@@ -1,0 +1,309 @@
+/*! LAYER CODES   DESKTOP START..................................................................................................*/
+@media screen and (max-width: 1359px) {
+    #layer {
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    #languages {
+        width: 72px !important;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    #layer {
+        margin-left: 15%;
+    }
+
+    #layer-p {
+        font-size: 13px;
+    }
+
+    #layer-a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+
+    #layer-p {
+        font-size: 12px;
+    }
+
+    #layer-a {
+        font-size: 14px;
+    }
+
+
+}
+
+/*! LAYER CODES  DESKTOP END........................................................................................................*/
+
+
+/* !HEADER DESKTOP MEDIA CODES START............................................................................................ */
+@media screen and (max-width: 1110px) {
+    #brand {
+        font-size: 19px;
+        padding-right: 10px;
+    }
+
+    [responsive] {
+        font-size: 15px !important;
+    }
+
+    #wishlist {
+        font-size: 20px;
+    }
+
+    #cart {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    #brand {
+        font-size: 17px;
+    }
+
+    [responsive] {
+        font-size: 13px !important;
+    }
+
+    #wishlist {
+        font-size: 17px;
+    }
+
+    #cart {
+        font-size: 17px;
+    }
+
+    #form {
+        padding: 8px 10px;
+    }
+}
+
+/* !HEADER DESKTOP MEDIA CODES END............................................................................................ */
+
+
+
+
+/* ............................................PLANSET RESPONSIVE CODES START................................................... */
+/*! LAYER CODES PLANSET........................................................................................................ */
+
+@media screen and (max-width: 827px) {
+
+    .container {
+        width: 90%;
+    }
+
+    #layer-p {
+        font-size: 11px;
+    }
+
+    #layer-a {
+        font-size: 13px;
+    }
+
+    #languages {
+        width: 61px !important;
+        font-size: 11px;
+    }
+}
+
+
+@media screen and (max-width: 690px) {
+
+    #layer-p {
+        font-size: 10px;
+    }
+
+    #layer-a {
+        font-size: 12px;
+    }
+
+
+    #languages {
+        width: 61px !important;
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    #layer {
+        margin-left: 10%;
+    }
+
+    #languages {
+        width: 60px !important;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 593px) {
+    #layer {
+        margin-left: 8%;
+    }
+
+    #languages {
+        width: 52px !important;
+        font-size: 9px;
+    }
+
+    #layer-p {
+        font-size: 9px;
+    }
+
+    #layer-a {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 516px) {
+
+    #layer {
+        margin-left: 5%;
+    }
+
+    #layer-p {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    #layer {
+        margin-left: 0;
+    }
+
+    #layer-p {
+        font-size: 7px;
+    }
+
+    #layer-a {
+        font-size: 8px;
+    }
+}
+
+/*! LAYER CODES   PLANSET END ................................................................................................*/
+
+
+
+
+/* !HEADER PLANSET CODES START...................................................................................................... */
+
+@media screen and (max-width: 827px) {
+    #nav {
+        display: none;
+    }
+
+    #planset-header-search {
+        display: block;
+        width: 50%;
+    }
+
+    #desktop-search {
+        display: none;
+    }
+
+    [data] {
+        display: none;
+    }
+
+    #header-components {
+        display: none;
+    }
+
+    #planset-header-icons {
+        display: flex;
+    }
+
+    #cart {
+        padding-right: 10px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    #brand {
+        font-size: 16px;
+    }
+
+    #form {
+        padding: 8px 5px;
+    }
+
+    input {
+        font-size: 12px;
+    }
+
+    #cart {
+        font-size: 16px;
+    }
+
+    #wishlist {
+        font-size: 16px;
+    }
+}
+
+/* !HEADER PLANSET CODES END...................................................................................................... */
+
+
+
+
+/* .......................................MOBILE RESPONSIVE CODES START ........................................................*/
+
+/*! LAYER CODES */
+@media screen and (max-width: 400px) {
+    #header-layer {
+        display: none;
+    }
+
+    #header {
+        display: none;
+    }
+
+    #mobileHeader{
+        display: block;
+    }
+    #mobile-header {
+        padding-top: 15px;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.249);
+        padding-bottom: 10px;
+    }
+
+    #brand-mobile {
+        font-size: 20px;
+    }
+
+    #languages-mobile {
+        background-color: #fff;
+        width: 15%;
+        color: #000;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    #mobile-header-items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #mobile-nav-items{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #header-mobile-nav {
+        padding-top: 10px;
+    }
+
+    #menu-icon {
+        font-size: 20px;
+    }
+
+    #mobile-right-icon{
+        display: flex;
+    }
+}
+
+/*! LAYER CODES  END*/
