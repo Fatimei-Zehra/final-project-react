@@ -1,6 +1,7 @@
 
 import Header from './Components/Header/Header';
 import Main from './Components/Main/Main';
+import Login from "../src/Components/Login/Login"
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <Header/>  
       <Main/>
+      <Login/>
     </div>
   );
 }
