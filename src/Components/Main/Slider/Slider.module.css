@@ -1,0 +1,93 @@
+/* .sliderItem {
+    padding: 33px 64px; 
+}
+
+
+.sliderLeftFirstItems{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-top: 40px;
+}
+
+.phoneModel{
+    color: #fff;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.slider{
+    display: flex;
+    justify-content: space-between;
+}
+
+.saleInfo{
+    width: 67%;
+}
+.phoneAbout{
+    color: #fff;
+    font-size: 50px;
+}
+
+.shopNowIphone{
+    color: #fff;
+    display: flex;
+    margin-top: 40px;
+} */
+
+/* .shop{
+    border-bottom: 1px solid grey;
+    padding-right: 15px;
+}
+
+.shopText{
+    margin-bottom: 8px;
+    font-size: 17px;
+} */
+
+/* .sliderLeftItems{
+    padding-left: 14px;
+}
+
+.sliderImg{
+    width: 100%;
+}
+
+
+.rightIcon{
+    margin-left: 15px;
+} */
+
+.slider {
+    display: flex;
+    ;
+    justify-content: space-between;
+    /* justify-content: end; */
+    /* gap: 13%; */
+}
+
+.sliderLeftItems {
+    /* width: 30%; */
+    width: 33%;
+    margin-top: 55px;
+}
+
+.sliderLeftFirstItems {
+    display: flex;
+    align-items: center;
+}
+
+.phoneAbout {
+    font-size: 48px;
+    padding-top: 30px;
+}
+
+.phoneModel {
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.shopNowIphone {
+    display: flex;
+    padding: 20px 0px;
+}
