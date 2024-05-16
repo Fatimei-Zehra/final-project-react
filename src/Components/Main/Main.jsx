@@ -16,6 +16,7 @@ function Main() {
                     <div className={MainStyle.sliderBox}>
                         <Slider />
                     </div>
+                    
                 </div>
 
             </div>
