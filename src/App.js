@@ -1,8 +1,8 @@
 
 import Adversiting from './Components/Advertising/Adversiting';
 import Header from './Components/Header/Header';
+import MainSlider from './Components/MainSlider/MainSlider';
 import Main from './Components/Main/Main';
-import Products from './Components/OurProducts/Products';
 
 
 function App() {
@@ -10,10 +10,7 @@ function App() {
     <div className="App">
       <Header/>  
       <Main/>
-      <Adversiting/>
-      <Products/>
     </div>
   );
 }
-
 export default App;
