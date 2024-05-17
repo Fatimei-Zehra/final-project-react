@@ -1,4 +1,4 @@
-.sectionLeftItems {
+/* .sectionLeftItems {
     width: 20%;
     border-right: 1px solid rgba(129, 129, 129, 0.245);
     padding-right: 18px;
@@ -14,4 +14,22 @@
     background-color: #000;
     width: 100%;
     height: 410px;
+    margin-top: 30px;
+} */
+
+
+.sectionItems{
+    display: flex;
+    justify-content: space-between;
+    gap: 3%;
+    margin-top: 30px;
 }
+
+.sliderBox{
+    background-color: #000;
+    width: 100%;
+    height: 410px;
+    /* margin-top: 30px; */
+    padding: 33px 64px;
+    color: #fff;
+} 

@@ -88,6 +88,72 @@
 
 
 
+
+
+/*! ADVERTISING DESKTOP MEDIA CODES START.......................................................................................... */
+@media screen and (max-width: 1350px) {
+    #about-product {
+        font-size: 42px;
+    }
+
+    #advertising-item {
+        width: 387px;
+    }
+
+    #advertising-product {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 1295px) {
+    #about-product {
+        font-size: 37px;
+    }
+
+    #advertising-item {
+        width: 345px;
+    }
+
+    #advetising-product {
+        width: 420px;
+    }
+}
+
+
+@media screen and (max-width: 1135px) {
+    #about-product {
+        font-size: 32px;
+    }
+
+    #advertising-item {
+        width: 303px;
+    }
+
+    #advetising-product {
+        width: 400px;
+    }
+}
+
+
+@media screen and (max-width: 1058px) {
+    #about-product {
+        font-size: 27px;
+    }
+
+    #advertising-item {
+        width: 303px;
+    }
+
+   
+
+    #advertising-btn{
+        padding: 17px 50px;
+    }
+}
+
+
+
+
 /* ............................................PLANSET RESPONSIVE CODES START................................................... */
 /*! LAYER CODES PLANSET........................................................................................................ */
 
@@ -262,9 +328,10 @@
         display: none;
     }
 
-    #mobileHeader{
+    #mobileHeader {
         display: block;
     }
+
     #mobile-header {
         padding-top: 15px;
         border-bottom: 1px solid rgba(128, 128, 128, 0.249);
@@ -288,7 +355,7 @@
         justify-content: space-between;
     }
 
-    #mobile-nav-items{
+    #mobile-nav-items {
         display: flex;
         justify-content: space-between;
     }
@@ -301,7 +368,7 @@
         font-size: 20px;
     }
 
-    #mobile-right-icon{
+    #mobile-right-icon {
         display: flex;
     }
 }
