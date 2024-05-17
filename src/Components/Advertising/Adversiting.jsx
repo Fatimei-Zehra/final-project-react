@@ -1,40 +1,49 @@
 import React from 'react'
+// import imgFirst from "../../Images/Adversiting/Ellipse 23.png"
+import imgSecond from "../../Images/Adversiting/Frame 694.png"
+import AdvertisingStyle from "../Advertising/Adversiting.module.css"
+import GlobalModuleCss from "../GlobalCss/global.module.css"
+import MediaStyle from "../GlobalCss/Media/media.css"
 
 function Adversiting() {
     return (
-        <div className='section-advertising'>
-            <div>
-                <p>Categories</p>
-                <h2>Enhance Your Music Experience</h2>
+        <div className="container">
+            <div className={AdvertisingStyle.sectionAdvertising}>
+                <div className={AdvertisingStyle.advertisingItems} id='advertising-item'>
+                    <p className={`${AdvertisingStyle.categoriesText} ${GlobalModuleCss.fontPoppins}`}>Categories</p>
+                    <h2 className={`${AdvertisingStyle.aboutProduct} ${GlobalModuleCss.fontInter}`} id='about-product'>Enhance Your Music Experience</h2>
 
-                <div className="date">
-                    <div>
-                        <p></p>
-                        <span></span>
-                    </div>
+                    <div className={AdvertisingStyle.advertisingDate}>
+                        <div className={AdvertisingStyle.advertisingDateItems}>
+                            <p className={`${AdvertisingStyle.dateNum} ${GlobalModuleCss.fontPoppins}`}>05</p>
+                            <span className={`${AdvertisingStyle.dateText} ${GlobalModuleCss.fontPoppins}`}>Days</span>
+                        </div>
 
-                    <div>
-                        <p></p>
-                        <span></span>
-                    </div>
+                        <div className={AdvertisingStyle.advertisingDateItems}>
+                            <p className={`${AdvertisingStyle.dateNum} ${GlobalModuleCss.fontPoppins}`}>23</p>
+                            <span className={`${AdvertisingStyle.dateText} ${GlobalModuleCss.fontPoppins}`}>Hours</span>
+                        </div>
 
-                    <div>
-                        <p></p>
-                        <span></span>
-                    </div>
+                        <div className={AdvertisingStyle.advertisingDateItems}>
+                            <p className={`${AdvertisingStyle.dateNum} ${GlobalModuleCss.fontPoppins}`}>59</p>
+                            <span className={`${AdvertisingStyle.dateText} ${GlobalModuleCss.fontPoppins}`}>Minutes</span>
+                        </div>
 
-                    <div>
-                        <p></p>
-                        <span></span>
+                        <div className={AdvertisingStyle.advertisingDateItems}>
+                            <p className={`${AdvertisingStyle.dateNum} ${GlobalModuleCss.fontPoppins}`}>35</p>
+                            <span className={`${AdvertisingStyle.dateText} ${GlobalModuleCss.fontPoppins}`}>Second</span>
+                        </div>
                     </div>
+                    <button className={AdvertisingStyle.advertisingBtn} id='advertising-btn'>Buy Now!</button>
                 </div>
-                <button>Buy Now!</button>
-            </div>
 
-            <div className='advertising-product'>
-                <img src="" alt="" />
+                <div className={AdvertisingStyle.advertisingProduct} id='advetising-product'>
+                    {/* <img src={imgFirst} alt="" /> */}
+                    <img src={imgSecond} className={AdvertisingStyle.secondProd} alt="" />
+                </div>
             </div>
         </div>
+
     )
 }
 
