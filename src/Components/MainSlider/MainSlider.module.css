@@ -1,13 +1,9 @@
 .slider {
     margin: 40px auto;
-    /* width: 70%; */
     display: flex;
     justify-content: space-between;
     overflow: hidden;
     position: relative;
-
-
-
 }
 
 /* @keyframes example {
