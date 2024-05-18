@@ -8,7 +8,6 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 function Slider() {
     return (
-        <div className={SliderStyle.sliderItem}>
             <div className={SliderStyle.slider}>
                 <div className={SliderStyle.sliderLeftItems}>
                     <div className={SliderStyle.sliderLeftFirstItems}>
@@ -16,7 +15,7 @@ function Slider() {
                         <p className={`${SliderStyle.phoneModel} ${GlobalModuleCss.fontPopppins}`}>iPhone 14 Series</p>
                     </div>
 
-                    <div>
+                    <div className={SliderStyle.saleInfo}>
                         <h1 className={`${SliderStyle.phoneAbout} ${GlobalModuleCss.fontInter}`}>Up to 10% off Voucher</h1>
                     </div>
 
@@ -25,15 +24,15 @@ function Slider() {
                         <p className={`${SliderStyle.shopText} ${GlobalModuleCss.fontPopppins}`}>Shop Now</p>
                         </div>
                        
-                        <FontAwesomeIcon icon={faArrowRight} />
+                        <FontAwesomeIcon icon={faArrowRight}  className={SliderStyle.rightIcon}/>
                     </div>
                 </div>
+
                 <div className="slider-right-items">
                     <img src={iphoneImg} alt="" className={SliderStyle.sliderImg} />
                 </div>
 
             </div>
-        </div>
     )
 }
 
