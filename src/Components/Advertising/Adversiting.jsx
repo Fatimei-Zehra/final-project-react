@@ -41,10 +41,7 @@ function Adversiting() {
                     {/* <img src={imgFirst} alt="" /> */}
                     <img src={imgSecond} className={AdvertisingStyle.secondProd} alt="" />
                 </div>
-            </div>
-
-
-           
+            </div>         
         </div>
 
     )
