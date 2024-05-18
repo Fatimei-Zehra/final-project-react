@@ -1,75 +1,16 @@
-/* .sliderItem {
-    padding: 33px 64px; 
-}
-
-
-.sliderLeftFirstItems{
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-    padding-top: 40px;
-}
-
-.phoneModel{
-    color: #fff;
-    font-size: 18px;
-    padding-left: 20px;
-}
-
-.slider{
-    display: flex;
-    justify-content: space-between;
-}
-
-.saleInfo{
-    width: 67%;
-}
-.phoneAbout{
-    color: #fff;
-    font-size: 50px;
-}
-
-.shopNowIphone{
-    color: #fff;
-    display: flex;
-    margin-top: 40px;
-} */
-
-/* .shop{
-    border-bottom: 1px solid grey;
-    padding-right: 15px;
-}
-
-.shopText{
-    margin-bottom: 8px;
-    font-size: 17px;
-} */
-
-/* .sliderLeftItems{
-    padding-left: 14px;
-}
-
-.sliderImg{
-    width: 100%;
-}
-
-
-.rightIcon{
-    margin-left: 15px;
-} */
 
 .slider {
     display: flex;
-    ;
     justify-content: space-between;
-    /* justify-content: end; */
-    /* gap: 13%; */
+   
+    gap: 8%;
 }
 
 .sliderLeftItems {
-    /* width: 30%; */
+  
     width: 33%;
-    margin-top: 55px;
+  
+    margin-top: 40px;
 }
 
 .sliderLeftFirstItems {
@@ -78,8 +19,10 @@
 }
 
 .phoneAbout {
-    font-size: 48px;
-    padding-top: 30px;
+    font-size: 42px;
+    padding: 25px 0px;
+    letter-spacing: 3px;
+    font-weight: 500;
 }
 
 .phoneModel {
@@ -87,7 +30,86 @@
     font-size: 16px;
 }
 
+
+.shop{
+    border-bottom: 1px solid grey;
+}
 .shopNowIphone {
     display: flex;
-    padding: 20px 0px;
+    align-items: center;
 }
+
+.rightIcon{
+    margin-left: 10px;
+}
+
+.sliderRightItems{
+    width: 496px;
+}
+
+.sliderImg{
+    width: 100%;
+}
+ 
+
+
+ /* farit codes */
+ /* .sliderBackground {
+    width: 1070px;
+    height: 409px;
+    background: rgb(0, 0, 0);
+    margin-top: 40px;
+  }
+  .IphoneSeria {
+    color: rgb(250, 250, 250);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+  }
+  .iphoneUP {
+    color: rgb(250, 250, 250);
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: 4%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  .Now {
+    color: rgb(250, 250, 250);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    text-decoration-line: underline;
+  }
+  .NowIconRight {
+    font-size: 24px;
+  }
+  .allbox {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 64px;
+    height: 85%;
+  }
+  .round {
+    width: 12px;
+    height: 12px;
+    background: #808080;
+    border-radius: 100%;
+  }
+
+
+  a{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    padding-top: 20px;
+  } */

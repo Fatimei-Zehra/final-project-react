@@ -29,10 +29,11 @@
 }
 
 .aboutProduct{
-    font-size: 48px;
+    font-size: 47px;
     font-weight: 600;
     letter-spacing: 2px;
     padding: 50px 0px;
+    /* padding: 27px 0px; */
 }
 
 .advertisingDate{
@@ -44,10 +45,10 @@
 .advertisingDateItems{
     border: 1px solid grey;
     border-radius: 100%;
-    width: 62px;
-    height: 62px;
+    width: 64px;
+    height: 64px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 7px;
     background-color: rgb(255, 255, 255);
     color: #000;
 }

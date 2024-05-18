@@ -10,7 +10,7 @@ import { FaStar } from "react-icons/fa";
 
 function MainSlider() {
     return (
-        <div>
+        <div className='container'>
              <div className={styles.slider}>
                 <div className={styles.sliderBox}>
                     <div className={styles.sliderBoxes}>
@@ -18,7 +18,7 @@ function MainSlider() {
                             <img src={ImageConsol} alt="" />
                             <div className={styles.buttons}>
                                 <div>
-                                    <span>-40%</span>
+                                    <span className={styles.saleProcent}>-40%</span>
                                 </div>
                                 <div className={styles.iconsBox}>
                                     <CiHeart className={styles.svg} />
@@ -30,7 +30,7 @@ function MainSlider() {
 
                     </div>
                     <div className={styles.downSide}>
-                        <h1>HAVIT HV-G92 Gamepad</h1>
+                        <h1 className={styles.downSideText}>HAVIT HV-G92 Gamepad</h1>
                         <div className={styles.price}>
                             <span className={styles.firstPrice}>$120</span>
                             <span className={styles.line}>$160</span>
@@ -60,7 +60,7 @@ function MainSlider() {
                             <img src={ImageKeyboard} alt="" />
                             <div className={styles.buttons}>
                                 <div>
-                                    <span>-35%</span>
+                                    <span className={styles.saleProcent}>-35%</span>
                                 </div>
                                 <div className={styles.iconsBox}>
                                     <CiHeart className={styles.svg} />
@@ -75,7 +75,7 @@ function MainSlider() {
                     </div>
 
                     <div className={styles.downSide}>
-                        <h1>AK-900 Wired Keyboard</h1>
+                        <h1 className={styles.downSideText}>AK-900 Wired Keyboard</h1>
                         <div className={styles.price}>
                             <span className={styles.firstPrice}>$960</span>
                             <span className={styles.line}>$1160</span>
@@ -104,7 +104,7 @@ function MainSlider() {
                             <img src={ImageTv} alt="" />
                             <div className={styles.buttons}>
                                 <div>
-                                    <span>-30%</span>
+                                    <span className={styles.saleProcent}>-30%</span>
                                 </div>
                                 <div className={styles.iconsBox}>
                                     <CiHeart className={styles.svg} />
@@ -119,7 +119,7 @@ function MainSlider() {
                     </div>
 
                     <div className={styles.downSide}>
-                        <h1>IPS LCD Gaming Monitor</h1>
+                        <h1 className={styles.downSideText}>IPS LCD Gaming Monitor</h1>
                         <div className={styles.price}>
                             <span className={styles.firstPrice}>$370</span>
                             <span className={styles.line}>$400</span>
@@ -149,7 +149,7 @@ function MainSlider() {
 
                             <div className={styles.buttons}>
                                 <div>
-                                    <span>-25%</span>
+                                    <span className={styles.saleProcent}>-25%</span>
                                 </div>
                                 <div className={styles.iconsBox}>
                                     <CiHeart className={styles.svg} />
@@ -164,7 +164,7 @@ function MainSlider() {
                     </div>
 
                     <div className={styles.downSide}>
-                        <h1>S-Series Comfort Chair</h1>
+                        <h1 className={styles.downSideText}>S-Series Comfort Chair</h1>
                         <div className={styles.price}>
                             <span className={styles.firstPrice}>$375</span>
                             <span className={styles.line}>$400</span>

@@ -89,15 +89,197 @@
 
 
 
+/* !SLIDER DESKTOP MEDIA CODES ...................................................................................................*/
+@media screen and (max-width: 1487px) {
+    #phone-model {
+        width: 460px;
+    }
+
+    #slider-left-items {
+        width: 36%;
+    }
+}
+
+@media screen and (max-width: 1452px) {
+    #about-sale {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 1415px) {
+    #about-sale {
+        font-size: 36px;
+    }
+
+    #slider-left-items {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1399px) {
+    #slider {
+        gap: 2%;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    #slider-box {
+        height: 375px;
+        padding: 32px 55px;
+    }
+}
+
+@media screen and (max-width: 1351px) {
+    #about-sale {
+        font-size: 36px;
+    }
+
+    #slider-right-items {
+        width: 440px;
+    }
+}
+
+
+@media screen and (max-width: 1297px) {
+    #slider {
+        gap: 4%;
+    }
+
+    #phone-model {
+        width: 405px;
+        margin-top: 24px;
+    }
+
+}
+
+
+@media screen and (max-width: 1265px) {
+    #phone-model {
+        width: 375px;
+    }
+
+
+    #slider-right-items {
+        width: 375px;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    #slider-left-items {
+        width: 45%;
+    }
+
+    #phone-model {
+        width: 335px;
+    }
+
+    #about-sale {
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width: 1149px) {
+    #phone-model {
+        width: 340px;
+    }
+
+    #phone-series {
+        font-size: 15px;
+    }
+
+    #slider-box {
+        padding: 29px 55px;
+    }
+}
+
+@media screen and (max-width: 1128px) {
+    #phone-model {
+        width: 325px;
+    }
+
+    #slider {
+        gap: 1%;
+    }
+}
+
+
+@media screen and (max-width: 1088px) {
+    #phone-model {
+        width: 100%;
+    }
+
+    #slider-right-items {
+        width: 310px;
+    }
+
+    #slider-left-items {
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 1022px) {
+    #about-sale {
+        font-size: 27px;
+    }
+
+    #img-logo {
+        width: 30px;
+    }
+
+    #slider-box {
+        padding: 29px 35px;
+        height: 330px;
+    }
+
+    #dropdown-list {
+        width: 170px;
+    }
+
+    #dropdown-list>li {
+        width: 100%;
+    }
+
+    #section-items-main {
+        gap: 2%;
+    }
+}
+
+
+
+@media screen and (max-width: 873px) {
+
+
+    #img-logo {
+        width: 25px;
+    }
+
+    #about-sale {
+        font-size: 25px;
+    }
+
+    #slider-box {
+        padding: 29px 30px;
+    }
+
+    #slider-right-items {
+        width: 226px;
+    }
+}
+
+
+
+
 
 /*! ADVERTISING DESKTOP MEDIA CODES START.......................................................................................... */
 @media screen and (max-width: 1350px) {
     #about-product {
-        font-size: 42px;
+        font-size: 39px;
     }
 
     #advertising-item {
-        width: 387px;
+        width: 370px;
     }
 
     #advertising-product {
@@ -107,7 +289,7 @@
 
 @media screen and (max-width: 1295px) {
     #about-product {
-        font-size: 37px;
+        font-size: 36px;
     }
 
     #advertising-item {
@@ -117,12 +299,21 @@
     #advetising-product {
         width: 420px;
     }
+
+    #advertising-btn {
+        padding: 17px 46px;
+    }
 }
 
 
 @media screen and (max-width: 1135px) {
     #about-product {
-        font-size: 32px;
+        font-size: 31px;
+        padding: 37px 0px;
+    }
+
+    #section-advertiising {
+        height: 465px;
     }
 
     #advertising-item {
@@ -135,23 +326,65 @@
 }
 
 
-@media screen and (max-width: 1058px) {
+@media screen and (max-width: 1059px) {
     #about-product {
         font-size: 27px;
     }
 
-    #advertising-item {
-        width: 303px;
+    #advetising-product {
+        width: 370px;
     }
 
-   
+    #advertising-item {
+        width: 300px;
+    }
 
-    #advertising-btn{
+
+
+    #advertising-btn {
         padding: 17px 50px;
     }
 }
 
 
+
+@media screen and (max-width: 938px) {
+    #section-advertiising{
+        padding: 70px 50px;
+    }
+
+    #advetising-product {
+        width: 310px;
+    }
+
+    #advertising-item {
+        width: 292px;
+    }
+
+    #days,#hours,#minute,#second{
+        width: 55px;
+        height: 55px;
+    }
+
+    #days>p{
+        font-size:12px;
+    }
+
+    #hours>p{
+        font-size:12px;
+    }
+
+    #minute>p{
+        font-size:12px;
+    }
+
+    #second>p{
+        font-size:12px;
+    }
+}
+
+
+/*! ADVERTISING DESKTOP MEDIA CODES END.......................................................................................... */
 
 
 /* ............................................PLANSET RESPONSIVE CODES START................................................... */
@@ -164,7 +397,7 @@
     }
 
     #layer-p {
-        font-size: 11px;
+        font-size: 10px;
     }
 
     #layer-a {
@@ -181,7 +414,7 @@
 @media screen and (max-width: 690px) {
 
     #layer-p {
-        font-size: 10px;
+        font-size: 9px;
     }
 
     #layer-a {
@@ -217,7 +450,7 @@
     }
 
     #layer-p {
-        font-size: 9px;
+        font-size: 8px;
     }
 
     #layer-a {
@@ -232,7 +465,7 @@
     }
 
     #layer-p {
-        font-size: 8px;
+        font-size: 7px;
     }
 }
 
@@ -247,6 +480,12 @@
 
     #layer-a {
         font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #layer-p {
+        font-size: 6px;
     }
 }
 
@@ -314,8 +553,368 @@
 /* !HEADER PLANSET CODES END...................................................................................................... */
 
 
+/* !SLIDER PALNSET CODES START................................................................................................ */
+@media screen and (max-width: 827px) {
+
+    .container {
+        width: 90%;
+    }
+
+    #list-items {
+        display: none;
+    }
+
+    #slider-right-items {
+        width: 325px;
+    }
+
+    #slider-box {
+        padding: 33px 70px;
+    }
+
+    #section-items-main {
+        gap: 0 !important;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #slider-box {
+        padding: 30px 44px;
+        height: 288px;
+    }
+
+    #about-sale {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 646px) {
+    #about-sale {
+        padding: 15px 0px;
+    }
+}
+
+@media screen and (max-width: 633px) {
+    #slider-box {
+        padding: 31px 33px;
+    }
 
 
+}
+
+
+@media screen and (max-width: 620px) {
+    #slider-right-items {
+        width: 290px;
+    }
+
+    #slider-box {
+        height: 260px;
+    }
+}
+
+@media screen and (max-width: 585px) {
+    #img-logo {
+        width: 18px;
+    }
+
+    #phone-series {
+        font-size: 13px;
+        margin-left: 12px;
+    }
+
+    #about-sale {
+        padding: 13px 0px;
+    }
+
+    #about-sale {
+        font-size: 21px;
+    }
+
+    #shop-now {
+        font-size: 12px;
+    }
+
+    #slider-right-items {
+        width: 220px;
+    }
+
+    #slider-left-items {
+        width: 53%;
+    }
+}
+
+@media screen and (max-width: 519px) {
+    #slider-box {
+        padding: 25px 30px;
+        height: 225px;
+
+    }
+
+}
+
+@media screen and (max-width: 505px) {
+    #about-sale {
+        font-size: 19px;
+        padding: 13px 0px;
+    }
+
+    #slider-right-items {
+        width: 190px;
+    }
+
+    .slider-left-items {
+        width: 33%;
+        margin-top: 32px;
+    }
+
+}
+
+@media screen and (max-width: 457px) {
+    #about-sale {
+        font-size: 17px;
+    }
+
+    #phone-series {
+        font-size: 10px;
+        margin-left: 9px;
+    }
+
+    #slider-left-items {
+        margin-top: 33px;
+    }
+}
+
+@media screen and (max-width: 437px) {
+    #slider-box {
+        padding: 25px 21px;
+    }
+}
+
+
+/*! ADVERTISING PLANSET MEDIA CODES START......................................................................................... */
+@media screen and (max-width: 827px) {
+    .container{
+        width: 90% !important;
+    }
+
+}
+
+@media screen and (max-width: 738px){
+    
+    #categories-title{
+        font-size: 14px;
+    }
+    #advetising-product {
+        width: 273px;
+    }
+
+    #about-product {
+        padding: 31px 0px;
+    }
+
+    #advertising-item {
+        width: 262px;
+    }
+
+    #section-advertiising {
+        padding: 65px 50px;
+    }
+
+    #section-advertiising {
+        height: 416px;
+    }
+
+    #about-product {
+        font-size: 25px;
+    }
+
+    #advertising-btn {
+        padding: 15px 30px}
+}
+
+@media screen and (max-width: 680px){
+    #advertising-item {
+        width: 243px;
+    }
+
+    #about-product {
+        font-size: 23px;
+    }
+
+    #section-advertiising {
+        padding: 65px 40px;
+    }
+
+    #days,#hours,#minute,#second{
+        width: 53px;
+        height: 53px;
+    }
+
+    #days>p{
+        font-size:10px;
+    }
+
+    #hours>p{
+        font-size:10px;
+    }
+
+    #minute>p{
+        font-size:10px;
+    }
+
+    #second>p{
+        font-size:10px;
+    }
+    #categories-title {
+        font-size: 12px;
+    }
+
+    #advertising-item {
+        width: 258px;
+    }
+
+    #section-advertiising {
+        height: 375px;
+    }
+}
+
+
+@media screen and (max-width: 680px){
+    #days,#hours,#minute,#second{
+        width: 45px;
+        height: 45px;
+        padding-top: 5px;
+    }
+
+    #days>p{
+        font-size:10px;
+    }
+
+    #hours>p{
+        font-size:10px;
+    }
+
+    #minute>p{
+        font-size:10px;
+    }
+
+    #second>p{
+        font-size:10px;
+    }
+
+    #days>span{
+        font-size: 9px;
+    }
+
+    #hours>span{
+        font-size: 9px;
+    }
+
+    #minute>span{
+        font-size: 9px;
+    }
+
+    #second>span{
+        font-size: 9px;
+    }
+
+    #advertising-btn {
+    font-size: 12px;
+    padding: 12px 26px;
+    }
+
+    #advertising-date{
+        margin-bottom: 22px;
+    }
+
+    #categories-title {
+        font-size: 11px;
+    }
+
+    #about-product {
+        font-size: 21px;
+    }
+
+    #about-product {
+        padding: 26px 0px;
+    }
+
+    #section-advertiising {
+        height: 324px;
+    }
+    #advetising-product {
+        width: 248px;
+    }
+}
+
+
+@media screen and (max-width: 558px){
+    #about-product {
+        font-size: 19px;
+    }
+    #advertising-item {
+        width: 280px;
+    }
+
+    #advetising-product {
+        display: flex;
+        align-items: center;
+}
+}
+
+@media screen and (max-width: 498px){
+    #about-product {
+        font-size: 17px;
+    }
+
+    #days,#hours,#minute,#second{
+        width: 40px;
+        height: 40px;
+        padding-top: 3px;
+    }
+
+    #days>p{
+        font-size:9px;
+    }
+
+    #hours>p{
+        font-size:9px;
+    }
+
+    #minute>p{
+        font-size:9px;
+    }
+
+    #second>p{
+        font-size:9px;
+    }
+
+    #days>span{
+        font-size: 7px;
+    }
+
+    #hours>span{
+        font-size: 7px;
+    }
+
+    #minute>span{
+        font-size: 7px;
+    }
+
+    #second>span{
+        font-size: 7px;
+    }
+
+    #advertising-btn {
+        font-size: 10px;
+        padding: 10px 22px;
+    }
+
+    #about-product {
+        font-size: 15px;
+    }
+}
 /* .......................................MOBILE RESPONSIVE CODES START ........................................................*/
 
 /*! LAYER CODES */
@@ -374,3 +973,15 @@
 }
 
 /*! LAYER CODES  END*/
+
+
+/* !SLIDER RESPONSIVE CODES START.................................................................................................. */
+@media screen and (max-width: 400px) {
+    /* #slider {
+        display: none;
+    } */
+
+    #slider-box {
+        display: none;
+    }
+}
