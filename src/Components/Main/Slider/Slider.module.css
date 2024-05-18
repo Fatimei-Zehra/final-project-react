@@ -1,0 +1,53 @@
+.sliderItem {
+  
+    padding: 33px 64px;
+   
+}
+
+
+.sliderLeftFirstItems{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-top: 40px;
+}
+
+.phoneModel{
+    color: #fff;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.slider{
+    display: flex;
+    justify-content: space-between;
+}
+
+.phoneAbout{
+    color: #fff;
+    font-size: 35px;
+}
+
+.shopNowIphone{
+    color: #fff;
+    display: flex;
+    margin-top: 30px;
+}
+
+/* .shop{
+    border-bottom: 1px solid grey;
+    padding-right: 15px;
+}
+
+.shopText{
+    margin-bottom: 8px;
+    font-size: 17px;
+} */
+
+.sliderLeftItems{
+    padding-left: 14px;
+}
+
+.sliderImg{
+    width: 100%;
+}

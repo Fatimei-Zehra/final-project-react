@@ -1,11 +1,19 @@
 
+import Header from './Components/Header/Header';
+import MainSlider from './Components/MainSlider/MainSlider';
+import Main from './Components/Main/Main';
+import Timer from './Components/Timer/Timer'
+
 function App() {
   return (
     <div className="App">
-     <h1>Hillo</h1>
-   <a>Salam</a>
+      <Header/>  
+      <Main/>
+      <Timer/>
+      <MainSlider/>
     </div>
   );
 }
-
 export default App;
+
+export default App;   

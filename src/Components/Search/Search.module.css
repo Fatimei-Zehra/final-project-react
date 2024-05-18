@@ -1,0 +1,15 @@
+.form{
+    /* width: 232px; */
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 10px 12px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+input{
+    border: none;
+    outline: none;
+    background-color: #f5f5f5;
+}
