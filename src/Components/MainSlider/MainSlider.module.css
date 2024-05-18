@@ -1,6 +1,6 @@
 .slider {
     margin: 40px auto;
-    width: 70%;
+    /* width: 70%; */
     display: flex;
     justify-content: space-between;
     overflow: hidden;
@@ -10,7 +10,7 @@
 
 }
 
-@keyframes example {
+/* @keyframes example {
     0% {
         transform: translateX(0);
     }
@@ -18,7 +18,7 @@
     100% {
         transform: translateX(calc(200px * 7))
     }
-}
+} */
 
 .sliderBox {
     animation: example 4s linear infinite;
@@ -41,7 +41,7 @@
     position: absolute;
 }
 
-.buttons span {
+.saleProcent {
     background-color: #DB4444;
     padding: 10px;
     color: #fff;
@@ -97,7 +97,8 @@
 
 .line {
     text-decoration: line-through;
-    color: #6084A4;
+    /* color: #8fa2b3; */
+    color:  grey;
     font-weight: 500;
 }
 
@@ -106,15 +107,17 @@
     font-family: 'Poppins';
     color: #DB4444;
     font-weight: 500;
+    margin-right: 10px;
 }
 
 .starIcons {
     display: flex;
 }
 
-.downSide h1 {
-    font-size: 18px;
+.downSideText {
+    font-size: 16px;
     font-family: 'Poppins';
+    padding: 10px 0px;
 }
 
 .star {
@@ -135,7 +138,6 @@
 .numberDown span {
     color: #6084A4;
     font-weight: 500;
-
 }
 
 .upSide button {
@@ -153,9 +155,10 @@
     cursor: pointer;
 }
 
-/* .starGradient {
-    background: linear-gradient(to right, #FFAD33, #bfbfbf);
-} */
+.starGradient {
+    /* background: linear-gradient(to right, #FFAD33, #bfbfbf); */
+    color: #bfbfbf;
+}
 .view button{
     cursor: pointer;
     background-color: #DB4444;

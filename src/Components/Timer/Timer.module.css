@@ -2,7 +2,9 @@
     display: flex;
     gap: 10px;
     margin: 0 auto;
-    width: 70%;
+    /* width: 70%; */
+    margin-top: 80px;
+    margin-bottom: 15px;
 
 }
 
@@ -10,13 +12,13 @@
     display: flex;
     gap: 50px;
     align-items: center;
-    width: 70%;
+    /* width: 70%; */
     margin: 0 auto;
+    text-align: center;
 }
 
-.rectangle h1 {
+.rectangleText {
     color: #DB4444;
-    font-family: 'Inter';
     font-size: 16px;
 }
 
@@ -24,15 +26,15 @@
     font-family: 'Inter';
 }
 
-.timerSide p {
+.timerSideP {
     font-family: "Poppins";
     font-size: 12px;
     font-weight: bold;
 }
 
-.timerSide span {
+.timerSideSpan {
     font-size: 32px;
-    font-family: "Poppins";
+    font-family: "Inter";
     font-weight: bold;
 }
 
@@ -50,10 +52,7 @@
     background-color: #DB4444;
 }
 
-.timer p,
-span {
-    font-family: "Inter", sans-serif;
-}
+
 
 .timer {
     display: flex;
