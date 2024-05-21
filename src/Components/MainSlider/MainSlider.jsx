@@ -11,7 +11,7 @@ import { FaStar } from "react-icons/fa";
 function MainSlider() {
     return (
         <div>
-             <div className={styles.slider}>
+            <div className={styles.slider}>
                 <div className={styles.sliderBox}>
                     <div className={styles.sliderBoxes}>
                         <div className={styles.upSide}>
@@ -26,6 +26,7 @@ function MainSlider() {
 
                                 </div>
                             </div>
+                            <button className={styles.buttonActive}>Add to Card</button>
                         </div>
 
                     </div>
@@ -34,7 +35,6 @@ function MainSlider() {
                         <div className={styles.price}>
                             <span className={styles.firstPrice}>$120</span>
                             <span className={styles.line}>$160</span>
-
                         </div>
                         <div className={styles.infoDown}>
                             <div className={styles.starIcons}>
@@ -48,12 +48,8 @@ function MainSlider() {
                                 <span>(88)</span>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
-
-
                 <div className={styles.sliderBox}>
                     <div className={styles.sliderBoxes}>
                         <div className={styles.upSide}>
@@ -68,7 +64,7 @@ function MainSlider() {
 
                                 </div>
                             </div>
-                            <button>Add to Card</button>
+                            <button className={styles.buttonActive}>Add to Card</button>
                         </div>
 
 
@@ -112,7 +108,7 @@ function MainSlider() {
 
                                 </div>
                             </div>
-
+                            <button className={styles.buttonActive}>Add to Card</button>
                         </div>
 
 
@@ -157,7 +153,7 @@ function MainSlider() {
 
                                 </div>
                             </div>
-
+                            <button style={styles.buttonActive}>Add to Card</button>
                         </div>
 
 
@@ -190,7 +186,7 @@ function MainSlider() {
                 <button >View All Products</button>
             </div>
         </div>
-        
+
     )
 }
 

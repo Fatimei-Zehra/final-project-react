@@ -10,18 +10,19 @@
 
 }
 
+
 @keyframes example {
     0% {
         transform: translateX(0);
     }
 
     100% {
-        transform: translateX(calc(200px * 7))
+        transform: translateX(calc(-200px * 7))
     }
 }
 
 .sliderBox {
-    animation: example 4s linear infinite;
+    animation: example 20s linear infinite;
     width: calc(250px * 14);
 }
 
@@ -32,6 +33,15 @@
     height: 250px;
     position: relative;
 }
+
+/* .sliderBoxes:hover .buttonActive {
+    display: block;
+}
+
+.buttonActive {
+    display: none;
+
+} */
 
 .sliderBoxes img {
     width: 170px;
@@ -90,8 +100,7 @@
 
 .price {
     display: flex;
-    justify-content: space-between;
-    width: 8%;
+    gap: 20px;
     align-items: center;
 }
 
@@ -156,7 +165,7 @@
 /* .starGradient {
     background: linear-gradient(to right, #FFAD33, #bfbfbf);
 } */
-.view button{
+.view button {
     cursor: pointer;
     background-color: #DB4444;
     color: #FFF;
@@ -165,9 +174,10 @@
     border: none;
     padding: 16px 48px 16px 48px;
     border-radius: 4px;
-    
+
 }
-.view{
+
+.view {
     display: flex;
     justify-content: center;
     align-items: center;
