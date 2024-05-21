@@ -5,7 +5,7 @@ import { HiOutlineComputerDesktop } from "react-icons/hi2";
 import { BsSmartwatch } from "react-icons/bs";
 import { MdOutlineCameraAlt } from "react-icons/md";
 import { PiHeadphonesLight } from "react-icons/pi";
-import { GiConsoleController } from "react-icons/gi";
+import { TbDeviceGamepad } from "react-icons/tb";
 export default function Categories() {
     return (
         <div>
@@ -21,7 +21,7 @@ export default function Categories() {
                     <h1>Phones</h1>
                 </div>
                 <div className={styles.categorieBoxes}>
-                    <HiOutlineComputerDesktop className={styles.icon} />  
+                    <HiOutlineComputerDesktop className={styles.icon} />
                     <h1>Computers</h1>
                 </div>
                 <div className={styles.categorieBoxes}>
@@ -37,7 +37,7 @@ export default function Categories() {
                     <h1>HeadPhones</h1>
                 </div>
                 <div className={styles.categorieBoxes}>
-                    <GiConsoleController className={styles.icon} />
+                    <TbDeviceGamepad className={styles.icon} />
                     <h1>Gaming</h1>
                 </div>
             </div>
