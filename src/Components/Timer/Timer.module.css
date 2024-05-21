@@ -2,6 +2,9 @@
     display: flex;
     gap: 10px;
     margin: 0 auto;
+    margin-top: 80px;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
 .frame {
