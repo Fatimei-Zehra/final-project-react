@@ -16,12 +16,12 @@ function Footer() {
         <div>
             <footer className={FooterStyle.footer}>
                 <div className='container'>
-                    <div className={FooterStyle.footerItems}>
+                    <div className={FooterStyle.footerItems}  id='footer-items'>
                         <div className={FooterStyle.footerListItems}>
                             <h2 className={FooterStyle.footerLogo} id='footer-logo'>Exclusive</h2>
                             <p className={FooterStyle.subscribeText} id='subscribe-text'>Subscribe</p>
                             <p className={FooterStyle.firstOrderSale} id='first-order-sale'>Get 10% off your first order</p>
-                            <form className={FooterStyle.formForEmail}>
+                            <form className={FooterStyle.formForEmail} id='form'>
                                 <input type="text" placeholder='Enter your email' className={FooterStyle.inputForEmail} id='input-mail' />
                                 <FaAngleRight />
                             </form>
