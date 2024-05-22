@@ -6,6 +6,7 @@ import Categories from "./Components/Categories/Categories"
 import Main from './Components/Main/Main';
 import Timer from "../src/Components/Timer/Timer"
 import Products from './Components/OurProducts/Products';
+import Services  from './Components/Services/Services';
 import Footer from "../src/Components/Footer/Footer"
 
 
@@ -20,6 +21,7 @@ function App() {
       <Categories/>
       <Adversiting />
       <Products />
+      <Services/>
       <Footer/>
     </div>
   );
