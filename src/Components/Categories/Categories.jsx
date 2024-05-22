@@ -6,9 +6,10 @@ import { BsSmartwatch } from "react-icons/bs";
 import { MdOutlineCameraAlt } from "react-icons/md";
 import { PiHeadphonesLight } from "react-icons/pi";
 import { TbDeviceGamepad } from "react-icons/tb";
+import GlobalCss from "../GlobalCss/global.css"
 export default function Categories() {
     return (
-        <div>
+        <div className='container'>
             <div className={styles.rectangle}>
                 <div className={styles.red}></div>
                 <h1>Categories</h1>
@@ -18,27 +19,27 @@ export default function Categories() {
             <div className={styles.categories}>
                 <div className={styles.categorieBoxes}>
                     <IoIosPhonePortrait className={styles.icon} />
-                    <h1>Phones</h1>
+                    <h1 className={styles.categoriesName}>Phones</h1>
                 </div>
                 <div className={styles.categorieBoxes}>
                     <HiOutlineComputerDesktop className={styles.icon} />
-                    <h1>Computers</h1>
+                    <h1 className={styles.categoriesName} >Computers</h1>
                 </div>
                 <div className={styles.categorieBoxes}>
                     <BsSmartwatch className={styles.icon} />
-                    <h1>SmartWatch</h1>
+                    <h1 className={styles.categoriesName}>SmartWatch</h1>
                 </div>
                 <div className={styles.categorieBoxes}>
                     <MdOutlineCameraAlt className={styles.icon} />
-                    <h1>Camera</h1>
+                    <h1 className={styles.categoriesName}>Camera</h1>
                 </div>
                 <div className={styles.categorieBoxes}>
                     <PiHeadphonesLight className={styles.icon} />
-                    <h1>HeadPhones</h1>
+                    <h1 className={styles.categoriesName}>HeadPhones</h1>
                 </div>
                 <div className={styles.categorieBoxes}>
                     <TbDeviceGamepad className={styles.icon} />
-                    <h1>Gaming</h1>
+                    <h1 className={styles.categoriesName} >Gaming</h1>
                 </div>
             </div>
         </div>

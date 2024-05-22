@@ -349,7 +349,7 @@
 
 
 @media screen and (max-width: 938px) {
-    #section-advertiising{
+    #section-advertiising {
         padding: 70px 50px;
     }
 
@@ -361,25 +361,28 @@
         width: 292px;
     }
 
-    #days,#hours,#minute,#second{
+    #days,
+    #hours,
+    #minute,
+    #second {
         width: 55px;
         height: 55px;
     }
 
-    #days>p{
-        font-size:12px;
+    #days>p {
+        font-size: 12px;
     }
 
-    #hours>p{
-        font-size:12px;
+    #hours>p {
+        font-size: 12px;
     }
 
-    #minute>p{
-        font-size:12px;
+    #minute>p {
+        font-size: 12px;
     }
 
-    #second>p{
-        font-size:12px;
+    #second>p {
+        font-size: 12px;
     }
 }
 
@@ -390,8 +393,142 @@
 
 /* !FOOTER DESKTOP MEDIA CODES START...............................................................................................*/
 @media screen and (max-width: 1140px) {
-    
+    #footer-logo {
+        font-size: 22px;
+    }
+
+    #subscribe-text {
+        font-size: 18px;
+    }
+
+    #first-order-sale {
+        font-size: 14px;
+    }
+
+    #input-mail {
+        padding: 12px 3px;
+    }
+
+    [title] {
+        font-size: 18px !important;
+    }
+
+    [list] {
+        font-size: 14px !important;
+    }
 }
+
+
+@media screen and (max-width: 1070px) {
+    #subscribe-text {
+        font-size: 16px;
+    }
+
+    #first-order-sale {
+        font-size: 13px;
+    }
+
+    #input-mail {
+        padding: 12px 0px;
+    }
+
+
+    [title] {
+        font-size: 17px !important;
+    }
+
+    [list] {
+        font-size: 13px !important;
+    }
+}
+
+
+@media screen and (max-width: 1030px) {
+    #qr-img{
+        width: 65px;
+        height: 65px;
+    }
+
+    #apple-store,#google-play{
+        width: 95px;
+    }
+
+    #new-user-suggest{
+        font-size: 10px;
+    }
+
+    [list] {
+        font-size: 12px !important;
+    }
+
+    #first-order-sale {
+        font-size: 12px;
+    }
+
+    #input-mail{
+        width: 142px;
+        padding: 12px 5px;
+    }
+}
+
+@media screen and (max-width: 965px) {
+    #subscribe-text {
+        font-size: 15px;
+    }
+
+    #input-mail{
+        width: 137px;
+    }
+
+    #first-order-sale {
+        font-size: 11px;
+    }
+
+    [title] {
+        font-size: 17px !important;
+    }
+}
+
+@media screen and (max-width: 900px){
+    #qr-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    
+    #apple-store,#google-play{
+        width: 75px;
+    }
+
+    [title] {
+        font-size: 16px !important;
+    }
+
+    [list] {
+        font-size: 11px !important;
+    }
+
+    #subscribe-text {
+        font-size: 14px;
+    }
+
+    #first-order-sale {
+        font-size: 10px;
+    }
+
+    #input-mail {
+        width: 116px;
+    }
+
+    #footer-icons{
+        font-size: 11px;
+    }
+
+    .footerLatItem{
+        width: 144px;
+    }
+    }
+
 
 /* ............................................PLANSET RESPONSIVE CODES START................................................... */
 /*! LAYER CODES PLANSET........................................................................................................ */
@@ -700,17 +837,18 @@
 
 /*! ADVERTISING PLANSET MEDIA CODES START......................................................................................... */
 @media screen and (max-width: 827px) {
-    .container{
+    .container {
         width: 90% !important;
     }
 
 }
 
-@media screen and (max-width: 738px){
-    
-    #categories-title{
+@media screen and (max-width: 738px) {
+
+    #categories-title {
         font-size: 14px;
     }
+
     #advetising-product {
         width: 273px;
     }
@@ -736,10 +874,11 @@
     }
 
     #advertising-btn {
-        padding: 15px 30px}
+        padding: 15px 30px
+    }
 }
 
-@media screen and (max-width: 680px){
+@media screen and (max-width: 680px) {
     #advertising-item {
         width: 243px;
     }
@@ -752,26 +891,30 @@
         padding: 65px 40px;
     }
 
-    #days,#hours,#minute,#second{
+    #days,
+    #hours,
+    #minute,
+    #second {
         width: 53px;
         height: 53px;
     }
 
-    #days>p{
-        font-size:10px;
+    #days>p {
+        font-size: 10px;
     }
 
-    #hours>p{
-        font-size:10px;
+    #hours>p {
+        font-size: 10px;
     }
 
-    #minute>p{
-        font-size:10px;
+    #minute>p {
+        font-size: 10px;
     }
 
-    #second>p{
-        font-size:10px;
+    #second>p {
+        font-size: 10px;
     }
+
     #categories-title {
         font-size: 12px;
     }
@@ -786,51 +929,55 @@
 }
 
 
-@media screen and (max-width: 680px){
-    #days,#hours,#minute,#second{
+@media screen and (max-width: 680px) {
+
+    #days,
+    #hours,
+    #minute,
+    #second {
         width: 45px;
         height: 45px;
         padding-top: 5px;
     }
 
-    #days>p{
-        font-size:10px;
+    #days>p {
+        font-size: 10px;
     }
 
-    #hours>p{
-        font-size:10px;
+    #hours>p {
+        font-size: 10px;
     }
 
-    #minute>p{
-        font-size:10px;
+    #minute>p {
+        font-size: 10px;
     }
 
-    #second>p{
-        font-size:10px;
+    #second>p {
+        font-size: 10px;
     }
 
-    #days>span{
+    #days>span {
         font-size: 9px;
     }
 
-    #hours>span{
+    #hours>span {
         font-size: 9px;
     }
 
-    #minute>span{
+    #minute>span {
         font-size: 9px;
     }
 
-    #second>span{
+    #second>span {
         font-size: 9px;
     }
 
     #advertising-btn {
-    font-size: 12px;
-    padding: 12px 26px;
+        font-size: 12px;
+        padding: 12px 26px;
     }
 
-    #advertising-date{
+    #advertising-date {
         margin-bottom: 22px;
     }
 
@@ -849,16 +996,18 @@
     #section-advertiising {
         height: 324px;
     }
+
     #advetising-product {
         width: 248px;
     }
 }
 
 
-@media screen and (max-width: 558px){
+@media screen and (max-width: 558px) {
     #about-product {
         font-size: 19px;
     }
+
     #advertising-item {
         width: 280px;
     }
@@ -866,49 +1015,52 @@
     #advetising-product {
         display: flex;
         align-items: center;
-}
+    }
 }
 
-@media screen and (max-width: 498px){
+@media screen and (max-width: 498px) {
     #about-product {
         font-size: 17px;
     }
 
-    #days,#hours,#minute,#second{
+    #days,
+    #hours,
+    #minute,
+    #second {
         width: 40px;
         height: 40px;
         padding-top: 3px;
     }
 
-    #days>p{
-        font-size:9px;
+    #days>p {
+        font-size: 9px;
     }
 
-    #hours>p{
-        font-size:9px;
+    #hours>p {
+        font-size: 9px;
     }
 
-    #minute>p{
-        font-size:9px;
+    #minute>p {
+        font-size: 9px;
     }
 
-    #second>p{
-        font-size:9px;
+    #second>p {
+        font-size: 9px;
     }
 
-    #days>span{
+    #days>span {
         font-size: 7px;
     }
 
-    #hours>span{
+    #hours>span {
         font-size: 7px;
     }
 
-    #minute>span{
+    #minute>span {
         font-size: 7px;
     }
 
-    #second>span{
+    #second>span {
         font-size: 7px;
     }
 
@@ -921,6 +1073,7 @@
         font-size: 15px;
     }
 }
+
 /* .......................................MOBILE RESPONSIVE CODES START ........................................................*/
 
 /*! LAYER CODES */

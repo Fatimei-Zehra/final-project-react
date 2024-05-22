@@ -10,7 +10,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: self-start;
-    gap: 30px;
+    /* gap: 30px; */
 }
 
 .appStores {
@@ -22,6 +22,7 @@ footer {
 
 .footerImages {
     display: flex;
+    align-items: center;
 }
 
 
@@ -98,4 +99,9 @@ footer {
 .socialIcons{
     margin-right: 30px;
     cursor: pointer;
+}
+
+
+.footerListItems{
+    padding-right: 20px;
 }

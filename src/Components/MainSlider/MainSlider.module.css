@@ -7,7 +7,7 @@
 }
 
 
-@keyframes example {
+/* @keyframes example {
     0% {
         transform: translateX(0);
     }
@@ -15,7 +15,7 @@
     100% {
         transform: translateX(calc(-200px * 7))
     }
-}
+} */
 
 .sliderBox {
     animation: example 20s linear infinite;
@@ -160,9 +160,6 @@
     cursor: pointer;
 }
 
-/* .starGradient {
-    background: linear-gradient(to right, #FFAD33, #bfbfbf);
-} */
 .view button {
     cursor: pointer;
     background-color: #DB4444;
@@ -179,4 +176,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 80px;
 }
