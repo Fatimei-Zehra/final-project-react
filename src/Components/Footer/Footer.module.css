@@ -67,21 +67,21 @@ footer {
     align-items: center;
 }
 
-.footerTittle{
+.footerTittle {
     font-size: 19px;
     font-family: "Poppins";
     font-weight: 500;
     padding-bottom: 25px;
 }
 
-.footerList{
+.footerList {
     font-size: 16px;
     font-family: "Poppins";
     font-weight: 400;
     margin-bottom: 15px;
 }
 
-.newUserSuggest{
+.newUserSuggest {
     font-size: 12px;
     font-weight: 400;
     font-family: "Poppins";
@@ -89,19 +89,47 @@ footer {
     color: grey;
 }
 
-.footerIcons{
+.footerIcons {
     display: flex;
     /* justify-content: space-evenly; */
     margin-top: 20px;
     align-items: flex-start;
 }
 
-.socialIcons{
+.socialIcons {
     margin-right: 30px;
     cursor: pointer;
 }
 
 
-.footerListItems{
+.footerListItems {
     padding-right: 20px;
+}
+
+.socialIcons:hover {
+    transition: all 0.95s;
+    transform: rotate(360deg);
+}
+
+.footerList:hover {
+   color: grey;
+    cursor: pointer;
+}
+
+.socialIcons:hover.facebook {
+    color: #4267B2 !important;
+}
+
+.socialIcons:hover.twitter {
+    color: 	#1DA1F2 !important;
+}
+
+.socialIcons:hover.instagram {
+    color: #833ab4;
+    color: linear-gradient(to right,
+            #833ab4, #fd1d1d, #fcb045)
+}
+
+.socialIcons:hover.linkedin {
+    color: #0077b5 !important;
 }

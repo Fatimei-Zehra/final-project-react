@@ -65,10 +65,10 @@ function Footer() {
                             </div>
 
                             <div className={FooterStyle.footerIcons} id='footer-icons'>
-                                <FaFacebookF className={FooterStyle.socialIcons} />
-                                <FiTwitter className={FooterStyle.socialIcons} />
-                                <FaInstagram className={FooterStyle.socialIcons} />
-                                <FaLinkedinIn className={FooterStyle.socialIcons} />
+                                <FaFacebookF className={`${FooterStyle.socialIcons} ${FooterStyle.facebook}`} />
+                                <FiTwitter className={`${FooterStyle.socialIcons} ${FooterStyle.twitter}`} />
+                                <FaInstagram className={`${FooterStyle.socialIcons} ${FooterStyle.instagram}`} />
+                                <FaLinkedinIn className={`${FooterStyle.socialIcons} ${FooterStyle.linkedin}`} />
                             </div>
                         </ul>
                     </div>
