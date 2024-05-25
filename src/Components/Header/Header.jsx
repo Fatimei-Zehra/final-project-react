@@ -11,6 +11,7 @@ import Search from '../Search/Search'
 import Wishlist from '../Wishlist/Wishlist'
 import Cart from '../Cart/Cart'
 import DropMenu from '../DropMenu/DropMenu'
+import { Link } from 'react-router-dom'
 
 
 export default function Header() {
@@ -94,7 +95,10 @@ export default function Header() {
                     <div className="container">
                         <div id='mobile-nav-items'>
                             <div id='mobile-nav-icon'>
+                                <Link to="/Sidebar">
                                 <FontAwesomeIcon icon={faBars} id='menu-icon' />
+                                </Link>
+                               
                             </div>
 
                             <div id='mobile-right-icon'>
