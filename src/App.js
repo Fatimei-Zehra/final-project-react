@@ -8,7 +8,7 @@ import Timer from "../src/Components/Timer/Timer"
 import Products from './Components/OurProducts/Products';
 import Services  from './Components/Services/Services';
 import Footer from "../src/Components/Footer/Footer"
-
+import Selling from '../src/Components/Selling/Selling'
 
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
       <Timer />
       <MainSlider />
       <Categories/>
+      <Selling/>
       <Adversiting />
       <Products />
       <Services/>
