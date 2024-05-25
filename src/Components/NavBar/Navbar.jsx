@@ -8,11 +8,15 @@ function Navbar() {
   return (
     <nav className={styles.nav} id='nav'>
         <ul className={styles.list}>
-            <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list" >home</li>
+            <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list" >
+              <Link to="/Home" className={styles.linkName}>
+                home
+              </Link>
+            </li>
             <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list">contact</li>
             <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list">about</li>
             <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list">
-              <Link to="/Login">
+              <Link to="/Login" className={styles.linkName}>
                 sign up
               </Link>
             </li>

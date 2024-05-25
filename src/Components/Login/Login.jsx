@@ -2,9 +2,6 @@ import React from 'react'
 import styles from "../Login/Login.module.css"
 import svg  from "../../Images/Login/login.jpg"
 
-
-
-
 function Login() {
   return (
     <div>

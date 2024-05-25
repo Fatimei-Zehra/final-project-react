@@ -43,17 +43,6 @@ function AppContent() {
 function App() {
   return (
     <div className="App">
-      {/* <Header />
-      <Main />
-      <Timer />
-      <MainSlider />
-      <Categories/>
-      <Selling/>
-      <Adversiting />
-      <Products />
-      <Services/>
-      <Footer/> */}
-
       <BrowserRouter>
         <AppContent/>
       </BrowserRouter>
