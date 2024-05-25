@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from "../Header/Header"
 import styles from "../Login/Login.module.css"
 import svg  from "../../Images/Login/login.jpg"
 
@@ -9,7 +8,6 @@ import svg  from "../../Images/Login/login.jpg"
 function Login() {
   return (
     <div>
-         <Header/>
         <div className={styles.login}>
       <div className={styles.log}>
         <img src={svg} alt='Login' /> 

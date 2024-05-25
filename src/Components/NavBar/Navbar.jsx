@@ -2,6 +2,7 @@ import React from 'react'
 import styles from "../NavBar/Navbar.module.css"
 import GlobalModuleCss from "../GlobalCss/global.module.css"
 import MediaStyle from "../GlobalCss/Media/media.css"
+import { Link } from 'react-router-dom'
 
 function Navbar() {
   return (
@@ -10,7 +11,11 @@ function Navbar() {
             <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list" >home</li>
             <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list">contact</li>
             <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list">about</li>
-            <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list">sign up</li>
+            <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list">
+              <Link to="/Login">
+                sign up
+              </Link>
+            </li>
         </ul>
     </nav>
   )

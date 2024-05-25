@@ -11,7 +11,7 @@ import { FaStar } from "react-icons/fa";
 function MainSlider() {
     return (
         <div className='container'>
-             <div className={styles.slider}>
+            <div className={styles.slider}>
                 <div className={styles.sliderBox}>
                     <div className={styles.sliderBoxes}>
                         <div className={styles.upSide}>
@@ -179,6 +179,90 @@ function MainSlider() {
                             </div>
                         </div>
 
+                    </div>
+                </div>
+
+
+
+                {/* //// */}
+
+                <div className={styles.sliderBox}>
+                    <div className={styles.sliderBoxes}>
+                        <div className={styles.upSide}>
+                            <img src={ImageConsol} alt="" />
+                            <div className={styles.buttons}>
+                                <div>
+                                    <span className={styles.saleProcent}>-40%</span>
+                                </div>
+                                <div className={styles.iconsBox}>
+                                    <CiHeart className={styles.svg} />
+                                    <LuEye className={styles.svg} />
+
+                                </div>
+                            </div>
+                            <button className={styles.buttonActive}>Add to Card</button>
+                        </div>
+
+                    </div>
+                    <div className={styles.downSide}>
+                        <h1 className={styles.downSideText}>HAVIT HV-G92 Gamepad</h1>
+                        <div className={styles.price}>
+                            <span className={styles.firstPrice}>$120</span>
+                            <span className={styles.line}>$160</span>
+                        </div>
+                        <div className={styles.infoDown}>
+                            <div className={styles.starIcons}>
+                                <FaStar className={styles.star} />
+                                <FaStar className={styles.star} />
+                                <FaStar className={styles.star} />
+                                <FaStar className={styles.star} />
+                                <FaStar className={styles.star} />
+                            </div>
+                            <div className={styles.numberDown}>
+                                <span>(88)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div className={styles.sliderBox}>
+                    <div className={styles.sliderBoxes}>
+                        <div className={styles.upSide}>
+                            <img src={ImageConsol} alt="" />
+                            <div className={styles.buttons}>
+                                <div>
+                                    <span className={styles.saleProcent}>-40%</span>
+                                </div>
+                                <div className={styles.iconsBox}>
+                                    <CiHeart className={styles.svg} />
+                                    <LuEye className={styles.svg} />
+
+                                </div>
+                            </div>
+                            <button className={styles.buttonActive}>Add to Card</button>
+                        </div>
+
+                    </div>
+                    <div className={styles.downSide}>
+                        <h1 className={styles.downSideText}>HAVIT HV-G92 Gamepad</h1>
+                        <div className={styles.price}>
+                            <span className={styles.firstPrice}>$120</span>
+                            <span className={styles.line}>$160</span>
+                        </div>
+                        <div className={styles.infoDown}>
+                            <div className={styles.starIcons}>
+                                <FaStar className={styles.star} />
+                                <FaStar className={styles.star} />
+                                <FaStar className={styles.star} />
+                                <FaStar className={styles.star} />
+                                <FaStar className={styles.star} />
+                            </div>
+                            <div className={styles.numberDown}>
+                                <span>(88)</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
