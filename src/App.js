@@ -8,8 +8,12 @@ import Timer from "../src/Components/Timer/Timer"
 import Products from './Components/OurProducts/Products';
 import Services from './Components/Services/Services';
 import Footer from "../src/Components/Footer/Footer"
+
+import WishlistPage from './Components/Wishlist/WishlistPage';
+
 import Selling from '../src/Components/Selling/Selling'
 import Login from "../src/Components/Login/Login";
+
 
 
 
@@ -44,9 +48,22 @@ function AppContent() {
 function App() {
   return (
     <div className="App">
+
+      <Header />
+      <Main />
+      <Timer />
+      <MainSlider />
+      <Categories/>
+      <Adversiting />
+      <Products />
+      <Services/>
+      <Footer/>
+
+      <WishlistPage/>
       <BrowserRouter>
         <AppContent/>
       </BrowserRouter>
+
     </div>
   );
 }
