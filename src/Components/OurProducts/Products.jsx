@@ -30,9 +30,10 @@ function Products() {
                 <img src={product1} alt="photo" className={OurProductsStyle.imageItem} />
               </div>
               <div className={OurProductsStyle.iconsBox}>
-                <CiHeart className={OurProductsStyle.svg} />
-                <LuEye className={OurProductsStyle.svg} />
+                <CiHeart className={`${OurProductsStyle.svg} ${OurProductsStyle.svgHeart}`} />
+                <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`}/>
               </div>
+              <button className={OurProductsStyle.addToCart}>Add To Cart</button>
             </div>
             <div className="product-about">
               <h1 className={OurProductsStyle.productAboutText}>Havic HV G-92 Gamepad</h1>
@@ -64,9 +65,10 @@ function Products() {
                 <img src={product2} alt="photo" className={OurProductsStyle.imageItem} />
               </div>
               <div className={OurProductsStyle.iconsBox}>
-                <CiHeart className={OurProductsStyle.svg} />
-                <LuEye className={OurProductsStyle.svg} />
+                <CiHeart className={`${OurProductsStyle.svg} ${OurProductsStyle.svgHeart}`} />
+                <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`} />
               </div>
+              <button className={OurProductsStyle.addToCart}>Add To Cart</button>
             </div>
             <div className="product-about">
               <h1 className={OurProductsStyle.productAboutText}>Lorem ipsum dolor</h1>
@@ -98,9 +100,10 @@ function Products() {
                 <img src={product3} alt="photo" className={OurProductsStyle.imageItem} />
               </div>
               <div className={OurProductsStyle.iconsBox}>
-                <CiHeart className={OurProductsStyle.svg} />
-                <LuEye className={OurProductsStyle.svg} />
+                <CiHeart className={`${OurProductsStyle.svg} ${OurProductsStyle.svgHeart}`} />
+                <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`} />
               </div>
+              <button className={OurProductsStyle.addToCart}>Add To Cart</button>
             </div>
             <div className="product-about">
               <h1 className={OurProductsStyle.productAboutText}>Lorem ipsum dolor</h1>
@@ -132,9 +135,10 @@ function Products() {
                 <img src={product3} alt="photo" className={OurProductsStyle.imageItem} />
               </div>
               <div className={OurProductsStyle.iconsBox}>
-                <CiHeart className={OurProductsStyle.svg} />
-                <LuEye className={OurProductsStyle.svg} />
+                <CiHeart className={`${OurProductsStyle.svg} ${OurProductsStyle.svgHeart}`} />
+                <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`} />
               </div>
+              <button className={OurProductsStyle.addToCart}>Add To Cart</button>
             </div>
             <div className="product-about">
               <h1 className={OurProductsStyle.productAboutText}>Lorem ipsum dolor</h1>
@@ -166,9 +170,10 @@ function Products() {
                 <img src={product3} alt="photo" className={OurProductsStyle.imageItem} />
               </div>
               <div className={OurProductsStyle.iconsBox}>
-                <CiHeart className={OurProductsStyle.svg} />
-                <LuEye className={OurProductsStyle.svg} />
+                <CiHeart className={`${OurProductsStyle.svg} ${OurProductsStyle.svgHeart}`} />
+                <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`} />
               </div>
+              <button className={OurProductsStyle.addToCart}>Add To Cart</button>
             </div>
             <div className="product-about">
               <h1 className={OurProductsStyle.productAboutText}>Lorem ipsum dolor</h1>
@@ -199,9 +204,10 @@ function Products() {
                 <img src={product3} alt="photo" className={OurProductsStyle.imageItem} />
               </div>
               <div className={OurProductsStyle.iconsBox}>
-                <CiHeart className={OurProductsStyle.svg} />
-                <LuEye className={OurProductsStyle.svg} />
+                <CiHeart className={`${OurProductsStyle.svg} ${OurProductsStyle.svgHeart}`} />
+                <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`} />
               </div>
+              <button className={OurProductsStyle.addToCart}>Add To Cart</button>
             </div>
             <div className="product-about">
               <h1 className={OurProductsStyle.productAboutText}>Lorem ipsum dolor</h1>
@@ -233,9 +239,10 @@ function Products() {
                 <img src={product3} alt="photo" className={OurProductsStyle.imageItem} />
               </div>
               <div className={OurProductsStyle.iconsBox}>
-                <CiHeart className={OurProductsStyle.svg} />
-                <LuEye className={OurProductsStyle.svg} />
+                <CiHeart className={`${OurProductsStyle.svg} ${OurProductsStyle.svgHeart}`} />
+                <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`} />
               </div>
+              <button className={OurProductsStyle.addToCart}>Add To Cart</button>
             </div>
             <div className="product-about">
               <h1 className={OurProductsStyle.productAboutText}>Lorem ipsum dolor</h1>
@@ -267,9 +274,10 @@ function Products() {
                 <img src={product3} alt="photo" className={OurProductsStyle.imageItem} />
               </div>
               <div className={OurProductsStyle.iconsBox}>
-                <CiHeart className={OurProductsStyle.svg} />
-                <LuEye className={OurProductsStyle.svg} />
+                <CiHeart className={`${OurProductsStyle.svg} ${OurProductsStyle.svgHeart}`}  />
+                <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`} />
               </div>
+              <button className={OurProductsStyle.addToCart}>Add To Cart</button>
             </div>
             <div className="product-about">
               <h1 className={OurProductsStyle.productAboutText}>Lorem ipsum dolor</h1>

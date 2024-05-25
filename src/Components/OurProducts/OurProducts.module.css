@@ -34,6 +34,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    position: relative;
 }
 
 .productImg {
@@ -88,39 +89,39 @@
     margin-bottom: 30px;
 }
 
-.productAboutText{
+.productAboutText {
     font-size: 16px;
     font-family: "Poppins";
     font-weight: 600;
     padding: 10px 0px;
 }
 
-.priceStar{
+.priceStar {
     align-items: center;
     display: flex;
 }
 
-.productPrice{
-    color:rgb(219, 68, 68);
+.productPrice {
+    color: rgb(219, 68, 68);
     margin-right: 10px;
     font-family: "Poppins";
 }
 
-.star{
+.star {
     color: #FFAD33;
 }
 
-.quanlity{
+.quanlity {
     margin-left: 10px;
     color: grey;
 }
 
+.productBg {
 
-.productBg:hover{
-    border: 1px solid black;
+    cursor: pointer;
 }
 
-.viewButton{
+.viewButton {
     cursor: pointer;
     background-color: #DB4444;
     color: #FFF;
@@ -129,11 +130,56 @@
     border: none;
     padding: 16px 48px 16px 48px;
     border-radius: 4px;
-    
 }
-.viewAllProducts{
+
+.viewButton::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
+
+
+.viewAllProducts {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 60px;
+}
+
+.productBg:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    transition: 1s;
+}
+
+.addToCart {
+    color: #fff;
+    padding: 10px 0px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #000;
+    display: none;
+}
+
+.productBg:hover .addToCart {
+    display: block;
+    cursor: pointer;
+}
+
+.svgHeart:hover {
+    color: red;
+    /* background-color: red; */
+    transform: scale(1.3);
+    transition: 2s;
+}
+
+.svgEyes:hover {
+    transform: scale(1.3);
+    transition: 2s;
+    color: lightskyblue;
 }

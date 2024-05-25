@@ -105,3 +105,15 @@ footer {
 .footerListItems{
     padding-right: 20px;
 }
+
+.socialIcons:hover{
+    transition: all 0.95s;
+    transform: rotate(360deg);
+}
+
+.footerList:hover{
+    transition:transform 0.5s;
+    transform-origin:left;
+    transform:scaleX(1);
+    cursor: pointer;
+}

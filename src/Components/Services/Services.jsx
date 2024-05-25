@@ -1,6 +1,7 @@
 import React from 'react'
 import ServicesCss from "../Services/Services.module.css"
 import { TbTruckDelivery } from "react-icons/tb";
+import { TfiHeadphoneAlt } from "react-icons/tfi";
 
 function Services() {
     return (
@@ -11,7 +12,7 @@ function Services() {
                         <div className={ServicesCss.serviceIcon}>
                             <TbTruckDelivery className={ServicesCss.deliveryIcon} />
                         </div>
-                        <div className='delivery'>
+                        <div className={ServicesCss.delivery}>
                             <h4 className={ServicesCss.serviceName}>free and fast delivery</h4>
                             <p className={ServicesCss.aboutService}>Free delivery for all orders over $140</p>
                         </div>
@@ -19,9 +20,9 @@ function Services() {
 
                     <div className={ServicesCss.serviceItem}>
                         <div className={ServicesCss.serviceIcon}>
-                            <TbTruckDelivery className={ServicesCss.deliveryIcon} />
+                            <TfiHeadphoneAlt className={ServicesCss.deliveryIcon} />
                         </div>
-                        <div className='delivery'>
+                        <div className={ServicesCss.delivery}>
                             <h4 className={ServicesCss.serviceName}>free and fast delivery</h4>
                             <p className={ServicesCss.aboutService}>Free delivery for all orders over $140</p>
                         </div>
@@ -31,7 +32,7 @@ function Services() {
                         <div className={ServicesCss.serviceIcon}>
                             <TbTruckDelivery className={ServicesCss.deliveryIcon}/>
                         </div>
-                        <div className='delivery'>
+                        <div className={ServicesCss.delivery}>
                             <h4 className={ServicesCss.serviceName}>free and fast delivery</h4>
                             <p className={ServicesCss.aboutService}>Free delivery for all orders over $140</p>
                         </div>
