@@ -3,11 +3,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import DropdownStyle from "../Dropdown/Dropdown.module.css"
 import GlobalModuleCss from "../../GlobalCss/global.module.css"
+import MediaStyle from "../../GlobalCss/Media/media.css"
 
 function Dropdown() {
     return (
-        <div>
-            <ul className={DropdownStyle.dropdownList}>
+        <div id='list-items'>
+            <ul className={DropdownStyle.dropdownList} id='dropdown-list'>
                 <li className={`${DropdownStyle.dropdown} ${GlobalModuleCss.fontPoppins}`}>Woman's Fashion
                     <FontAwesomeIcon icon={faChevronRight}  />
                 </li>
