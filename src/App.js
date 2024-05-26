@@ -1,4 +1,8 @@
 
+import Login from "../src/Components/Login/Login"
+//import Arrival from "../src/Components/Arrival/Arrival"
+
+
 import Adversiting from './Components/Advertising/Adversiting';
 import Header from './Components/Header/Header';
 import MainSlider from './Components/MainSlider/MainSlider';
@@ -50,9 +54,26 @@ function AppContent() {
 function App() {
   return (
     <div className="App">
+
+
+      <Login/>
+     {/*<Arrival/>*/}
+
+      <Header />
+      <Main />
+      <Timer />
+      <MainSlider />
+      <Categories/>
+      <Selling/>
+      <Adversiting />
+      <Products />
+      <Services/>
+
       <BrowserRouter>
         <AppContent/>
       </BrowserRouter>
+
+
 
     </div>
   );
