@@ -26,7 +26,8 @@ function AppContent() {
         <Route path="/Login" element={<Login />} />
         <Route path="/Wishlist" element={<WishlistPage />} />
       </Routes>
-      {location.pathname !== "/Login" && (
+      {location.pathname !== "/Login" && 
+       location.pathname !="/Wishlist" && (
         <>
           <Main />
           <Timer />
@@ -39,18 +40,7 @@ function AppContent() {
         </>
       )}
 
-      {location.pathname !="/Wishlist" && (
-        <>
-         <Main />
-          <Timer />
-          <MainSlider />
-          <Categories />
-          <Selling />
-          <Adversiting />
-          <Products />
-          <Services />
-        </>
-      )}
+  
       <Footer />
     </div>
 
