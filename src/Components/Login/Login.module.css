@@ -1,17 +1,37 @@
 .login {
   display: flex;
   align-items: center;
+
+  /* justify-content: space-between; */
+  font-family: "Inter", sans-serif;
+}
+
+.logImg {
+
   justify-content: space-between;
   font-family: "Inter", sans-serif;
 }
 
 .log img {
+
   width: 750px;
   height: 650px;
   margin-top: 7%;
 }
 
 .text {
+
+  margin-left: 15%;
+  /* margin-top: 2%; */
+}
+
+.textH1 {
+  padding-bottom: 8%;
+}
+
+ .textInput{
+  /* padding-top: 2%; */
+
   margin-right: 15%;
   margin-top: 2%;
 }
@@ -22,13 +42,26 @@
 
 .text input {
   padding-top: 2%;
+
   border: none;
   border-bottom: 1px solid black;
   display: block;
   margin-top: 10%;
+
+  /* padding-right: 40%; */
+  outline: none;
+  background: #fff;
+  width: 100%;
+  padding: 10px 0px;
+}
+
+input ::placeholder {
+  color: #f5f5f5 !important;
+
   padding-right: 40%;
   outline: none;
   background: #fff;
+
 }
 
 
@@ -38,7 +71,11 @@
   color: #DB4444;
 }
 
+
+.forgetButton {
+
 .forget button {
+
   margin-top: 10%;
   background-color: #DB4444;
   border: none;
@@ -46,6 +83,12 @@
   color: #fff;
   padding: 3% 10%;
   margin-right: 22%;
+  cursor: pointer;
+}
+
+
+.forgetP {
+  padding-top: 10%;
   cursor: pointer;
 }
 
