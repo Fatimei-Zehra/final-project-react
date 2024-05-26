@@ -8,9 +8,7 @@ import Timer from "../src/Components/Timer/Timer"
 import Products from './Components/OurProducts/Products';
 import Services from './Components/Services/Services';
 import Footer from "../src/Components/Footer/Footer"
-
 import WishlistPage from './Components/Wishlist/WishlistPage';
-
 import Selling from '../src/Components/Selling/Selling'
 import Login from "../src/Components/Login/Login";
 
@@ -26,10 +24,24 @@ function AppContent() {
       <Header />
       <Routes>
         <Route path="/Login" element={<Login />} />
+        <Route path="/Wishlist" element={<WishlistPage />} />
       </Routes>
       {location.pathname !== "/Login" && (
         <>
           <Main />
+          <Timer />
+          <MainSlider />
+          <Categories />
+          <Selling />
+          <Adversiting />
+          <Products />
+          <Services />
+        </>
+      )}
+
+      {location.pathname !="/Wishlist" && (
+        <>
+         <Main />
           <Timer />
           <MainSlider />
           <Categories />
@@ -48,18 +60,6 @@ function AppContent() {
 function App() {
   return (
     <div className="App">
-
-      <Header />
-      <Main />
-      <Timer />
-      <MainSlider />
-      <Categories/>
-      <Adversiting />
-      <Products />
-      <Services/>
-      <Footer/>
-
-      <WishlistPage/>
       <BrowserRouter>
         <AppContent/>
       </BrowserRouter>

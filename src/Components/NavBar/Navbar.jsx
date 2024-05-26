@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 function Navbar() {
   return (
-    <nav className={styles.nav} id='nav'>
+    <nav className={styles.nav} id='nav' >
         <ul className={styles.list}>
             <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list" >
               <Link to="/Home" className={styles.linkName}>
