@@ -1,0 +1,17 @@
+.pageLink{
+    display: flex;
+}
+
+.aboutItems{
+    display: flex;
+}
+
+.ourStory{
+    font-family: "Inter";
+    font-size: 54px;
+}
+
+.storyText{
+    font-family: "Poppins";
+    font-size: 16px;
+}

@@ -389,6 +389,70 @@
 
 /*! ADVERTISING DESKTOP MEDIA CODES END.......................................................................................... */
 
+/* !SERVICES DESKTOP MEDIA CODES START..............................................................................................*/
+@media screen and (max-width: 1245px) {
+    [service] {
+        font-size: 12px !important;
+    }
+
+}
+
+@media screen and (max-width: 1205px) {
+    [name] {
+        font-size: 17px !important;
+    }
+
+}
+
+@media screen and (max-width: 1182px) {
+    [name] {
+        font-size: 16px !important;
+    }
+
+    [serviceItem] {
+        padding: 32px !important;
+    }
+
+}
+
+
+@media screen and (max-width: 992px) {
+    [name] {
+        font-size: 15px !important;
+    }
+
+    [serviceItem] {
+        padding: 30px !important;
+    }
+}
+
+@media screen and (max-width: 969px) {
+    [service] {
+        font-size: 11px !important;
+    }
+
+    [serviceItem] {
+        padding: 20px !important;
+    }
+
+}
+
+
+@media screen and (max-width: 849px) {
+    [service] {
+        font-size: 10px !important;
+    }
+
+
+    [name] {
+        font-size: 14px !important;
+    }
+
+}
+
+/* !SERVICES DESKTOP MEDIA CODES END................................................................................................*/
+
+
 
 
 /* !FOOTER DESKTOP MEDIA CODES START...............................................................................................*/
@@ -531,8 +595,13 @@
     }
 }
 
+/* !FOOTER RESPONSIVE CODES END ...................................................................................................*/
+
+
 
 /* ............................................PLANSET RESPONSIVE CODES START................................................... */
+
+
 /*! LAYER CODES PLANSET........................................................................................................ */
 
 @media screen and (max-width: 827px) {
@@ -1077,6 +1146,96 @@
 }
 
 
+
+/*! SERVICES RESPONSIVE PLANSET CODES PLANSET.................................................................................. */
+
+@media screen and (max-width: 711px) {
+    [name] {
+        font-size: 13px !important;
+    }
+
+    [service] {
+        font-size: 10px !important;
+        margin-top: 0 !important;
+    }
+
+    [serviceItem] {
+        padding: 15px !important;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 652px) {
+    [name] {
+        font-size: 12px !important;
+    }
+
+    [serviceItem] {
+        padding: 13px !important;
+    }
+
+    [serviceIcon]{
+        margin-bottom: 18px !important;
+        width: 65px !important;
+        height: 65px !important;
+    }
+
+    [service] {
+        font-size: 9px !important;
+    }
+}
+
+@media screen and (max-width: 638px) {
+    [service] {
+        font-size: 9px !important;
+    }
+}
+
+
+
+@media screen and (max-width: 588px) {
+    [service] {
+        font-size: 7px !important;
+    }
+
+    [name] {
+        font-size: 9px !important;
+    }
+}
+
+
+@media screen and (max-width: 473px) {
+    
+    [serviceIcon]{
+        margin-bottom: 10px !important;
+        width: 50px !important;
+        height: 50px !important;
+        border: 6px solid grey !important;
+
+    }
+
+    #truck,#headphone,#truck-second{
+        font-size: 18px;
+    }
+
+    [service] {
+        font-size: 6px !important;
+    }
+    [name] {
+        font-size: 8px !important;
+    }
+
+    [serviceItem] {
+        padding: 10px !important;
+    }
+}
+
+/*! SERVICES RESPONSIVE PLANSET CODES END.................................................................................. */
+
+
+
 /* !FOOTER PLANSET RESPONSIVE CODES START .....................................................................................*/
 
 @media screen and (max-width: 827px) {
@@ -1140,8 +1299,8 @@
 
 /* .......................................MOBILE RESPONSIVE CODES START ........................................................*/
 
-/*! LAYER CODES */
-@media screen and (max-width: 400px) {
+/*! LAYER MOBILE RESPONS CODES */
+@media screen and (max-width: 401px) {
     #header-layer {
         display: none;
     }
@@ -1199,7 +1358,7 @@
 
 
 /* !SLIDER RESPONSIVE CODES START.................................................................................................. */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 401px) {
     /* #slider {
         display: none;
     } */
@@ -1211,9 +1370,43 @@
 
 /* !SLIDER RESPONSIVE CODES START............................................................................................*/
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 401px) {
     #form {
         width: 75% !important;
+    }
+}
+
+
+/* !SERVICES MOBILE RESPONSIVE CODES START..........................................................................................*/
+@media screen and (max-width: 401px) {
+    #services{
+        display: block;
+    }
+
+    [name] {
+        font-size: 12px !important;
+    }
+
+
+      
+    [serviceIcon]{
+        margin-bottom: 10px !important;
+        width: 60px !important;
+        height: 60px !important;
+        border: 7px solid grey !important;
+
+    }
+
+    #truck,#headphone,#truck-second{
+        font-size: 20px;
+    }
+
+    [service] {
+        font-size: 8px !important;
+    }
+  
+    [serviceItem] {
+        padding: 30px !important;
     }
 }
 
