@@ -1,3 +1,8 @@
 .cartIcon{
-    font-size: 23px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.cartLink{
+    font-size: #000 !important;
 }

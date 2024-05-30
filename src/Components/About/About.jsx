@@ -4,6 +4,8 @@ import imgAbout from "../../Images/About/Side Image.png"
 import { Link } from "react-router-dom";
 import GlobalCss from "../GlobalCss/global.css"
 import Statistics from '../Statistics/Statistics';
+import Founder from '../Founders/Founder';
+import Services from '../Services/Services';
 
 
 function About() {
@@ -32,9 +34,10 @@ function About() {
       </div>
 
       <div className="container">
-        <Statistics/>
+        <Statistics />
+        <Founder />
       </div>
-
+      <Services/>
     </div>
   )
 }

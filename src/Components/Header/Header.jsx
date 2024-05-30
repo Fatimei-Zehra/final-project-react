@@ -45,7 +45,9 @@ export default function Header() {
             <header className={styles.header} id='header'>
                 <div className="container">
                     <div className={styles.headerNav}>
+                        <Link to="/Home">
                         <h1 className={`${styles.brand} ${GlobalModuleCss.fontInter}`} id='brand'>exclusive</h1>
+                        </Link>
                         <Navbar />
 
                         {/* PLANSET HEADER SEARCH CODES........................................................................ */}
