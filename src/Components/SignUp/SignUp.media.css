@@ -1,0 +1,150 @@
+@media screen and (max-width: 1353px) {
+    #image {
+      width: 720px;
+      height: 630px;
+    }
+  
+    #account-text-items {
+      margin-left: 12%;
+    }
+
+    #account-btn{
+     padding: 16px 140px;
+    }
+
+  }
+
+  @media screen and (max-width: 1301px) {
+    #image {
+      width: 650px;
+      height: 555px;
+    }
+  
+    #account-text-items {
+      margin-left: 9%;
+    }
+  }
+  
+  
+  
+  @media screen and (max-width: 1171px) {
+    #image {
+      width: 590px;
+      height: 545px;
+    }
+  
+  
+    #login-text-items {
+      margin-left: 7%;
+    }
+  }
+  
+  
+  
+  @media screen and (max-width: 1066px) {
+    #image {
+      width: 510px;
+      height: 485px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 983px) {
+    #image {
+      width: 510px;
+      height: 485px;
+    }
+
+   #account-text-items{
+    margin-left: 5%;
+   }
+
+  }
+  
+  
+  @media screen and (max-width: 450px) {
+    #image {
+     display: none;
+    }
+
+    #account-text-items {
+    margin-left: 10%;
+    margin-top: 3%;  
+    }
+
+    #account-btn{
+        font-size: 10px;
+    }
+
+    #Google-btn{
+        font-size: 10.5px;
+    }
+
+   #forget-pass{
+    font-size: 10px;
+   }
+
+   #acc-p{
+    font-size: 10px;
+   }
+
+
+  }
+
+  @media screen and (max-width: 400px) {
+    #image {
+     display: none;
+    }
+
+    #account-text-items {
+    margin-left: 7%;
+    margin-top: 3%;  
+    }
+
+    #account-btn{
+        font-size: 6px;
+    }
+
+    #Google-btn{
+        font-size: 7.5px;
+    }
+
+   #forget-pass{
+    font-size: 10px;
+   }
+
+   #acc-p{
+    font-size: 10px;
+   }
+
+
+  }
+
+  @media screen and (max-width: 350px) {
+    #image {
+     display: none;
+    }
+
+    #account-text-items {
+    margin-left: 4%;
+    margin-top: 3%;  
+    }
+
+    #account-btn{
+        font-size: 6px;
+    }
+
+    #Google-btn{
+        font-size: 7.5px;
+    }
+
+   #forget-pass{
+    font-size: 10px;
+   }
+
+   #acc-p{
+    font-size: 10px;
+   }
+
+
+  }
