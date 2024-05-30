@@ -268,7 +268,35 @@
     }
 }
 
+/* !SLIDER DESKTOP MEDIA CODES  END.................................................................................................*/
 
+
+/*! TIMER DESKTOP MEDIA CODES START.......................................................................................... */
+@media screen and (max-width: 1156px) {
+    .flash-sales {
+        font-size: 27px;
+    }
+
+    #frame {
+        gap: 40px;
+    }
+
+    #timer {
+        gap: 13px;
+    }
+}
+
+@media screen and (max-width: 945px) {
+
+    #daysNum,
+    #hoursNum,
+    #minutesNum,
+    #secondsNum {
+        font-size: 28px;
+    }
+}
+
+/*! TIMER DESKTOP MEDIA CODES END.............................................................................................. */
 
 
 
@@ -708,7 +736,7 @@
 
 
 
-/* !HEADER PLANSET CODES START...................................................................................................... */
+/* !HEADER PLANSET CODES START..................................................................................................... */
 
 @media screen and (max-width: 827px) {
     #nav {
@@ -904,6 +932,112 @@
         padding: 25px 21px;
     }
 }
+
+
+
+
+/*! TIMER PLANSET MEDIA CODES START............................................................................................. */
+
+@media screen and (max-width: 827px) {
+
+    #daysNum,
+    #hoursNum,
+    #minutesNum,
+    #secondsNum {
+        font-size: 23px;
+    }
+
+    #frame {
+        gap: 28px;
+    }
+}
+
+@media screen and (max-width: 574px) {
+
+    #frame {
+        gap: 23px;
+    }
+
+    .flash-sales {
+        font-size: 26px;
+    }
+
+    #timer {
+        gap: 8px;
+    }
+
+}
+
+@media screen and (max-width: 513px) {
+
+    #timer {
+        gap: 6px;
+    }
+
+    .flash-sales {
+        font-size: 24px;
+    }
+
+    #frame {
+        gap: 18px;
+    }
+
+}
+
+
+@media screen and (max-width: 448px) {
+
+    #daysNum,
+    #hoursNum,
+    #minutesNum,
+    #secondsNum {
+        font-size: 19px;
+    }
+
+    #frame {
+        font-size: 14px;
+    }
+
+    .flash-sales {
+        font-size: 22px;
+    }
+
+    #timer {
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    .flash-sales {
+        font-size: 20px;
+    }
+
+    #dayPair,
+    #hourPair,
+    #minPair {
+        font-size: 24px;
+    }
+
+    #frame{
+        gap: 11px;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    .flash-sales {
+        font-size: 19px;
+    }
+
+    #dayPair,
+    #hourPair,
+    #minPair {
+        font-size: 22px;
+    }
+}
+
+/*! TIMER PLANSET MEDIA CODES END.............................................................................................. */
+
+
 
 
 /*! ADVERTISING PLANSET MEDIA CODES START......................................................................................... */
@@ -1378,7 +1512,32 @@
         width: 75% !important;
     }
 }
+/* !SLIDER RESPONSIVE CODES END............................................................................................*/
 
+
+
+
+/*! TIMER MOBILER MEDIA CODES START............................................................................................. */
+@media screen and (max-width:401px) {
+    #frame{
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+       align-items: start;
+    }
+
+    #timer{
+        text-align: center;
+    }
+
+    #timer-mobile-rectangle{
+        margin-top: 5px;
+    }
+
+    .flash-sales{
+        margin: 10px 0px;
+    }
+}
 
 /* !ADVERTISING MOBILE RESPONSIVE CODES START......................................................................................*/
 
