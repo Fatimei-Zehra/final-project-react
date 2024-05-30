@@ -10,6 +10,8 @@ import Footer from "../src/Components/Footer/Footer"
 import WishlistPage from './Components/Wishlist/WishlistPage';
 import Selling from '../src/Components/Selling/Selling'
 import Login from "../src/Components/Login/Login";
+import About from "../src/Components/About/About"
+import Home  from './Components/Home';
 
 // ROOTER CODES
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
@@ -22,22 +24,26 @@ function AppContent() {
       <Routes>
         <Route path="/Login" element={<Login />} />
         <Route path="/Wishlist" element={<WishlistPage />} />
+        <Route path='/About' element={<About />}/>
+        <Route path='/Home' element={<Home />}/>
       </Routes>
-      {location.pathname !== "/Login" && 
-       location.pathname !=="/Wishlist" && (
-        <>
-          <Main />
-          <Timer />
-          <MainSlider />
-          <Categories />
-          <Selling />
-          <Adversiting />
-          <Products />
-          <Services />
-        </>
-      )}
+      {location.pathname !== "/Login" &&
+        location.pathname !== "/Wishlist" &&
+        location.pathname !== "/About" && 
+        (
+          <>
+            <Main />
+            <Timer />
+            <MainSlider />
+            <Categories />
+            <Selling />
+            <Adversiting />
+            <Products />
+            <Services />
+          </>
+        )}
 
-  
+
       <Footer />
     </div>
 
@@ -48,7 +54,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <AppContent/>
+        <AppContent />
       </BrowserRouter>
     </div>
   );

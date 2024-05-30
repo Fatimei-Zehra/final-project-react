@@ -1,0 +1,45 @@
+.pageLink {
+    display: flex;
+    margin-top: 80px;
+}
+
+.aboutItems {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+
+.homePage {
+    font-size: 14px;
+    font-family: "Poppins";
+    color: grey;
+    padding-right: 3px;
+}
+
+.aboutPage {
+    font-size: 14px;
+    font-family: "Poppins";
+}
+
+.ourStory {
+    font-family: "Inter";
+    font-size: 54px;
+}
+
+.storyText {
+    font-family: "Poppins";
+    font-size: 16px;
+    margin: 25px 0px;
+}
+
+.storySecondText {
+    font-family: "Poppins";
+    font-size: 16px;
+
+}
+
+.aboutStory {
+    width: 525px;
+    margin-right: 9%;
+}

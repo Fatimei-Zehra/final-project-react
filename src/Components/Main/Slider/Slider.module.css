@@ -113,3 +113,18 @@
     gap: 5rem;
     padding-top: 20px;
   } */
+
+/* 
+  .sliderLeftItems{
+    animation: example 15s linear infinite;
+  }
+
+  @keyframes slider {
+    0% {
+      transform: translateX(0);
+    }
+  
+    100% {
+      transform: translateX(-50%);
+    }
+  } */

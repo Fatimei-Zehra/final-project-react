@@ -10,7 +10,7 @@
 .frame {
     display: flex;
     gap: 50px;
-    align-items: center;
+    align-items: end;
     margin: 0 auto;
     text-align: center;
 }
@@ -38,7 +38,9 @@
 
 .pair {
     color: #E07575;
-    font-size: 20px;
+    font-size: 30px;
+    margin-top: 11px;
+    margin-top: 11px;
 
 }
 
@@ -55,6 +57,7 @@
 .timer {
     display: flex;
     align-items: center;
-    width: 20%;
-    justify-content: space-between;
+    width: 21%;
+    /* justify-content: space-between; */
+    gap: 20px;
 }
