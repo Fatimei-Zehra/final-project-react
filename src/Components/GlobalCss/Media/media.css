@@ -417,6 +417,83 @@
 
 /*! ADVERTISING DESKTOP MEDIA CODES END.......................................................................................... */
 
+
+
+
+/* !OUR PRODUCT DESKTOP  RESPONSIVE CODES START...................................................................................*/
+@media screen and (max-width: 1386px) {
+    [productSize] {
+        width: 250px !important;
+        height: 250px !important;
+    }
+}
+
+@media screen and (max-width: 1290px) {
+    [productSize] {
+        width: 240px !important;
+        height: 240px !important;
+    }
+
+    #section-products-text {
+        font-size: 27px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    [productSize] {
+        width: 270px !important;
+        height: 270px !important;
+    }
+
+    #productItems7,
+    #productItems8 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    [productSize] {
+        width: 250px !important;
+        height: 250px !important;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    [productSize] {
+        width: 230px !important;
+        height: 240px !important;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    [productSize] {
+        width: 220px !important;
+        height: 230px !important;
+    }
+
+    [productImage] {
+        width: 120px !important;
+    }
+}
+
+
+@media screen and (max-width: 860px) {
+    [productSize] {
+        width: 215px !important;
+        height: 220px !important;
+    }
+
+    [productImage] {
+        width: 120px !important;
+    }
+}
+
+/* !OUR PRODUCT DESKTOP  RESPONSIVE CODES END...................................................................................*/
+
+
+
+
 /* !SERVICES DESKTOP MEDIA CODES START..............................................................................................*/
 @media screen and (max-width: 1245px) {
     [service] {
@@ -624,6 +701,83 @@
 }
 
 /* !FOOTER RESPONSIVE CODES END ...................................................................................................*/
+
+
+/* ************************************PAGE ABOUT RESPONSIVE CODES START ***********************************************************/
+
+/* !SECTION IMAGE OUR STORY DESKTOP CODES START RESPONSIVE ........................................................................ */
+@media screen and (max-width: 1390px) {
+    #image-about {
+        width: 607px;
+    }
+}
+
+
+@media screen and (max-width: 1260px) {
+    #image-about {
+        width: 555px;
+    }
+
+    #our-story {
+        font-size: 50px;
+    }
+
+    #story-text,
+    #story-second-text {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 1090px) {
+    #image-about {
+        width: 470px;
+    }
+
+    #our-story {
+        font-size: 40px;
+    }
+
+    #story-text,
+    #story-second-text {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 935px) {
+
+    #our-story {
+        font-size: 33px;
+    }
+
+    #story-text,
+    #story-second-text {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 862px) {
+    #our-story {
+        font-size: 30px;
+    }
+
+    #story-text,
+    #story-second-text {
+        font-size: 11px;
+    }
+
+}
+
+/* !SECTION IMAGE OUR STORY DESKTOP CODES END RESPONSIVE.......................................................................... */
+
+
+
+
+
+
+
+
 
 
 
@@ -1018,7 +1172,7 @@
         font-size: 24px;
     }
 
-    #frame{
+    #frame {
         gap: 11px;
     }
 }
@@ -1280,6 +1434,127 @@
 }
 
 
+/* !OUR PRODUCT PLANSET RESPONSIVE CODES START...................................................................................*/
+
+@media screen and (max-width: 827px) {
+    [productSize] {
+        width: 320px !important;
+        height: 290px !important;
+    }
+
+    [productImage] {
+        width: 160px !important;
+    }
+}
+
+
+@media screen and (max-width: 730px) {
+    [productSize] {
+        width: 290px !important;
+        height: 270px !important;
+    }
+
+
+}
+
+
+@media screen and (max-width: 675px) {
+    [productSize] {
+        width: 270px !important;
+        height: 260px !important;
+    }
+
+    [productImage] {
+        width: 150px !important;
+    }
+}
+
+
+
+
+@media screen and (max-width: 625px) {
+    [productSize] {
+        width: 260px !important;
+        height: 250px !important;
+    }
+
+    [productImage] {
+        width: 140px !important;
+    }
+}
+
+@media screen and (max-width: 595px) {
+    [productSize] {
+        width: 240px !important;
+        height: 240px !important;
+    }
+
+    [productImage] {
+        width: 120px !important;
+    }
+
+    #section-products-text {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    [productSize] {
+        width: 220px !important;
+        height: 230px !important;
+    }
+
+    [productImage] {
+        width: 100px !important;
+    }
+
+    #section-products-text {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    [productSize] {
+        width: 210px !important;
+        height: 215px !important;
+    }
+
+    [productAbout] {
+        font-size: 13px !important;
+    }
+
+    #prod-icon1,
+    #prod-icon2,
+    #prod-icon3,
+    #prod-icon4,
+    #prod-icon5,
+    #prod-icon6,
+    #prod-icon7,
+    #prod-icon8 {
+        right: 11px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    [productSize] {
+        width: 200px !important;
+        height: 205px !important;
+    }
+}
+
+@media screen and (max-width: 459px) {
+    [productSize] {
+        width: 175px !important;
+        height: 185px !important;
+    }
+
+    [productImage] {
+        width: 90px !important;
+    }
+}
+
 
 /*! SERVICES RESPONSIVE PLANSET CODES PLANSET.................................................................................. */
 
@@ -1434,6 +1709,53 @@
 /* !FOOTER PLANSET RESPONSIVE CODES END .....................................................................................*/
 
 
+/* ************************************PAGE ABOUT RESPONSIVE PLANSET CODES START **************************************************/
+
+/* !SECTION IMAGE OUR STORY PLANSET CODES START RESPONSIVE ........................................................................ */
+@media screen and (max-width: 827px) {
+    #about-items {
+        flex-flow: column;
+    }
+    #image-about {
+        width: 90%;
+        margin-top: 45px;
+    }
+    #our-story {
+        font-size: 45px;
+        margin-top: 50px;
+    }
+
+    #about-story{
+        width: 90%;
+        margin-left: 0;
+    }
+    #story-text, #story-second-text {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* .......................................MOBILE RESPONSIVE CODES START ........................................................*/
 
 /*! LAYER MOBILE RESPONS CODES */
@@ -1491,7 +1813,7 @@
     }
 }
 
-/*! LAYER CODES  END*/
+/*! LAYER CODES  END ...........................................................................................................*/
 
 
 /* !SLIDER RESPONSIVE CODES START.................................................................................................. */
@@ -1512,6 +1834,7 @@
         width: 75% !important;
     }
 }
+
 /* !SLIDER RESPONSIVE CODES END............................................................................................*/
 
 
@@ -1519,22 +1842,22 @@
 
 /*! TIMER MOBILER MEDIA CODES START............................................................................................. */
 @media screen and (max-width:401px) {
-    #frame{
+    #frame {
         display: flex;
         flex-direction: column;
         text-align: start;
-       align-items: start;
+        align-items: start;
     }
 
-    #timer{
+    #timer {
         text-align: center;
     }
 
-    #timer-mobile-rectangle{
+    #timer-mobile-rectangle {
         margin-top: 5px;
     }
 
-    .flash-sales{
+    .flash-sales {
         margin: 10px 0px;
     }
 }
@@ -1580,7 +1903,6 @@
 }
 
 
-/* !SERVICES MOBILE RESPONSIVE CODES START..........................................................................................*/
 @media screen and (max-width: 401px) {
     #services {
         display: block;
@@ -1614,3 +1936,37 @@
         padding: 30px !important;
     }
 }
+
+/* !ADVERTISING MOBILE RESPONSIVE CODES END......................................................................................*/
+
+
+
+/* !OUR PRODUCT MOBILE RESPONSIVE CODES START......................................................................................*/
+
+@media screen and (max-width: 401px) {
+    [productSize] {
+        width: 348px !important;
+        height: 290px !important;
+    }
+
+    [productImage] {
+        width: 190px !important;
+    }
+
+    [productAbout] {
+        font-size: 17px !important;
+    }
+
+    #prod-icon1,
+    #prod-icon2,
+    #prod-icon3,
+    #prod-icon4,
+    #prod-icon5,
+    #prod-icon6,
+    #prod-icon7,
+    #prod-icon8 {
+        right: 23px;
+    }
+}
+
+/* !OUR PRODUCT MOBILE RESPONSIVE CODES END......................................................................................*/

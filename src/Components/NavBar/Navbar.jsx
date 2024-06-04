@@ -9,11 +9,11 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 function Navbar() {
 
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  // const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  };
+  // const toggleSidebar = () => {
+  //   setIsSidebarOpen(!isSidebarOpen);
+  // };
 
   return (
     <>
@@ -25,7 +25,7 @@ function Navbar() {
             </Link>
           </li>
           <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list">
-            <Link className={styles.linkName}>
+            <Link to='/Contact' className={styles.linkName}>
               contact
             </Link></li>
           <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list">

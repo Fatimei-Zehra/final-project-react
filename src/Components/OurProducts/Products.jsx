@@ -1,6 +1,7 @@
 import React from 'react'
 import OurProductsStyle from "../OurProducts/OurProducts.module.css"
 import GlobalModuleCss from "../GlobalCss/global.module.css"
+import MediaStyle from "../GlobalCss/Media/media.css"
 import product1 from "../../Images/OurProducts/img6.png"
 import product2 from "../../Images/OurProducts/img2.png"
 import product3 from "../../Images/OurProducts/img3.png"
@@ -18,25 +19,25 @@ function Products() {
 
       <div className="section-our-products">
         <div className="section-ourProducts">
-          <h1 className={OurProductsStyle.sectionProductsText}>Explore Our Products</h1>
+          <h1 className={OurProductsStyle.sectionProductsText} id='section-products-text'>Explore Our Products</h1>
         </div>
 
         <div className={OurProductsStyle.products}>
 
           {/* FIRST PRODUCT */}
           <div className={OurProductsStyle.productItems}>
-            <div className={OurProductsStyle.productBg}>
-              <div className={OurProductsStyle.productImg}>
+            <div className={OurProductsStyle.productBg} productSize="productBg">
+              <div className={OurProductsStyle.productImg} productImage="prodImg">
                 <img src={product1} alt="photo" className={OurProductsStyle.imageItem} />
               </div>
-              <div className={OurProductsStyle.iconsBox}>
+              <div className={OurProductsStyle.iconsBox} id='prod-icon1'>
                 <CiHeart className={`${OurProductsStyle.svg} ${OurProductsStyle.svgHeart}`} />
                 <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`}/>
               </div>
               <button className={OurProductsStyle.addToCart}>Add To Cart</button>
             </div>
             <div className="product-about">
-              <h1 className={OurProductsStyle.productAboutText}>Havic HV G-92 Gamepad</h1>
+              <h1 className={OurProductsStyle.productAboutText} productAbout="prod-about">Havic HV G-92 Gamepad</h1>
             </div>
 
             <div className={OurProductsStyle.priceStar}>
@@ -60,18 +61,18 @@ function Products() {
 
           {/* SECOND PRODUCT */}
           <div className={OurProductsStyle.productItems}>
-            <div className={OurProductsStyle.productBg}>
-              <div className={OurProductsStyle.productImg}>
+            <div className={OurProductsStyle.productBg} productSize="productBg">
+              <div className={OurProductsStyle.productImg} productImage="prodImg">
                 <img src={product2} alt="photo" className={OurProductsStyle.imageItem} />
               </div>
-              <div className={OurProductsStyle.iconsBox}>
+              <div className={OurProductsStyle.iconsBox} id='prod-icon2'>
                 <CiHeart className={`${OurProductsStyle.svg} ${OurProductsStyle.svgHeart}`} />
                 <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`} />
               </div>
               <button className={OurProductsStyle.addToCart}>Add To Cart</button>
             </div>
             <div className="product-about">
-              <h1 className={OurProductsStyle.productAboutText}>Lorem ipsum dolor</h1>
+              <h1 className={OurProductsStyle.productAboutText} productAbout="prod-about">Lorem ipsum dolor</h1>
             </div>
 
             <div className={OurProductsStyle.priceStar}>
@@ -95,18 +96,18 @@ function Products() {
 
           {/* THIRD PRODUCT */}
           <div className={OurProductsStyle.productItems}>
-            <div className={OurProductsStyle.productBg}>
-              <div className={OurProductsStyle.productImg}>
+            <div className={OurProductsStyle.productBg} productSize="productBg">
+              <div className={OurProductsStyle.productImg} productImage="prodImg">
                 <img src={product3} alt="photo" className={OurProductsStyle.imageItem} />
               </div>
-              <div className={OurProductsStyle.iconsBox}>
+              <div className={OurProductsStyle.iconsBox} id='prod-icon3'>
                 <CiHeart className={`${OurProductsStyle.svg} ${OurProductsStyle.svgHeart}`} />
                 <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`} />
               </div>
               <button className={OurProductsStyle.addToCart}>Add To Cart</button>
             </div>
             <div className="product-about">
-              <h1 className={OurProductsStyle.productAboutText}>Lorem ipsum dolor</h1>
+              <h1 className={OurProductsStyle.productAboutText} productAbout="prod-about">Lorem ipsum dolor</h1>
             </div>
 
             <div className={OurProductsStyle.priceStar}>
@@ -130,18 +131,18 @@ function Products() {
 
           {/* FOURST PRODUCT */}
           <div className={OurProductsStyle.productItems}>
-            <div className={OurProductsStyle.productBg}>
-              <div className={OurProductsStyle.productImg}>
+            <div className={OurProductsStyle.productBg} productSize="productBg">
+              <div className={OurProductsStyle.productImg}productImage="prodImg">
                 <img src={product3} alt="photo" className={OurProductsStyle.imageItem} />
               </div>
-              <div className={OurProductsStyle.iconsBox}>
+              <div className={OurProductsStyle.iconsBox} id='prod-icon4'>
                 <CiHeart className={`${OurProductsStyle.svg} ${OurProductsStyle.svgHeart}`} />
                 <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`} />
               </div>
               <button className={OurProductsStyle.addToCart}>Add To Cart</button>
             </div>
             <div className="product-about">
-              <h1 className={OurProductsStyle.productAboutText}>Lorem ipsum dolor</h1>
+              <h1 className={OurProductsStyle.productAboutText} productAbout="prod-about">Lorem ipsum dolor</h1>
             </div>
 
             <div className={OurProductsStyle.priceStar}>
@@ -165,18 +166,18 @@ function Products() {
 
           {/* FIVETH PRODUCT */}
           <div className={OurProductsStyle.productItems}>
-            <div className={OurProductsStyle.productBg}>
-              <div className={OurProductsStyle.productImg}>
+            <div className={OurProductsStyle.productBg} productSize="productBg">
+              <div className={OurProductsStyle.productImg}productImage="prodImg">
                 <img src={product3} alt="photo" className={OurProductsStyle.imageItem} />
               </div>
-              <div className={OurProductsStyle.iconsBox}>
+              <div className={OurProductsStyle.iconsBox} id='prod-icon5'>
                 <CiHeart className={`${OurProductsStyle.svg} ${OurProductsStyle.svgHeart}`} />
                 <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`} />
               </div>
               <button className={OurProductsStyle.addToCart}>Add To Cart</button>
             </div>
             <div className="product-about">
-              <h1 className={OurProductsStyle.productAboutText}>Lorem ipsum dolor</h1>
+              <h1 className={OurProductsStyle.productAboutText} productAbout="prod-about">Lorem ipsum dolor</h1>
             </div>
 
             <div className={OurProductsStyle.priceStar}>
@@ -199,18 +200,18 @@ function Products() {
           </div>
           {/* SEXTH PRODUCT */}
           <div className={OurProductsStyle.productItems}>
-            <div className={OurProductsStyle.productBg}>
-              <div className={OurProductsStyle.productImg}>
+            <div className={OurProductsStyle.productBg} productSize="productBg">
+              <div className={OurProductsStyle.productImg}productImage="prodImg">
                 <img src={product3} alt="photo" className={OurProductsStyle.imageItem} />
               </div>
-              <div className={OurProductsStyle.iconsBox}>
+              <div className={OurProductsStyle.iconsBox} id='prod-icon6'>
                 <CiHeart className={`${OurProductsStyle.svg} ${OurProductsStyle.svgHeart}`} />
                 <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`} />
               </div>
               <button className={OurProductsStyle.addToCart}>Add To Cart</button>
             </div>
             <div className="product-about">
-              <h1 className={OurProductsStyle.productAboutText}>Lorem ipsum dolor</h1>
+              <h1 className={OurProductsStyle.productAboutText} productAbout="prod-about">Lorem ipsum dolor</h1>
             </div>
 
             <div className={OurProductsStyle.priceStar}>
@@ -233,19 +234,19 @@ function Products() {
           </div>
 
           {/* SEVENTH PRODUCT */}
-          <div className={OurProductsStyle.productItems}>
-            <div className={OurProductsStyle.productBg}>
-              <div className={OurProductsStyle.productImg}>
+          <div className={OurProductsStyle.productItems} id='productItems7'>
+            <div className={OurProductsStyle.productBg} productSize="productBg">
+              <div className={OurProductsStyle.productImg}productImage="prodImg">
                 <img src={product3} alt="photo" className={OurProductsStyle.imageItem} />
               </div>
-              <div className={OurProductsStyle.iconsBox}>
+              <div className={OurProductsStyle.iconsBox} id='prod-icon7'>
                 <CiHeart className={`${OurProductsStyle.svg} ${OurProductsStyle.svgHeart}`} />
                 <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`} />
               </div>
               <button className={OurProductsStyle.addToCart}>Add To Cart</button>
             </div>
             <div className="product-about">
-              <h1 className={OurProductsStyle.productAboutText}>Lorem ipsum dolor</h1>
+              <h1 className={OurProductsStyle.productAboutText} productAbout="prod-about">Lorem ipsum dolor</h1>
             </div>
 
             <div className={OurProductsStyle.priceStar}>
@@ -268,19 +269,19 @@ function Products() {
           </div>
 
           {/* EIGHTH PRODUCT */}
-          <div className={OurProductsStyle.productItems}>
-            <div className={OurProductsStyle.productBg}>
-              <div className={OurProductsStyle.productImg}>
+          <div className={OurProductsStyle.productItems} id='productItems8'>
+            <div className={OurProductsStyle.productBg} productSize="productBg">
+              <div className={OurProductsStyle.productImg}productImage="prodImg">
                 <img src={product3} alt="photo" className={OurProductsStyle.imageItem} />
               </div>
-              <div className={OurProductsStyle.iconsBox}>
+              <div className={OurProductsStyle.iconsBox} id='prod-icon8'>
                 <CiHeart className={`${OurProductsStyle.svg} ${OurProductsStyle.svgHeart}`}  />
                 <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`} />
               </div>
               <button className={OurProductsStyle.addToCart}>Add To Cart</button>
             </div>
             <div className="product-about">
-              <h1 className={OurProductsStyle.productAboutText}>Lorem ipsum dolor</h1>
+              <h1 className={OurProductsStyle.productAboutText} productAbout="prod-about">Lorem ipsum dolor</h1>
             </div>
 
             <div className={OurProductsStyle.priceStar}>

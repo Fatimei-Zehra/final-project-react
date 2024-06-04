@@ -11,10 +11,12 @@ import WishlistPage from './Components/Wishlist/WishlistPage';
 import Selling from '../src/Components/Selling/Selling'
 import Login from "../src/Components/Login/Login";
 import About from "../src/Components/About/About"
-import Home  from './Components/Home';
+import Home from './Components/Home';
+import Contact from './Components/Contact/Contact';
 
 // ROOTER CODES
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+
 
 function AppContent() {
   const location = useLocation();
@@ -24,12 +26,14 @@ function AppContent() {
       <Routes>
         <Route path="/Login" element={<Login />} />
         <Route path="/Wishlist" element={<WishlistPage />} />
-        <Route path='/About' element={<About />}/>
-        <Route path='/Home' element={<Home />}/>
+        <Route path='/About' element={<About />} />
+        <Route path='/Home' element={<Home />} />
+        <Route path='/Contact' element={< Contact />} />
       </Routes>
       {location.pathname !== "/Login" &&
         location.pathname !== "/Wishlist" &&
-        location.pathname !== "/About" && 
+        location.pathname !== "/About" &&
+        location.pathname !== "/Contact" &&
         (
           <>
             <Main />

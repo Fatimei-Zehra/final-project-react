@@ -98,9 +98,8 @@ export default function Header() {
                     <div className="container">
                         <div id='mobile-nav-items'>
                             <div id='mobile-nav-icon'>
-                                <Link>
                                 <FontAwesomeIcon icon={faBars} id='menu-icon' />
-                                </Link>       
+                                {/* <DropMenu/> */}
                             </div>
 
                             <div id='mobile-right-icon'>
