@@ -1,0 +1,100 @@
+.content {
+    display: flex;
+    padding: 50px;
+  }
+  
+  .sidebar {
+    flex: 1;
+    padding-right: 50px;
+  }
+
+  .sidebarH3 {
+    margin-left: 33%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  .sidebarUl {
+    list-style: none;
+    padding: 0;
+    margin-left: 40%;
+  }
+  
+  .sidebarLi {
+    margin-bottom: 15px;
+  }
+  
+  .Edit {
+    flex: 3;
+    padding-left: 180px;
+  }
+  
+  .editH2 {
+   margin-top: 5%;
+   margin-bottom: 3%;
+   color: #DB4444;
+   ;
+  }
+  
+  .Account {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .item {
+   display: flex;
+   gap: 20%;
+  }
+
+  .itemInput{
+    width: 180%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .AccountGroup {
+    margin-bottom: 20px;
+  }
+  
+  .itemLabel {
+    display: flex;
+    margin-bottom: 5px;
+  }
+  
+  
+  .passInput{
+    width: 78%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .btn{
+    display: flex;
+    margin-left: 45%;
+  }
+
+  .buttons {
+    margin-left: 10%;
+  }
+  
+  .submitBtn {
+    padding: 16px 48px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5%;
+    background-color: #DB4444;
+    color: #fff;
+   
+    
+  }
+  
+  .cancelBtn {
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  margin-top: 30%;
+  }
+  

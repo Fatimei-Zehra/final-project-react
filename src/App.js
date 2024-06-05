@@ -11,7 +11,8 @@ import Header from './Components/Header/Header';
 //import Selling from '../src/Components/Selling/Selling'
 //import Login from "../src/Components/Login/Login";
 //import SignUp from '../src/Components/SignUp/SignUp';
-import Error from '../src/Components/Error/Error';
+//import Error from '../src/Components/Error/Error';
+import Account from '../src/Components/Account/Account';
 
 // ROOTER CODES
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
@@ -21,7 +22,8 @@ function AppContent() {
   return (
     <div>
       <Header />
-      <Error />
+      <Account />
+      {/*<Error />*/}
       {/*<SignUp />*/}
       {/*<Routes>
         <Route path="/Login" element={<Login />} />
