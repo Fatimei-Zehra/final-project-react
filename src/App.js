@@ -1,5 +1,6 @@
-import Adversiting from './Components/Advertising/Adversiting';
 import Header from './Components/Header/Header';
+
+import Adversiting from './Components/Advertising/Adversiting';
 import MainSlider from './Components/MainSlider/MainSlider';
 import Categories from "./Components/Categories/Categories"
 import Main from './Components/Main/Main';

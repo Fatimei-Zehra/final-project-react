@@ -12,9 +12,9 @@ function About() {
   return (
     <div>
       <div className="container">
-        <div className={AboutCss.pageLink}>
-          <Link to='/Home' className={AboutCss.homePage}>Home /</Link>
-          <p className={AboutCss.aboutPage}>About</p>
+        <div className={AboutCss.pageLink} id='page-link'>
+          <Link to='/Home' className={AboutCss.homePage} id='homePage'>Home /</Link>
+          <p className={AboutCss.aboutPage} id='aboutPage'>About</p>
         </div>
       </div>
       <div className={AboutCss.aboutItems} id='about-items'>

@@ -8,10 +8,22 @@ import product3 from "../../Images/OurProducts/img3.png"
 import { LuEye } from "react-icons/lu";
 import { CiHeart } from "react-icons/ci";
 import { FaStar } from "react-icons/fa";
+import firebase from 'firebase/app';
+
+import { useState } from 'react'
+
 
 function Products() {
+  const [favorites, setFavorites] = useState([]);
+
+
+  const addToFavorites = (product) => {
+    setFavorites([...favorites, product]);
+  };
+
   return (
     <div className='container'>
+
       <div className={OurProductsStyle.rectangle}>
         <div className={OurProductsStyle.red}></div>
         <h1 className={`${GlobalModuleCss.fontPoppins} ${OurProductsStyle.rectangleText}`}>Our Products</h1>
@@ -22,17 +34,18 @@ function Products() {
           <h1 className={OurProductsStyle.sectionProductsText} id='section-products-text'>Explore Our Products</h1>
         </div>
 
-        <div className={OurProductsStyle.products}>
 
+        <div className={OurProductsStyle.products}>
           {/* FIRST PRODUCT */}
-          <div className={OurProductsStyle.productItems}>
+
+          < div className={OurProductsStyle.productItems} >
             <div className={OurProductsStyle.productBg} productSize="productBg">
               <div className={OurProductsStyle.productImg} productImage="prodImg">
                 <img src={product1} alt="photo" className={OurProductsStyle.imageItem} />
               </div>
               <div className={OurProductsStyle.iconsBox} id='prod-icon1'>
                 <CiHeart className={`${OurProductsStyle.svg} ${OurProductsStyle.svgHeart}`} />
-                <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`}/>
+                <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`} />
               </div>
               <button className={OurProductsStyle.addToCart}>Add To Cart</button>
             </div>
@@ -132,7 +145,7 @@ function Products() {
           {/* FOURST PRODUCT */}
           <div className={OurProductsStyle.productItems}>
             <div className={OurProductsStyle.productBg} productSize="productBg">
-              <div className={OurProductsStyle.productImg}productImage="prodImg">
+              <div className={OurProductsStyle.productImg} productImage="prodImg">
                 <img src={product3} alt="photo" className={OurProductsStyle.imageItem} />
               </div>
               <div className={OurProductsStyle.iconsBox} id='prod-icon4'>
@@ -167,7 +180,7 @@ function Products() {
           {/* FIVETH PRODUCT */}
           <div className={OurProductsStyle.productItems}>
             <div className={OurProductsStyle.productBg} productSize="productBg">
-              <div className={OurProductsStyle.productImg}productImage="prodImg">
+              <div className={OurProductsStyle.productImg} productImage="prodImg">
                 <img src={product3} alt="photo" className={OurProductsStyle.imageItem} />
               </div>
               <div className={OurProductsStyle.iconsBox} id='prod-icon5'>
@@ -201,7 +214,7 @@ function Products() {
           {/* SEXTH PRODUCT */}
           <div className={OurProductsStyle.productItems}>
             <div className={OurProductsStyle.productBg} productSize="productBg">
-              <div className={OurProductsStyle.productImg}productImage="prodImg">
+              <div className={OurProductsStyle.productImg} productImage="prodImg">
                 <img src={product3} alt="photo" className={OurProductsStyle.imageItem} />
               </div>
               <div className={OurProductsStyle.iconsBox} id='prod-icon6'>
@@ -236,7 +249,7 @@ function Products() {
           {/* SEVENTH PRODUCT */}
           <div className={OurProductsStyle.productItems} id='productItems7'>
             <div className={OurProductsStyle.productBg} productSize="productBg">
-              <div className={OurProductsStyle.productImg}productImage="prodImg">
+              <div className={OurProductsStyle.productImg} productImage="prodImg">
                 <img src={product3} alt="photo" className={OurProductsStyle.imageItem} />
               </div>
               <div className={OurProductsStyle.iconsBox} id='prod-icon7'>
@@ -271,11 +284,11 @@ function Products() {
           {/* EIGHTH PRODUCT */}
           <div className={OurProductsStyle.productItems} id='productItems8'>
             <div className={OurProductsStyle.productBg} productSize="productBg">
-              <div className={OurProductsStyle.productImg}productImage="prodImg">
+              <div className={OurProductsStyle.productImg} productImage="prodImg">
                 <img src={product3} alt="photo" className={OurProductsStyle.imageItem} />
               </div>
               <div className={OurProductsStyle.iconsBox} id='prod-icon8'>
-                <CiHeart className={`${OurProductsStyle.svg} ${OurProductsStyle.svgHeart}`}  />
+                <CiHeart className={`${OurProductsStyle.svg} ${OurProductsStyle.svgHeart}`} />
                 <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`} />
               </div>
               <button className={OurProductsStyle.addToCart}>Add To Cart</button>
@@ -302,15 +315,15 @@ function Products() {
               </div>
             </div>
           </div>
-
         </div>
-      </div>
 
+      </div>
       <div className={OurProductsStyle.viewAllProducts}>
-                <button className={OurProductsStyle.viewButton}>View All Products</button>
-            </div>
-    </div>
+        <button className={OurProductsStyle.viewButton}>View All Products</button>
+      </div>
+    </div >
   )
 }
 
 export default Products
+
