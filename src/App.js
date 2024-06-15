@@ -1,5 +1,5 @@
 
-import Login from "../src/Components/Login/Login"
+//import Login from "../src/Components/Login/Login"
 //import Arrival from "../src/Components/Arrival/Arrival"
 
 
@@ -25,6 +25,7 @@ function AppContent() {
   const location = useLocation();
   return (
     <div>
+        {/*<Arrival/>*/}
       <Header />
       <Routes>
         <Route path="/Login" element={<Login />} />
@@ -43,18 +44,6 @@ function AppContent() {
         </>
       )}
 
-      {location.pathname !="/Wishlist" && (
-        <>
-         <Main />
-          <Timer />
-          <MainSlider />
-          <Categories />
-          <Selling />
-          <Adversiting />
-          <Products />
-          <Services />
-        </>
-      )}
       <Footer />
     </div>
 
@@ -64,27 +53,9 @@ function AppContent() {
 function App() {
   return (
     <div className="App">
-
-
-      <Login/>
-     {/*<Arrival/>*/}
-
-      <Header />
-      <Main />
-      <Timer />
-      <MainSlider />
-      <Categories/>
-      <Selling/>
-      <Adversiting />
-      <Products />
-      <Services/>
-
       <BrowserRouter>
         <AppContent/>
       </BrowserRouter>
-
-
-
     </div>
   );
 }
