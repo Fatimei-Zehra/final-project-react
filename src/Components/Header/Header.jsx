@@ -14,6 +14,7 @@ import DropMenu from '../DropMenu/DropMenu'
 import { Link } from 'react-router-dom'
 
 
+
 export default function Header() {
     return (
         <div>
@@ -44,7 +45,9 @@ export default function Header() {
             <header className={styles.header} id='header'>
                 <div className="container">
                     <div className={styles.headerNav}>
+                        <Link to="/Home">
                         <h1 className={`${styles.brand} ${GlobalModuleCss.fontInter}`} id='brand'>exclusive</h1>
+                        </Link>
                         <Navbar />
 
                         {/* PLANSET HEADER SEARCH CODES........................................................................ */}
@@ -95,10 +98,9 @@ export default function Header() {
                     <div className="container">
                         <div id='mobile-nav-items'>
                             <div id='mobile-nav-icon'>
-                                <Link to="/Sidebar">
+                                <Link>
                                 <FontAwesomeIcon icon={faBars} id='menu-icon' />
-                                </Link>
-                               
+                                </Link>       
                             </div>
 
                             <div id='mobile-right-icon'>

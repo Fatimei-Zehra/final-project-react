@@ -268,7 +268,35 @@
     }
 }
 
+/* !SLIDER DESKTOP MEDIA CODES  END.................................................................................................*/
 
+
+/*! TIMER DESKTOP MEDIA CODES START.......................................................................................... */
+@media screen and (max-width: 1156px) {
+    .flash-sales {
+        font-size: 27px;
+    }
+
+    #frame {
+        gap: 40px;
+    }
+
+    #timer {
+        gap: 13px;
+    }
+}
+
+@media screen and (max-width: 945px) {
+
+    #daysNum,
+    #hoursNum,
+    #minutesNum,
+    #secondsNum {
+        font-size: 28px;
+    }
+}
+
+/*! TIMER DESKTOP MEDIA CODES END.............................................................................................. */
 
 
 
@@ -388,6 +416,70 @@
 
 
 /*! ADVERTISING DESKTOP MEDIA CODES END.......................................................................................... */
+
+/* !SERVICES DESKTOP MEDIA CODES START..............................................................................................*/
+@media screen and (max-width: 1245px) {
+    [service] {
+        font-size: 12px !important;
+    }
+
+}
+
+@media screen and (max-width: 1205px) {
+    [name] {
+        font-size: 17px !important;
+    }
+
+}
+
+@media screen and (max-width: 1182px) {
+    [name] {
+        font-size: 16px !important;
+    }
+
+    [serviceItem] {
+        padding: 32px !important;
+    }
+
+}
+
+
+@media screen and (max-width: 992px) {
+    [name] {
+        font-size: 15px !important;
+    }
+
+    [serviceItem] {
+        padding: 30px !important;
+    }
+}
+
+@media screen and (max-width: 969px) {
+    [service] {
+        font-size: 11px !important;
+    }
+
+    [serviceItem] {
+        padding: 20px !important;
+    }
+
+}
+
+
+@media screen and (max-width: 849px) {
+    [service] {
+        font-size: 10px !important;
+    }
+
+
+    [name] {
+        font-size: 14px !important;
+    }
+
+}
+
+/* !SERVICES DESKTOP MEDIA CODES END................................................................................................*/
+
 
 
 
@@ -531,8 +623,13 @@
     }
 }
 
+/* !FOOTER RESPONSIVE CODES END ...................................................................................................*/
+
+
 
 /* ............................................PLANSET RESPONSIVE CODES START................................................... */
+
+
 /*! LAYER CODES PLANSET........................................................................................................ */
 
 @media screen and (max-width: 827px) {
@@ -639,7 +736,7 @@
 
 
 
-/* !HEADER PLANSET CODES START...................................................................................................... */
+/* !HEADER PLANSET CODES START..................................................................................................... */
 
 @media screen and (max-width: 827px) {
     #nav {
@@ -835,6 +932,112 @@
         padding: 25px 21px;
     }
 }
+
+
+
+
+/*! TIMER PLANSET MEDIA CODES START............................................................................................. */
+
+@media screen and (max-width: 827px) {
+
+    #daysNum,
+    #hoursNum,
+    #minutesNum,
+    #secondsNum {
+        font-size: 23px;
+    }
+
+    #frame {
+        gap: 28px;
+    }
+}
+
+@media screen and (max-width: 574px) {
+
+    #frame {
+        gap: 23px;
+    }
+
+    .flash-sales {
+        font-size: 26px;
+    }
+
+    #timer {
+        gap: 8px;
+    }
+
+}
+
+@media screen and (max-width: 513px) {
+
+    #timer {
+        gap: 6px;
+    }
+
+    .flash-sales {
+        font-size: 24px;
+    }
+
+    #frame {
+        gap: 18px;
+    }
+
+}
+
+
+@media screen and (max-width: 448px) {
+
+    #daysNum,
+    #hoursNum,
+    #minutesNum,
+    #secondsNum {
+        font-size: 19px;
+    }
+
+    #frame {
+        font-size: 14px;
+    }
+
+    .flash-sales {
+        font-size: 22px;
+    }
+
+    #timer {
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    .flash-sales {
+        font-size: 20px;
+    }
+
+    #dayPair,
+    #hourPair,
+    #minPair {
+        font-size: 24px;
+    }
+
+    #frame{
+        gap: 11px;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    .flash-sales {
+        font-size: 19px;
+    }
+
+    #dayPair,
+    #hourPair,
+    #minPair {
+        font-size: 22px;
+    }
+}
+
+/*! TIMER PLANSET MEDIA CODES END.............................................................................................. */
+
+
 
 
 /*! ADVERTISING PLANSET MEDIA CODES START......................................................................................... */
@@ -1077,6 +1280,99 @@
 }
 
 
+
+/*! SERVICES RESPONSIVE PLANSET CODES PLANSET.................................................................................. */
+
+@media screen and (max-width: 711px) {
+    [name] {
+        font-size: 13px !important;
+    }
+
+    [service] {
+        font-size: 10px !important;
+        margin-top: 0 !important;
+    }
+
+    [serviceItem] {
+        padding: 15px !important;
+    }
+
+
+}
+
+
+@media screen and (max-width: 652px) {
+    [name] {
+        font-size: 12px !important;
+    }
+
+    [serviceItem] {
+        padding: 13px !important;
+    }
+
+    [serviceIcon] {
+        margin-bottom: 18px !important;
+        width: 65px !important;
+        height: 65px !important;
+    }
+
+    [service] {
+        font-size: 9px !important;
+    }
+}
+
+@media screen and (max-width: 638px) {
+    [service] {
+        font-size: 9px !important;
+    }
+}
+
+
+
+@media screen and (max-width: 588px) {
+    [service] {
+        font-size: 7px !important;
+    }
+
+    [name] {
+        font-size: 9px !important;
+    }
+}
+
+
+@media screen and (max-width: 473px) {
+
+    [serviceIcon] {
+        margin-bottom: 10px !important;
+        width: 50px !important;
+        height: 50px !important;
+        border: 6px solid grey !important;
+
+    }
+
+    #truck,
+    #headphone,
+    #truck-second {
+        font-size: 18px;
+    }
+
+    [service] {
+        font-size: 6px !important;
+    }
+
+    [name] {
+        font-size: 8px !important;
+    }
+
+    [serviceItem] {
+        padding: 10px !important;
+    }
+}
+
+/*! SERVICES RESPONSIVE PLANSET CODES END.................................................................................. */
+
+
+
 /* !FOOTER PLANSET RESPONSIVE CODES START .....................................................................................*/
 
 @media screen and (max-width: 827px) {
@@ -1140,8 +1436,8 @@
 
 /* .......................................MOBILE RESPONSIVE CODES START ........................................................*/
 
-/*! LAYER CODES */
-@media screen and (max-width: 400px) {
+/*! LAYER MOBILE RESPONS CODES */
+@media screen and (max-width: 401px) {
     #header-layer {
         display: none;
     }
@@ -1199,7 +1495,7 @@
 
 
 /* !SLIDER RESPONSIVE CODES START.................................................................................................. */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 401px) {
     /* #slider {
         display: none;
     } */
@@ -1211,9 +1507,110 @@
 
 /* !SLIDER RESPONSIVE CODES START............................................................................................*/
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 401px) {
     #form {
         width: 75% !important;
     }
 }
+/* !SLIDER RESPONSIVE CODES END............................................................................................*/
 
+
+
+
+/*! TIMER MOBILER MEDIA CODES START............................................................................................. */
+@media screen and (max-width:401px) {
+    #frame{
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+       align-items: start;
+    }
+
+    #timer{
+        text-align: center;
+    }
+
+    #timer-mobile-rectangle{
+        margin-top: 5px;
+    }
+
+    .flash-sales{
+        margin: 10px 0px;
+    }
+}
+
+/* !ADVERTISING MOBILE RESPONSIVE CODES START......................................................................................*/
+
+@media screen and (max-width:401px) {
+    #section-advertiising {
+        flex-direction: column;
+        padding: 23px 40px;
+        height: 360px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #days,
+    #hours,
+    #minute,
+    #second {
+        width: 40px;
+        height: 40px;
+        padding-top: 3px;
+    }
+
+    #about-product {
+        padding: 18px 0px;
+    }
+
+    #advetising-product {
+        width: 185px;
+    }
+
+    #advertising-item {
+        width: 280px;
+    }
+}
+
+
+@media screen and (max-width: 371px) {
+    #advertising-item {
+        width: 211px;
+    }
+}
+
+
+/* !SERVICES MOBILE RESPONSIVE CODES START..........................................................................................*/
+@media screen and (max-width: 401px) {
+    #services {
+        display: block;
+    }
+
+    [name] {
+        font-size: 12px !important;
+    }
+
+
+
+    [serviceIcon] {
+        margin-bottom: 10px !important;
+        width: 60px !important;
+        height: 60px !important;
+        border: 7px solid grey !important;
+
+    }
+
+    #truck,
+    #headphone,
+    #truck-second {
+        font-size: 20px;
+    }
+
+    [service] {
+        font-size: 8px !important;
+    }
+
+    [serviceItem] {
+        padding: 30px !important;
+    }
+}
