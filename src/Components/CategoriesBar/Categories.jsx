@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { CategoriesData } from '../../Server/CategoriesJson';
 import { customProductArray } from '../../Server/AllJson';
 import subStyle from "./submenu.module.css"
 

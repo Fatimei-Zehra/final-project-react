@@ -7,16 +7,24 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import Navbar from "../NavBar/Navbar"
-
 import DropMenu from '../DropMenu/DropMenu'
 import { Link } from 'react-router-dom'
 import Wishlist from '../Wishlist/Wishlist'
 import Search from '../Search/Search'
 import Cart from '../Cart/Cart'
 
+// import { useTranslation } from 'react-i18next'
+// import i18n from '../../i18/i18n'
 
 
 export default function Header() {
+    // const { t, i18n } = useTranslation()
+
+    // const clickHandle = async lang => {
+    //     await i18n.changeLanguage(lang)
+    // onClick={() => clickHandle('en')}
+    // }
+
     return (
         <div>
             {/* LAYER CODES START */}
@@ -30,8 +38,8 @@ export default function Header() {
 
 
                         <select className={styles.languages} id='languages'>
-                            <option value="english">English</option>
-                            <option value="azerbaijan">Azerbaijan</option>
+                            <option value="english" >English</option>
+                            <option value="azerbaijan" >Azerbaijan</option>
                             <option value="russian">Russian</option>
                         </select>
 
@@ -74,7 +82,7 @@ export default function Header() {
                 </div>
             </header>
 
-          
+
 
 
 

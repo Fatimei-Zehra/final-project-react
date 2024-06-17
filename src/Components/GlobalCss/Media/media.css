@@ -772,9 +772,13 @@
 /* !SECTION IMAGE OUR STORY DESKTOP CODES END RESPONSIVE.......................................................................... */
 
 
-
-
-
+/* !SECTION STATISTCIS DESKTOP CODES START............................................................................... */
+@media screen and (max-width: 1392px) {
+    [statistics] {
+        width: 260px !important;
+        height: 220px !important;
+    }
+}
 
 
 
@@ -2073,8 +2077,9 @@
     #story-second-text {
         font-size: 8px;
     }
-    
-    #homePage, #aboutPage {
+
+    #homePage,
+    #aboutPage {
         font-size: 11px;
     }
 }

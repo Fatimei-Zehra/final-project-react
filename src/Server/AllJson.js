@@ -38,7 +38,7 @@ export const customProductArray = [
             },
 
             {
-                id: 1, title: 'Bag', desc: 'lorem  bla bla bla', children: [
+                id: 3, title: 'Bag', desc: 'lorem  bla bla bla', children: [
                     { id: 2, title: 'Shoulder Bag' }, { id: 4, title: 'Backpack' },
                     { id: 5, title: 'School Bag' },{ id: 6, title: 'Handbag' },
                     { id: 7, title: 'Mini Bag' },{ id: 8, title: 'Bag bag' },
