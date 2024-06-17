@@ -1,4 +1,3 @@
-
 .container {
     display: flex;
     justify-content: space-between;
@@ -168,22 +167,4 @@
   
  
 
-Img{
-    width: 570px;
-    height: 600px;
-    background-color: black;
-}
-
-.Img1{
-    width: 511px;
-    height: 511px;
-    position: relative;
-    
-}
-
-.ImgH1{
-    color: #fff;
-    position: absolute;
-    padding: 10%;
-}
 

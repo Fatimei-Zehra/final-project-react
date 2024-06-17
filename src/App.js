@@ -1,12 +1,12 @@
 
-import Arrival from "./Components/Arrival/Arrival";
+
 // import Header from './Components/Header/Header';
 // import Main from './Components/Main/Main';
 //import Login from "../src/Components/Login/Login"
 
 
-import Login from "../src/Components/Login/Login"
-//import Arrival from "../src/Components/Arrival/Arrival"
+//import Login from "../src/Components/Login/Login"
+import Arrival from "../src/Components/Arrival/Arrival"
 
 
 
@@ -21,6 +21,7 @@ import Services from './Components/Services/Services';
 import Footer from "../src/Components/Footer/Footer"
 import WishlistPage from './Components/Wishlist/WishlistPage';
 import Selling from '../src/Components/Selling/Selling'
+//import Arrival from "./Components/Arrival/Arrival";
 import Login from "../src/Components/Login/Login";
 
 
@@ -47,6 +48,7 @@ function AppContent() {
           <Selling />
           <Adversiting />
           <Products />
+          <Arrival/>
           <Services />
         </>
       )}
@@ -65,22 +67,10 @@ function App() {
       {/* <Header/>   */}
       {/* <Main/> */}
       {/*<Login/>*/}
-      <Arrival/>
+     
 
 
-      <Login/>
-     {/*<Arrival/>*/}
-
-      <Header />
-      <Main />
-      <Timer />
-      <MainSlider />
-      <Categories/>
-      <Selling/>
-      <Adversiting />
-      <Products />
-      <Services/>
-
+     
       <BrowserRouter>
         <AppContent/>
       </BrowserRouter>
