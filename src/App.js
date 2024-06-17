@@ -10,7 +10,7 @@ import Footer from "../src/Components/Footer/Footer"
 import WishlistPage from './Components/Wishlist/WishlistPage';
 import Selling from '../src/Components/Selling/Selling'
 import Login from "../src/Components/Login/Login";
-
+import Checkout from './Components/Checkout/Checkout';
 // ROOTER CODES
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 
@@ -34,6 +34,7 @@ function AppContent() {
           <Adversiting />
           <Products />
           <Services />
+          <Checkout/>
         </>
       )}
 
