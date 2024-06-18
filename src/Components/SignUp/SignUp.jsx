@@ -32,8 +32,8 @@ const SignUp = () => {
 
   return (
     <div>
-        <div className={styles.Account}>
-      <div className={styles.acc}>
+        <div id='account' className={styles.Account}>
+      <div id='acc' className={styles.acc}>
         <img src={svg} alt='Login' id='image' className={styles.accImg} /> 
       </div>
 
@@ -46,7 +46,7 @@ const SignUp = () => {
         <div className={styles.forget}>
         <button onClick={handleSignUp} id='account-btn' className={styles.AccountButton}>Create Account</button> 
         <button id='Google-btn' className={styles.GoogleButton}> <FcGoogle className={styles.icon}/> Sign up with Google</button> 
-        <div className={styles.P}>
+        <div id='p' className={styles.P}>
         <p className={styles.forgetP} id='forget-pass'>Already have account?</p>
         <p className={styles.AccountP} id='acc-p'>Log in</p>
         </div> 
