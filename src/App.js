@@ -1,4 +1,4 @@
-//import Adversiting from './Components/Advertising/Adversiting';
+import Adversiting from './Components/Advertising/Adversiting';
 import Header from './Components/Header/Header';
 import SignUp from '../src/Components/SignUp/SignUp';
 import MainSlider from './Components/MainSlider/MainSlider';
@@ -24,30 +24,12 @@ function AppContent() {
     <div>
       <Header />
       <SignUp />
-      {/*<Routes>
-        <Route path="/Login" element={<Login />} />
-        <Route path="/Wishlist" element={<WishlistPage />} />
-  </Routes>*/}
-      {location.pathname !== "/Login" && 
-       location.pathname !=="/Wishlist" && (
-        <>
-          
-          {/*<Main />
-          <Timer />
-          <MainSlider />
-          <Categories />
-          <Selling />
-          <Adversiting />
-          <Products />
-       <Services />*/}
-        </>
-      )}
-    
-  
-      {/*<Footer />*/}
-
-        <Route path='/About' element={<About />}/>
-        <Route path='/Home' element={<Home />}/>
+     
+       <Routes>
+       <Route path="/Login" element={<Login />} />
+       <Route path="/Wishlist" element={<WishlistPage />} />
+       <Route path='/About' element={<About />}/>
+       <Route path='/Home' element={<Home />}/>
       </Routes>
       {location.pathname !== "/Login" &&
         location.pathname !== "/Wishlist" &&
