@@ -421,7 +421,7 @@
         padding: 45px 26px !important;
     }
 
-    
+
     #phone,
     #computer,
     #watch,
@@ -441,11 +441,11 @@
         font-size: 18px;
     }
 
-    #categoriesText{
+    #categoriesText {
         font-size: 20px;
     }
 
-    #browsing{
+    #browsing {
         font-size: 26px;
     }
 }
@@ -1110,7 +1110,12 @@
         width: 90%;
     }
 
-    .categoriesBar{
+    .categoriesBar {
+        display: none;
+    }
+
+
+    #dropdown {
         display: none;
     }
 
@@ -1349,8 +1354,117 @@
 
 /*! TIMER PLANSET MEDIA CODES END.............................................................................................. */
 
+/*! CategoRIES ELCAN PLANSET MEDIA CODES END....................................................................................... */
+@media screen and (max-width: 700px) {
+    [categoryBox] {
+        width: 175px !important;
+        height: 175px !important;
+        padding: 30px 20px !important;
+    }
+}
 
 
+
+@media screen and (max-width: 656px) {
+    [categoryBox] {
+        width: 165px !important;
+        height: 165px !important;
+    }
+}
+
+
+@media screen and (max-width: 565px) {
+
+    #mobileCodesCategory {
+        display: none;
+    }
+
+    #plansetCodesCategory {
+        display: block;
+    }
+
+    [categoryBox] {
+        width: 214px !important;
+        height: 214px !important;
+        padding: 45px 20px !important;
+    }
+
+    #phoneText,
+    #computerText,
+    #watchText,
+    #cameraText,
+    #headphoneText,
+    #gamepadText {
+        font-size: 18px;
+    }
+
+    #phone,
+    #computer,
+    #watch,
+    #camera,
+    #headphone,
+    #gamepad {
+        width: 65px;
+        height: 65px;
+    }
+
+}
+
+@media screen and (max-width: 490px) {
+    [categoryBox] {
+        width: 200px !important;
+        height: 200px !important;
+        padding: 45px 20px !important;
+    }
+
+    #phoneText,
+    #computerText,
+    #watchText,
+    #cameraText,
+    #headphoneText,
+    #gamepadText {
+        font-size: 17px;
+    }
+
+
+    #categoriesText {
+        font-size: 18px;
+    }
+
+    #browsing {
+        font-size: 23px;
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+
+    [categoryBox] {
+        width: 190px !important;
+        height: 190px !important;
+        padding: 40px 20px !important;
+    }
+}
+
+
+@media screen and (max-width:430px) {
+
+    [categoryBox] {
+        width: 175px !important;
+        height: 175px !important;
+        padding: 30px 20px !important;
+    }
+
+    #phone,
+    #computer,
+    #watch,
+    #camera,
+    #headphone,
+    #gamepad {
+        width: 55px;
+        height: 55px;
+    }
+}
 
 /*! ADVERTISING PLANSET MEDIA CODES START......................................................................................... */
 @media screen and (max-width: 827px) {
@@ -1784,7 +1898,7 @@
     }
 
     #truck,
-    #headphone,
+    #headphoneService,
     #truck-second {
         font-size: 18px;
     }
@@ -2069,6 +2183,53 @@
     }
 }
 
+
+/* !categories ELcan MOBILE RESPONSIVE CODES START..................................................................................*/
+@media screen and (max-width:401px) {
+
+    #plansetCodesCategory {
+        display: none;
+    }
+
+
+    #mobCodesCategory {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #browsing {
+        font-size: 19px;
+    }
+
+    #categoriesText {
+        font-size: 16px;
+    }
+
+    [categoryBox] {
+        width: 100% !important;
+        height: 300px !important;
+        padding: 60px 20px !important;
+        margin-bottom: 30px !important;
+    }
+
+    #phone, #computer, #watch, #camera, #headphone, #gamepad {
+        width: 100px;
+        height: 100px;
+    }
+
+    #phoneText, #computerText, #watchText, #cameraText, #headphoneText, #gamepadText {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    [categoryBox]{
+        height: 250px !important;
+        padding: 38px 20px !important;
+    }
+}
+
 /* !ADVERTISING MOBILE RESPONSIVE CODES START......................................................................................*/
 
 @media screen and (max-width:401px) {
@@ -2151,8 +2312,13 @@
 /* !OUR PRODUCT MOBILE RESPONSIVE CODES START......................................................................................*/
 
 @media screen and (max-width: 401px) {
+
+    #productMobCodes{
+        width: 100%;
+    }
     [productSize] {
-        width: 348px !important;
+        /* width: 348px !important; */
+        width: 100% !important;
         height: 290px !important;
     }
 

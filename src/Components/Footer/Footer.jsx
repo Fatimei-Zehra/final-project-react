@@ -39,6 +39,10 @@ function Footer() {
     };
 
     console.log(db)
+
+    const handleIconClick = (url) => {
+        window.open(url, '_blank');
+    };
     return (
         <div>
             <footer className={FooterStyle.footer}>
@@ -92,10 +96,28 @@ function Footer() {
                             </div>
 
                             <div className={FooterStyle.footerIcons} id='footer-icons'>
-                                <FaFacebookF className={`${FooterStyle.socialIcons} ${FooterStyle.facebook}`} />
+                                {/* <FaFacebookF className={`${FooterStyle.socialIcons} ${FooterStyle.facebook}`} />
                                 <FiTwitter className={`${FooterStyle.socialIcons} ${FooterStyle.twitter}`} />
                                 <FaInstagram className={`${FooterStyle.socialIcons} ${FooterStyle.instagram}`} />
-                                <FaLinkedinIn className={`${FooterStyle.socialIcons} ${FooterStyle.linkedin}`} />
+                                <FaLinkedinIn className={`${FooterStyle.socialIcons} ${FooterStyle.linkedin}`} /> */}
+                                <div className={FooterStyle.footerIcons} id='footer-icons'>
+                                    <FaFacebookF
+                                        className={`${FooterStyle.socialIcons} ${FooterStyle.facebook}`}
+                                        onClick={() => handleIconClick('https://www.facebook.com/')}
+                                    />
+                                    <FiTwitter
+                                        className={`${FooterStyle.socialIcons} ${FooterStyle.twitter}`}
+                                        onClick={() => handleIconClick('https://twitter.com/')}
+                                    />
+                                    <FaInstagram
+                                        className={`${FooterStyle.socialIcons} ${FooterStyle.instagram}`}
+                                        onClick={() => handleIconClick('https://www.instagram.com/')}
+                                    />
+                                    <FaLinkedinIn
+                                        className={`${FooterStyle.socialIcons} ${FooterStyle.linkedin}`}
+                                        onClick={() => handleIconClick('https://www.linkedin.com/')}
+                                    />
+                                </div>
                             </div>
                         </ul>
                     </div>

@@ -5,7 +5,7 @@ import subStyle from "./submenu.module.css"
 const Categories = ({ setHoverCategory }) => {
   
   return (
-    <div className={subStyle.dropdown} >
+    <div className={subStyle.dropdown} id='dropdown' >
       <ul >
         {customProductArray.map((item, index) => (
           <li

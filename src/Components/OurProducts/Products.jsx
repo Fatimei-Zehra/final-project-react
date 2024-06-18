@@ -10,7 +10,7 @@ import { useState } from 'react'
 import products from "../../Server/Products";
 import Wishlist from '../Wishlist/WishlistPage';
 import Raiting from "./Raiting"
-
+import WishProduct from "./WishProducts"
 
 const ProductList = () => {
   const [wishlist, setWishlist] = useState([]);
@@ -41,17 +41,14 @@ const ProductList = () => {
 
       <div className={OurProductsStyle.products}>
         {products.map((product) => (
-          <div key={product.id}>
+          <div key={product.id} id='productMobCodes'>
             <div className={OurProductsStyle.productBg} productSize="productBg">
               <div className={OurProductsStyle.productImg} productImage="prodImg">
                 <img src={product.image} alt={product.name} className={OurProductsStyle.imageItem} />
               </div>
 
               <div className={OurProductsStyle.iconsBox} id='prod-icon1'>
-                {/* <CiHeart className={`${OurProductsStyle.svg} ${OurProductsStyle.svgHeart}`} /> */}
-                <CiHeart
-                  className={`${OurProductsStyle.svg} ${OurProductsStyle.svgHeart}`}
-                  onClick={() => handleWishlistClick(product.id)} />
+                <WishProduct />
                 <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`} />
               </div>
 
@@ -69,11 +66,6 @@ const ProductList = () => {
               </div>
 
               <div className='stars-product'>
-                {/* <FaStar className={OurProductsStyle.star} />
-                <FaStar className={OurProductsStyle.star} />
-                <FaStar className={OurProductsStyle.star} />
-                <FaStar className={OurProductsStyle.star} />
-                <FaStar className={OurProductsStyle.star} /> */}
                 <Raiting />
               </div>
 
