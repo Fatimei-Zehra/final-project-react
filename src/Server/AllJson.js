@@ -53,15 +53,15 @@ export const customProductArray = [
     },
 
     {
-        id: 12, type: 'man', title: "Men's Fashion",
+        id: 13, type: 'man', title: "Men's Fashion",
         children: [
             {
                 id: 1, title: 'Shoe', desc: 'lorem  bla bla bla', children: [
-                       { id: 2, title: 'Heeled shoes' }, { id: 4, title: 'Sandals' },
-                    { id: 5, title: 'Sneaker' }, { id: 6, title: 'Casual shoes' },
-                    { id: 7, title: 'Bot' }, { id: 8, title: 'Boots' },
-                    { id: 9, title: 'Loafer' }, { id: 10, title: 'Lorem' },
-                    { id: 11, title: 'Lorem' }, { id: 12, title: 'Lorem' }
+                       { id: 13, title: 'Heeled shoes' }, { id: 14, title: 'Sandals' },
+                    { id: 15, title: 'Sneaker' }, { id: 16, title: 'Casual shoes' },
+                    { id: 17, title: 'Bot' }, { id: 18, title: 'Boots' },
+                    { id: 19, title: 'Loafer' }, { id: 20, title: 'Lorem' },
+                    { id: 21, title: 'Lorem' }, { id: 22, title: 'Lorem' }
                 ]
             },
             {
@@ -97,7 +97,7 @@ export const customProductArray = [
     },
 
     {
-        id: 12, type: 'electronics', title: "Electronics",
+        id: 14, type: 'electronics', title: "Electronics",
         children: [
             {
                 id: 1, title: 'Lorem', desc: 'lorem  bla bla bla', children: [
@@ -123,7 +123,7 @@ export const customProductArray = [
     },
 
     {
-        id: 12, type: 'home', title:  "Home & Lifestyle",
+        id: 15, type: 'home', title:  "Home & Lifestyle",
         children: [
             {
                 id: 1, title: 'Home', desc: 'lorem  bla bla bla', children: [
@@ -148,7 +148,7 @@ export const customProductArray = [
     },
 
     {
-        id: 12, type: 'medicine', title: "Medicine",
+        id: 16, type: 'medicine', title: "Medicine",
         children: [
             {
                 id: 1, title: 'Meidicine', desc: 'lorem  bla bla bla', children: [
@@ -175,7 +175,7 @@ export const customProductArray = [
     },
 
     {
-        id: 12, type: 'sport', title: "Sports & Outdoor",
+        id: 17, type: 'sport', title: "Sports & Outdoor",
         children: [
             {
                 id: 1, title: 'Sports', desc: 'lorem  bla bla bla', children: [
@@ -200,7 +200,7 @@ export const customProductArray = [
     },
 
     {
-        id: 12, type: 'baby', title: "Baby’s & Toys",
+        id: 18, type: 'baby', title: "Baby’s & Toys",
         children: [
             {
                 id: 1, title: 'Baby', desc: 'lorem  bla bla bla', children: [
@@ -234,7 +234,7 @@ export const customProductArray = [
     },
 
     {
-        id: 12, type: 'man', title: "Groceries & Pets",
+        id: 19, type: 'man', title: "Groceries & Pets",
         children: [
             {
                 id: 1, title: 'Sports', desc: 'lorem  bla bla bla', children: [
@@ -259,7 +259,7 @@ export const customProductArray = [
     },
 
     {
-        id: 12, type: 'man', title: "Health & Beauty",
+        id: 20, type: 'man', title: "Health & Beauty",
         children: [
             {
                 id: 1, title: 'Sports', desc: 'lorem  bla bla bla', children: [

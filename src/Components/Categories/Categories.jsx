@@ -7,39 +7,73 @@ import { MdOutlineCameraAlt } from "react-icons/md";
 import { PiHeadphonesLight } from "react-icons/pi";
 import { TbDeviceGamepad } from "react-icons/tb";
 import GlobalCss from "../GlobalCss/global.css"
+import MediaStyle from "../GlobalCss/Media/media.css"
+
 export default function Categories() {
     return (
         <div className='container'>
             <div className={styles.rectangle}>
                 <div className={styles.red}></div>
-                <h1>Categories</h1>
+                <h1 id='categoriesText'>Categories</h1>
 
             </div>
-            <h1 className={styles.browsing}>Browse By Category</h1>
-            <div className={styles.categories}>
-                <div className={styles.categorieBoxes}>
-                    <IoIosPhonePortrait className={styles.icon} />
-                    <h1 className={styles.categoriesName}>Phones</h1>
+            <h1 className={styles.browsing} id='browsing'>Browse By Category</h1>
+            <div className={styles.categories} id='categories'>
+                <div className={styles.categorieBoxes} categoryBox="categori">
+                    <IoIosPhonePortrait className={styles.icon} id='phone' />
+                    <h1 className={styles.categoriesName} id='phoneText'>Phones</h1>
                 </div>
-                <div className={styles.categorieBoxes}>
-                    <HiOutlineComputerDesktop className={styles.icon} />
-                    <h1 className={styles.categoriesName} >Computers</h1>
+                <div className={styles.categorieBoxes} categoryBox="categori">
+                    <HiOutlineComputerDesktop className={styles.icon} id='computer' />
+                    <h1 className={styles.categoriesName} id='computerText' >Computers</h1>
                 </div>
-                <div className={styles.categorieBoxes}>
-                    <BsSmartwatch className={styles.icon} />
-                    <h1 className={styles.categoriesName}>SmartWatch</h1>
+                <div className={styles.categorieBoxes} categoryBox="categori">
+                    <BsSmartwatch className={styles.icon} id='watch' />
+                    <h1 className={styles.categoriesName} id='watchText'>SmartWatch</h1>
                 </div>
-                <div className={styles.categorieBoxes}>
-                    <MdOutlineCameraAlt className={styles.icon} />
-                    <h1 className={styles.categoriesName}>Camera</h1>
+                <div className={styles.categorieBoxes} categoryBox="categori">
+                    <MdOutlineCameraAlt className={styles.icon} id='camera' />
+                    <h1 className={styles.categoriesName} id='cameraText'>Camera</h1>
                 </div>
-                <div className={styles.categorieBoxes}>
-                    <PiHeadphonesLight className={styles.icon} />
-                    <h1 className={styles.categoriesName}>HeadPhones</h1>
+                <div className={styles.categorieBoxes} categoryBox="categori">
+                    <PiHeadphonesLight className={styles.icon} id='headphone' />
+                    <h1 className={styles.categoriesName} id='headphoneText'>HeadPhones</h1>
                 </div>
-                <div className={styles.categorieBoxes}>
-                    <TbDeviceGamepad className={styles.icon} />
-                    <h1 className={styles.categoriesName} >Gaming</h1>
+                <div className={styles.categorieBoxes} categoryBox="categori">
+                    <TbDeviceGamepad className={styles.icon} id='gamepad' />
+                    <h1 className={styles.categoriesName} id='gamepadText' >Gaming</h1>
+                </div>
+            </div>
+            {/* //Mobile codes */}
+            <div className={styles.mobileCodes} id='mobileCodesCategory'>
+                <div id='firstCategory'>
+                    <div className={styles.categorieBoxes} categoryBox="categori">
+                        <IoIosPhonePortrait className={styles.icon} id='phone' />
+                        <h1 className={styles.categoriesName} id='phoneText'>Phones</h1>
+                    </div>
+                    <div className={styles.categorieBoxes} categoryBox="categori">
+                        <HiOutlineComputerDesktop className={styles.icon} id='computer' />
+                        <h1 className={styles.categoriesName} id='computerText' >Computers</h1>
+                    </div>
+                    <div className={styles.categorieBoxes} categoryBox="categori">
+                        <BsSmartwatch className={styles.icon} id='watch' />
+                        <h1 className={styles.categoriesName} id='watchText'>SmartWatch</h1>
+                    </div>
+                </div>
+
+                <div id='secondCategory'>
+                    <div className={styles.categorieBoxes} categoryBox="categori">
+                        <MdOutlineCameraAlt className={styles.icon} id='camera' />
+                        <h1 className={styles.categoriesName} id='cameraText'>Camera</h1>
+                    </div>
+                    <div className={styles.categorieBoxes} categoryBox="categori">
+                        <PiHeadphonesLight className={styles.icon} id='headphone' />
+                        <h1 className={styles.categoriesName} id='headphoneText'>HeadPhones</h1>
+                    </div>
+                    <div className={styles.categorieBoxes} categoryBox="categori">
+                        <TbDeviceGamepad className={styles.icon} id='gamepad' />
+                        <h1 className={styles.categoriesName} id='gamepadText' >Gaming</h1>
+                    </div>
                 </div>
             </div>
         </div>

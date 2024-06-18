@@ -1,5 +1,7 @@
 
-import image from "../Images/OurProducts/img1.png"
+import image from "../Images/OurProducts/img6.png"
+import image2 from "../Images/OurProducts/img2.png"
+import image3 from "../Images/OurProducts/img3.png"
 const productsItem = [
     {
         id: 1,
@@ -13,49 +15,49 @@ const productsItem = [
         name: "Lorem ipsum dolor",
         price: 124,
         description: "Description of Lorem ipsum dolor.",
-        image: "product2.jpg",
+        image: image2,
     },
     {
         id: 3,
         name: "Lorem ipsum dolor",
         price: 124,
         description: "Description of Lorem ipsum dolor.",
-        image: "product3.jpg",
+        image: image3,
     },
     {
         id: 4,
         name: "Lorem ipsum dolor",
         price: 124,
         description: "Description of Lorem ipsum dolor.",
-        image: "product4.jpg",
+        image: image3,
     },
     {
         id: 5,
         name: "Lorem ipsum dolor",
         price: 124,
         description: "Description of Lorem ipsum dolor.",
-        image: "product5.jpg",
+        image: image3,
     },
     {
         id: 6,
         name: "Lorem ipsum dolor",
         price: 124,
         description: "Description of Lorem ipsum dolor.",
-        image: "product6.jpg",
+        image: image3,
     },
     {
         id: 7,
         name: "Lorem ipsum dolor",
         price: 124,
         description: "Description of Lorem ipsum dolor.",
-        image: "product7.jpg",
+        image: image3,
     },
     {
         id: 8,
         name: "Lorem ipsum dolor",
         price: 124,
         description: "Description of Lorem ipsum dolor.",
-        image: "product8.jpg",
+        image: image3,
     },
 ];
 

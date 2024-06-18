@@ -20,7 +20,7 @@ const Submenu = ({ hoverCategory, setHoverCategory }) => {
     return (
         <div> 
             {hoverCategory ? (
-                <div className={subStyle.submenu}>
+                <div className={subStyle.submenu} id='categoriesBar'>
                     {hoverCategory.map((data, index) => (
                         <div key={index} className={subStyle.subSubmenu}>
                             <h2 className={subStyle.title}>{data.title}</h2>
