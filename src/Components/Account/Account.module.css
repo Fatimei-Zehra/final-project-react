@@ -80,15 +80,14 @@
   }
   
   .submitBtn {
-    padding: 16px 48px;
+    padding: 13px 39px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-left: 5%;
     background-color: #DB4444;
     color: #fff;
-   
-    
+    white-space: nowrap;
   }
   
   .cancelBtn {

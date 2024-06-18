@@ -1,11 +1,12 @@
 import React from 'react'
 import styles from '../Account/Account.module.css'
+import mediacss from '../Account/Account.media.css'
 
 function Account() {
   return (
     <div>
-      <div className={styles.content}>
-        <aside className={styles.sidebar}>
+      <div id='content' className={styles.content}>
+        <aside id='sidebar' className={styles.sidebar}>
             <h3 className={styles.sidebarH3}>Manage My Account</h3>
           <ul className={styles.sidebarUl}>
             <li className={styles.sidebarLi} >My Profile</li>
@@ -19,13 +20,13 @@ function Account() {
        </ul>
        <h3 className={styles.sidebarH3}>My WishList</h3>
         </aside>
-        <div className={styles.Edit}>
+        <div id='edit' className={styles.Edit}>
           <h2 className={styles.editH2}>Edit Your Profile</h2>
           <div className={styles.Account}>
-            <div className={styles.item}>
+            <div id='item' className={styles.item}>
             <div className={styles.AccountGroup}>
               <label className={styles.itemLabel}  htmlFor="firstName">First Name</label>
-              <input className={styles.itemInput} type="text" id="firstName" name="firstName" defaultValue="Md" />
+              <input  className={styles.itemInput} type="text" id="firstName" name="firstName" defaultValue="Md" />
             </div>
             <div className={styles.AccountGroup}>
               <label  className={styles.itemLabel} htmlFor="lastName">Last Name</label>
@@ -53,12 +54,12 @@ function Account() {
             <div className={styles.AccountGroup}>
               <input className={styles.passInput} type="password" id="confirmPassword" name="confirmPassword" defaultValue="Confirm New Passwod" />
             </div>
-            <div className={styles.btn}>
-            <div className={styles.cancel}>
-              <button className={styles.cancelBtn} type="button" >Cancel</button>
+            <div id='btn' className={styles.btn}>
+            <div id='cncl' className={styles.cancel}>
+              <button id='cancel' className={styles.cancelBtn} type="button" >Cancel</button>
               </div>
-            <div className={styles.buttons}>
-             <button  className={styles.submitBtn} type="submit" >Save Changes</button>
+            <div id='btns' className={styles.buttons}>
+             <button id='submit' className={styles.submitBtn} type="submit" >Save Changes</button>
                </div>
               </div>
             </div>
