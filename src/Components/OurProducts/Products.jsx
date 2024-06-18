@@ -77,7 +77,7 @@ const ProductList = () => {
           </div>
         ))}
       </div>
-      <Wishlist wishlist={wishlist} />
+      {/* <Wishlist wishlist={wishlist} /> */}
       <div className={OurProductsStyle.viewAllProducts}>
         <button className={OurProductsStyle.viewButton}>View All Products</button>
       </div>
