@@ -15,9 +15,9 @@ import Footer from "../src/Components/Footer/Footer"
 import WishlistPage from './Components/Wishlist/WishlistPage';
 import Selling from '../src/Components/Selling/Selling'
 import Login from "../src/Components/Login/Login";
+import Checkout from './Components/Checkout/Checkout';
 import About from "../src/Components/About/About"
 import Home from './Components/Home';
-
 import Contact from './Components/Contact/Contact';
 
 
@@ -38,6 +38,7 @@ function AppContent() {
         <Route path="/SignUp" element={<SignUp />} />
         <Route path='/Contact' element={< Contact />} />
       </Routes>
+
       {
         location.pathname !== "/Login" &&
         location.pathname !== "/Wishlist" &&
@@ -60,6 +61,7 @@ function AppContent() {
       }
       < Footer />
     </div >
+
 
   )
 }
