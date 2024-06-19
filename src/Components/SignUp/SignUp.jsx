@@ -6,6 +6,7 @@ import { FcGoogle } from 'react-icons/fc'
 import SignUpMediacss from '../SignUp/SignUp.media.css'
 import {createUserWithEmailAndPassword } from 'firebase/auth'
 import { auth } from '../SignUp/firebase.js'
+import { Link } from 'react-router-dom'
 
 
 
@@ -48,7 +49,10 @@ const SignUp = () => {
         <button id='Google-btn' className={styles.GoogleButton}> <FcGoogle className={styles.icon}/> Sign up with Google</button> 
         <div id='p' className={styles.P}>
         <p className={styles.forgetP} id='forget-pass'>Already have account?</p>
-        <p className={styles.AccountP} id='acc-p'>Log in</p>
+        {/*  id='acc-p'></p> */}
+        <Link  to="/Login"  className={styles.AccountP}>
+        Log in
+        </Link>
         </div> 
         </div>
         </div>

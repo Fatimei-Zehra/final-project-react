@@ -6,14 +6,23 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from "react-i18next";
+
+
+
+
+
+
 
 function Navbar() {
 
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  // const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  };
+  // const toggleSidebar = () => {
+  //   setIsSidebarOpen(!isSidebarOpen);
+  // };
+
+  const { t } = useTranslation();
 
   return (
     <>
@@ -21,11 +30,11 @@ function Navbar() {
         <ul className={styles.list}>
           <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list" >
             <Link to="/Home" className={styles.linkName}>
-              home
+              {t("home")}
             </Link>
           </li>
           <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list">
-            <Link className={styles.linkName}>
+            <Link to='/Contact' className={styles.linkName}>
               contact
             </Link></li>
           <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list">
@@ -34,7 +43,7 @@ function Navbar() {
             </Link>
           </li>
           <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list">
-            <Link to="/Login" className={styles.linkName}>
+            <Link to="/SignUp" className={styles.linkName}>
               sign up
             </Link>
           </li>

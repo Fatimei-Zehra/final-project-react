@@ -4,6 +4,8 @@ import { CiShop } from "react-icons/ci";
 import { PiCurrencyCircleDollarLight } from "react-icons/pi";
 import { MdOutlineShoppingBag } from "react-icons/md";
 import { TbMoneybag } from "react-icons/tb";
+import MediaStyle from "../GlobalCss/Media/media.css"
+
 
 
 
@@ -11,8 +13,8 @@ import { TbMoneybag } from "react-icons/tb";
 function Statistics() {
     return (
         <div>
-            <div className={StatisticsCss.statistics}>
-                <div className={StatisticsCss.statisticsItem} >
+            <div className={StatisticsCss.statistics} id='statistics'>
+                <div className={StatisticsCss.statisticsItem} statisticsMedia="statistic-items">
                     <div className={StatisticsCss.statisticsIcon} >
                         <CiShop className={StatisticsCss.shopIcon} id='shop' />
                     </div>
@@ -22,7 +24,7 @@ function Statistics() {
                     </div>
                 </div>
 
-                <div className={StatisticsCss.statisticsItem} >
+                <div className={StatisticsCss.statisticsItem} statisticsMedia="statistic-items" >
                     <div className={StatisticsCss.statisticsIcon} >
                         <PiCurrencyCircleDollarLight className={StatisticsCss.priceIcon} />
                     </div>
@@ -32,7 +34,7 @@ function Statistics() {
                     </div>
                 </div>
 
-                <div className={StatisticsCss.statisticsItem} >
+                <div className={StatisticsCss.statisticsItem} statisticsMedia="statistic-items" >
                     <div className={StatisticsCss.statisticsIcon} >
                         <MdOutlineShoppingBag className={StatisticsCss.shopBagIcon} />
                     </div>
@@ -42,7 +44,7 @@ function Statistics() {
                     </div>
                 </div>
 
-                <div className={StatisticsCss.statisticsItem} >
+                <div className={StatisticsCss.statisticsItem}  statisticsMedia="statistic-items">
                     <div className={StatisticsCss.statisticsIcon} >
                         <TbMoneybag  className={StatisticsCss.moneyBagIcon}/>
                     </div>

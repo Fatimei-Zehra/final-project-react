@@ -6,7 +6,7 @@ import MediaStyle from "../GlobalCss/Media/media.css"
 import { Link } from 'react-router-dom';
 
 
-function Wishlist() {
+const Wishlist=()=> {
   return (
     <div>
       <Link to="/Wishlist">

@@ -268,6 +268,10 @@
     }
 }
 
+
+
+
+
 /* !SLIDER DESKTOP MEDIA CODES  END.................................................................................................*/
 
 
@@ -299,6 +303,152 @@
 /*! TIMER DESKTOP MEDIA CODES END.............................................................................................. */
 
 
+/*! CATEGORIES BROWSE MEDIA CODES START............................................................................................ */
+@media screen and (max-width: 1363px) {
+    [categoryBox] {
+        width: 150px !important;
+        height: 150px !important;
+        padding: 20px 20px !important;
+    }
+
+    #phone,
+    #computer,
+    #watch,
+    #camera,
+    #headphone,
+    #gamepad {
+        width: 50px;
+        height: 50px;
+    }
+
+    #phoneText,
+    #computerText,
+    #watchText,
+    #cameraText,
+    #headphoneText,
+    #gamepadText {
+        font-size: 17px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1163px) {
+    [categoryBox] {
+        width: 140px !important;
+        height: 140px !important;
+        padding: 20px 13px !important;
+    }
+}
+
+@media screen and (max-width: 1062px) {
+    [categoryBox] {
+        width: 130px !important;
+        height: 130px !important;
+        padding: 20px 13px !important;
+    }
+
+    #phone,
+    #computer,
+    #watch,
+    #camera,
+    #headphone,
+    #gamepad {
+        width: 35px;
+        height: 35px;
+    }
+
+    #phoneText,
+    #computerText,
+    #watchText,
+    #cameraText,
+    #headphoneText,
+    #gamepadText {
+        font-size: 15px;
+    }
+
+}
+
+
+@media screen and (max-width: 995px) {
+
+    [categoryBox] {
+        width: 120px !important;
+        padding: 26px 13px !important;
+    }
+
+    #phone,
+    #computer,
+    #watch,
+    #camera,
+    #headphone,
+    #gamepad {
+        width: 30px;
+        height: 30px;
+    }
+
+    #phoneText,
+    #computerText,
+    #watchText,
+    #cameraText,
+    #headphoneText,
+    #gamepadText {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 915px) {
+
+    #categories {
+        display: none;
+    }
+
+    #mobileCodesCategory {
+        display: block;
+    }
+
+    #firstCategory,
+    #secondCategory {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    [categoryBox] {
+        width: 200px !important;
+        height: 200px !important;
+        padding: 45px 26px !important;
+    }
+
+
+    #phone,
+    #computer,
+    #watch,
+    #camera,
+    #headphone,
+    #gamepad {
+        width: 56px;
+        height: 56px;
+    }
+
+    #phoneText,
+    #computerText,
+    #watchText,
+    #cameraText,
+    #headphoneText,
+    #gamepadText {
+        font-size: 18px;
+    }
+
+    #categoriesText {
+        font-size: 20px;
+    }
+
+    #browsing {
+        font-size: 26px;
+    }
+}
 
 /*! ADVERTISING DESKTOP MEDIA CODES START.......................................................................................... */
 @media screen and (max-width: 1350px) {
@@ -416,6 +566,83 @@
 
 
 /*! ADVERTISING DESKTOP MEDIA CODES END.......................................................................................... */
+
+
+
+
+/* !OUR PRODUCT DESKTOP  RESPONSIVE CODES START...................................................................................*/
+@media screen and (max-width: 1386px) {
+    [productSize] {
+        width: 250px !important;
+        height: 250px !important;
+    }
+}
+
+@media screen and (max-width: 1290px) {
+    [productSize] {
+        width: 240px !important;
+        height: 240px !important;
+    }
+
+    #section-products-text {
+        font-size: 27px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    [productSize] {
+        width: 270px !important;
+        height: 270px !important;
+    }
+
+    #productItems7,
+    #productItems8 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    [productSize] {
+        width: 250px !important;
+        height: 250px !important;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    [productSize] {
+        width: 230px !important;
+        height: 240px !important;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    [productSize] {
+        width: 220px !important;
+        height: 230px !important;
+    }
+
+    [productImage] {
+        width: 120px !important;
+    }
+}
+
+
+@media screen and (max-width: 860px) {
+    [productSize] {
+        width: 215px !important;
+        height: 220px !important;
+    }
+
+    [productImage] {
+        width: 120px !important;
+    }
+}
+
+/* !OUR PRODUCT DESKTOP  RESPONSIVE CODES END...................................................................................*/
+
+
+
 
 /* !SERVICES DESKTOP MEDIA CODES START..............................................................................................*/
 @media screen and (max-width: 1245px) {
@@ -626,6 +853,87 @@
 /* !FOOTER RESPONSIVE CODES END ...................................................................................................*/
 
 
+/* ************************************PAGE ABOUT RESPONSIVE CODES START ***********************************************************/
+
+/* !SECTION IMAGE OUR STORY DESKTOP CODES START RESPONSIVE ........................................................................ */
+@media screen and (max-width: 1390px) {
+    #image-about {
+        width: 607px;
+    }
+}
+
+
+@media screen and (max-width: 1260px) {
+    #image-about {
+        width: 555px;
+    }
+
+    #our-story {
+        font-size: 50px;
+    }
+
+    #story-text,
+    #story-second-text {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 1090px) {
+    #image-about {
+        width: 470px;
+    }
+
+    #our-story {
+        font-size: 40px;
+    }
+
+    #story-text,
+    #story-second-text {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 935px) {
+
+    #our-story {
+        font-size: 33px;
+    }
+
+    #story-text,
+    #story-second-text {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 862px) {
+    #our-story {
+        font-size: 30px;
+    }
+
+    #story-text,
+    #story-second-text {
+        font-size: 11px;
+    }
+
+}
+
+/* !SECTION IMAGE OUR STORY DESKTOP CODES END RESPONSIVE.......................................................................... */
+
+
+/* !SECTION STATISTCIS DESKTOP CODES START............................................................................... */
+@media screen and (max-width: 1392px) {
+    [statistics] {
+        width: 260px !important;
+        height: 220px !important;
+    }
+}
+
+
+
+
+
 
 /* ............................................PLANSET RESPONSIVE CODES START................................................... */
 
@@ -800,6 +1108,15 @@
 
     .container {
         width: 90%;
+    }
+
+    .categoriesBar {
+        display: none;
+    }
+
+
+    #dropdown {
+        display: none;
     }
 
     #list-items {
@@ -1018,7 +1335,7 @@
         font-size: 24px;
     }
 
-    #frame{
+    #frame {
         gap: 11px;
     }
 }
@@ -1037,8 +1354,117 @@
 
 /*! TIMER PLANSET MEDIA CODES END.............................................................................................. */
 
+/*! CategoRIES ELCAN PLANSET MEDIA CODES END....................................................................................... */
+@media screen and (max-width: 700px) {
+    [categoryBox] {
+        width: 175px !important;
+        height: 175px !important;
+        padding: 30px 20px !important;
+    }
+}
 
 
+
+@media screen and (max-width: 656px) {
+    [categoryBox] {
+        width: 165px !important;
+        height: 165px !important;
+    }
+}
+
+
+@media screen and (max-width: 565px) {
+
+    #mobileCodesCategory {
+        display: none;
+    }
+
+    #plansetCodesCategory {
+        display: block;
+    }
+
+    [categoryBox] {
+        width: 214px !important;
+        height: 214px !important;
+        padding: 45px 20px !important;
+    }
+
+    #phoneText,
+    #computerText,
+    #watchText,
+    #cameraText,
+    #headphoneText,
+    #gamepadText {
+        font-size: 18px;
+    }
+
+    #phone,
+    #computer,
+    #watch,
+    #camera,
+    #headphone,
+    #gamepad {
+        width: 65px;
+        height: 65px;
+    }
+
+}
+
+@media screen and (max-width: 490px) {
+    [categoryBox] {
+        width: 200px !important;
+        height: 200px !important;
+        padding: 45px 20px !important;
+    }
+
+    #phoneText,
+    #computerText,
+    #watchText,
+    #cameraText,
+    #headphoneText,
+    #gamepadText {
+        font-size: 17px;
+    }
+
+
+    #categoriesText {
+        font-size: 18px;
+    }
+
+    #browsing {
+        font-size: 23px;
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+
+    [categoryBox] {
+        width: 190px !important;
+        height: 190px !important;
+        padding: 40px 20px !important;
+    }
+}
+
+
+@media screen and (max-width:430px) {
+
+    [categoryBox] {
+        width: 175px !important;
+        height: 175px !important;
+        padding: 30px 20px !important;
+    }
+
+    #phone,
+    #computer,
+    #watch,
+    #camera,
+    #headphone,
+    #gamepad {
+        width: 55px;
+        height: 55px;
+    }
+}
 
 /*! ADVERTISING PLANSET MEDIA CODES START......................................................................................... */
 @media screen and (max-width: 827px) {
@@ -1280,6 +1706,127 @@
 }
 
 
+/* !OUR PRODUCT PLANSET RESPONSIVE CODES START...................................................................................*/
+
+@media screen and (max-width: 827px) {
+    [productSize] {
+        width: 320px !important;
+        height: 290px !important;
+    }
+
+    [productImage] {
+        width: 160px !important;
+    }
+}
+
+
+@media screen and (max-width: 730px) {
+    [productSize] {
+        width: 290px !important;
+        height: 270px !important;
+    }
+
+
+}
+
+
+@media screen and (max-width: 675px) {
+    [productSize] {
+        width: 270px !important;
+        height: 260px !important;
+    }
+
+    [productImage] {
+        width: 150px !important;
+    }
+}
+
+
+
+
+@media screen and (max-width: 625px) {
+    [productSize] {
+        width: 260px !important;
+        height: 250px !important;
+    }
+
+    [productImage] {
+        width: 140px !important;
+    }
+}
+
+@media screen and (max-width: 595px) {
+    [productSize] {
+        width: 240px !important;
+        height: 240px !important;
+    }
+
+    [productImage] {
+        width: 120px !important;
+    }
+
+    #section-products-text {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    [productSize] {
+        width: 220px !important;
+        height: 230px !important;
+    }
+
+    [productImage] {
+        width: 100px !important;
+    }
+
+    #section-products-text {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    [productSize] {
+        width: 210px !important;
+        height: 215px !important;
+    }
+
+    [productAbout] {
+        font-size: 13px !important;
+    }
+
+    #prod-icon1,
+    #prod-icon2,
+    #prod-icon3,
+    #prod-icon4,
+    #prod-icon5,
+    #prod-icon6,
+    #prod-icon7,
+    #prod-icon8 {
+        right: 11px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    [productSize] {
+        width: 200px !important;
+        height: 205px !important;
+    }
+}
+
+@media screen and (max-width: 459px) {
+    [productSize] {
+        width: 175px !important;
+        height: 185px !important;
+    }
+
+    [productImage] {
+        width: 90px !important;
+    }
+}
+
 
 /*! SERVICES RESPONSIVE PLANSET CODES PLANSET.................................................................................. */
 
@@ -1351,7 +1898,7 @@
     }
 
     #truck,
-    #headphone,
+    #headphoneService,
     #truck-second {
         font-size: 18px;
     }
@@ -1434,6 +1981,102 @@
 /* !FOOTER PLANSET RESPONSIVE CODES END .....................................................................................*/
 
 
+/* ************************************PAGE ABOUT RESPONSIVE PLANSET CODES START **************************************************/
+
+/* !SECTION IMAGE OUR STORY PLANSET CODES START RESPONSIVE ........................................................................ */
+@media screen and (max-width: 827px) {
+    #about-items {
+        flex-flow: column;
+    }
+
+    #image-about {
+        width: 90%;
+        margin-top: 45px;
+    }
+
+    #our-story {
+        font-size: 45px;
+        margin-top: 50px;
+    }
+
+    #about-story {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    #story-text,
+    #story-second-text {
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 698px) {
+
+    #story-text,
+    #story-second-text {
+        font-size: 16px;
+    }
+
+    #our-story {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+
+    #story-text,
+    #story-second-text {
+        font-size: 15px;
+    }
+
+    #our-story {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    #story-text,
+    #story-second-text {
+        font-size: 13px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    #story-text,
+    #story-second-text {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 433px) {
+
+    #story-text,
+    #story-second-text {
+        font-size: 11px;
+    }
+
+    #our-story {
+        font-size: 30px;
+    }
+}
+
+/* !SECTION IMAGE OUR STORY PLANSET CODES END RESPONSIVE ........................................................................ */
+
+
+
+
+
+
+
+
+
+
+
+
 /* .......................................MOBILE RESPONSIVE CODES START ........................................................*/
 
 /*! LAYER MOBILE RESPONS CODES */
@@ -1491,7 +2134,7 @@
     }
 }
 
-/*! LAYER CODES  END*/
+/*! LAYER CODES  END ...........................................................................................................*/
 
 
 /* !SLIDER RESPONSIVE CODES START.................................................................................................. */
@@ -1512,6 +2155,7 @@
         width: 75% !important;
     }
 }
+
 /* !SLIDER RESPONSIVE CODES END............................................................................................*/
 
 
@@ -1519,23 +2163,70 @@
 
 /*! TIMER MOBILER MEDIA CODES START............................................................................................. */
 @media screen and (max-width:401px) {
-    #frame{
+    #frame {
         display: flex;
         flex-direction: column;
         text-align: start;
-       align-items: start;
+        align-items: start;
     }
 
-    #timer{
+    #timer {
         text-align: center;
     }
 
-    #timer-mobile-rectangle{
+    #timer-mobile-rectangle {
         margin-top: 5px;
     }
 
-    .flash-sales{
+    .flash-sales {
         margin: 10px 0px;
+    }
+}
+
+
+/* !categories ELcan MOBILE RESPONSIVE CODES START..................................................................................*/
+@media screen and (max-width:401px) {
+
+    #plansetCodesCategory {
+        display: none;
+    }
+
+
+    #mobCodesCategory {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #browsing {
+        font-size: 19px;
+    }
+
+    #categoriesText {
+        font-size: 16px;
+    }
+
+    [categoryBox] {
+        width: 100% !important;
+        height: 300px !important;
+        padding: 60px 20px !important;
+        margin-bottom: 30px !important;
+    }
+
+    #phone, #computer, #watch, #camera, #headphone, #gamepad {
+        width: 100px;
+        height: 100px;
+    }
+
+    #phoneText, #computerText, #watchText, #cameraText, #headphoneText, #gamepadText {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    [categoryBox]{
+        height: 250px !important;
+        padding: 38px 20px !important;
     }
 }
 
@@ -1580,7 +2271,6 @@
 }
 
 
-/* !SERVICES MOBILE RESPONSIVE CODES START..........................................................................................*/
 @media screen and (max-width: 401px) {
     #services {
         display: block;
@@ -1612,5 +2302,104 @@
 
     [serviceItem] {
         padding: 30px !important;
+    }
+}
+
+/* !ADVERTISING MOBILE RESPONSIVE CODES END......................................................................................*/
+
+
+
+/* !OUR PRODUCT MOBILE RESPONSIVE CODES START......................................................................................*/
+
+@media screen and (max-width: 401px) {
+
+    #productMobCodes{
+        width: 100%;
+    }
+    [productSize] {
+        /* width: 348px !important; */
+        width: 100% !important;
+        height: 290px !important;
+    }
+
+    [productImage] {
+        width: 190px !important;
+    }
+
+    [productAbout] {
+        font-size: 17px !important;
+    }
+
+    #prod-icon1,
+    #prod-icon2,
+    #prod-icon3,
+    #prod-icon4,
+    #prod-icon5,
+    #prod-icon6,
+    #prod-icon7,
+    #prod-icon8 {
+        right: 23px;
+    }
+}
+
+/* !OUR PRODUCT MOBILE RESPONSIVE CODES END......................................................................................*/
+
+
+
+
+
+/* ************************************PAGE ABOUT RESPONSIVE MOBILE CODES START **************************************************/
+/* !ABOUT MOBILE RESPONSIVE CODES START......................................................................................*/
+
+@media screen and (max-width: 398px) {
+
+    #story-text,
+    #story-second-text {
+        font-size: 10px;
+        margin: 18px 0px;
+    }
+
+    #our-story {
+        font-size: 28px;
+    }
+
+    #image-about {
+        margin-top: 0;
+    }
+
+    #page-link {
+        margin-top: 45px
+    }
+
+    #homePage,
+    #aboutPage {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:361px) {
+    #our-story {
+        font-size: 25px;
+    }
+
+    #story-text,
+    #story-second-text {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width:325px) {
+    #our-story {
+        font-size: 23px;
+    }
+
+    #story-text,
+    #story-second-text {
+        font-size: 8px;
+    }
+
+    #homePage,
+    #aboutPage {
+        font-size: 11px;
     }
 }
