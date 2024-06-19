@@ -14,7 +14,7 @@ import Search from '../Search/Search'
 import Cart from '../Cart/Cart'
 
 // import { useTranslation } from 'react-i18next'
-// import i18n from '../../i18/i18n'
+
 
 
 export default function Header() {

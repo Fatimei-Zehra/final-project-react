@@ -6,6 +6,16 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from "react-i18next";
+
+
+
+
+
+
+
+
+
 
 function Navbar() {
 
@@ -14,6 +24,12 @@ function Navbar() {
   // const toggleSidebar = () => {
   //   setIsSidebarOpen(!isSidebarOpen);
   // };
+  const { t } = useTranslation();
+
+
+
+
+
 
   return (
     <>
@@ -21,7 +37,7 @@ function Navbar() {
         <ul className={styles.list}>
           <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list" >
             <Link to="/Home" className={styles.linkName}>
-              home
+            {t("home")}
             </Link>
           </li>
           <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list">
