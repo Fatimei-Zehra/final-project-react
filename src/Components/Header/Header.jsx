@@ -7,14 +7,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import Navbar from "../NavBar/Navbar"
-import Search from '../Search/Search'
-import Wishlist from '../Wishlist/Wishlist'
-import Cart from '../Cart/Cart'
 import DropMenu from '../DropMenu/DropMenu'
 import { Link } from 'react-router-dom'
+import Wishlist from '../Wishlist/Wishlist'
+import Search from '../Search/Search'
+import Cart from '../Cart/Cart'
+import { useTranslation } from 'react-i18next'
+
 
 
 export default function Header() {
+    const { i18n } = useTranslation()
+
+    // const clickChange=(e)=>{
+    //     i18n.changeLanguage(e.target.value)
+    // }
+    // onChange={clickChange} value={i18n.language}
     return (
         <div>
             {/* LAYER CODES START */}
@@ -27,9 +35,9 @@ export default function Header() {
                         </div>
 
 
-                        <select className={styles.languages} id='languages'>
-                            <option value="english">English</option>
-                            <option value="azerbaijan">Azerbaijan</option>
+                        <select className={styles.languages} id='languages' >
+                            <option value="english" >English</option>
+                            <option value="azerbaijan" >Azerbaijan</option>
                             <option value="russian">Russian</option>
                         </select>
 
@@ -39,12 +47,13 @@ export default function Header() {
             {/* LAYER CODES END */}
 
 
-
             {/* HEADER CODES START */}
             <header className={styles.header} id='header'>
                 <div className="container">
                     <div className={styles.headerNav}>
-                        <h1 className={`${styles.brand} ${GlobalModuleCss.fontInter}`} id='brand'>exclusive</h1>
+                        <Link to="/Home">
+                            <h1 className={`${styles.brand} ${GlobalModuleCss.fontInter}`} id='brand'>exclusive</h1>
+                        </Link>
                         <Navbar />
 
                         {/* PLANSET HEADER SEARCH CODES........................................................................ */}
@@ -56,7 +65,6 @@ export default function Header() {
                         <div id='planset-header-icons' className={styles.plansetHeaderIcons}>
                             <Wishlist />
                             <Cart />
-                            <DropMenu />
                         </div>
 
 
@@ -71,6 +79,8 @@ export default function Header() {
                     </div>
                 </div>
             </header>
+
+
 
 
 
@@ -95,10 +105,8 @@ export default function Header() {
                     <div className="container">
                         <div id='mobile-nav-items'>
                             <div id='mobile-nav-icon'>
-                                <Link to="/Sidebar">
                                 <FontAwesomeIcon icon={faBars} id='menu-icon' />
-                                </Link>
-                               
+                                {/* <DropMenu/> */}
                             </div>
 
                             <div id='mobile-right-icon'>
@@ -118,3 +126,7 @@ export default function Header() {
         </div>
     )
 }
+
+
+
+

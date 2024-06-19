@@ -1,7 +1,6 @@
 .login {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   font-family: "Inter", sans-serif;
 }
 
@@ -11,56 +10,45 @@
   margin-top: 7%;
 }
 
-
-
 .text {
   margin-left: 15%;
-  /* margin-top: 2%; */
 }
 
 .textH1 {
   padding-bottom: 8%;
 }
 
- .textInput{
-  /* padding-top: 2%; */
+.textInput {
   border: none;
   border-bottom: 1px solid black;
   display: block;
   margin-top: 10%;
-  /* padding-right: 40%; */
   outline: none;
   background: #fff;
   width: 100%;
   padding: 10px 0px;
 }
 
-
-
 .forget {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   color: #DB4444;
+  margin-top: 20px;
 }
 
-
-
-
 .forgetButton {
-  margin-top: 10%;
   background-color: #DB4444;
   border: none;
   border-radius: 5px;
   color: #fff;
-  padding: 3% 9%;
-  margin-right: 22%;
+  padding: 3% 10%;
   cursor: pointer;
 }
 
-
 .forgetP {
-  padding-top: 10%;
   cursor: pointer;
+  font-size: 13px;
 }
 
 

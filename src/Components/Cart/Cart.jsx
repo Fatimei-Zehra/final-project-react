@@ -8,9 +8,9 @@ import { Link } from 'react-router-dom';
 function Cart() {
   return (
     <div>
-        <Link to="/Cart">
+        
         <FontAwesomeIcon icon={faCartShopping}  className={cartStyle.cartIcon} id='cart'/>
-        </Link>
+      
     </div>
   )
 }
