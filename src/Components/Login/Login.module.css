@@ -68,34 +68,35 @@ input ::placeholder {
 .forget {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   color: #DB4444;
+  margin-top: 20px;
 }
 
 
 
 
-.forget button {
+.forgetButton {
 
-  margin-top: 10%;
+
+  /* margin-top: 10%; */
   background-color: #DB4444;
   border: none;
   border-radius: 5px;
   color: #fff;
   padding: 3% 10%;
-  margin-right: 22%;
+  /* margin-right: 22%; */
   cursor: pointer;
 }
 
 
 .forgetP {
-  padding-top: 10%;
+  /* padding-top: 10%; */
   cursor: pointer;
+  font-size: 13px;
 }
 
-.forget p {
-  padding-top: 10%;
-  cursor: pointer;
-}
+
 
 @media screen and (max-width: 835px) {
   .log img {

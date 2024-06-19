@@ -53,4 +53,5 @@ import png4 from '../../Images/Arrival/img4.png'
   )
 }
 
+
 export default Arrival;
