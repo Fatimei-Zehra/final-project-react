@@ -6,7 +6,7 @@
 .aboutItems {
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: space-between;
 }
 
 
@@ -41,5 +41,14 @@
 
 .aboutStory {
     width: 525px;
-    margin-right: 9%;
+    margin-left: 10%;
+}
+
+.image{
+    width: 707px;
+    /* height: 609px; */
+}
+
+.imageAbout{
+    width: 100%;
 }

@@ -22,7 +22,7 @@ function Services() {
 
                     <div className={ServicesCss.serviceItem} serviceItem="service-item">
                         <div className={ServicesCss.serviceIcon} serviceIcon="sevices-icons">
-                            <TfiHeadphoneAlt className={ServicesCss.deliveryIcon}  id='headphone'/>
+                            <TfiHeadphoneAlt className={ServicesCss.deliveryIcon}  id='headphoneService'/>
                         </div>
                         <div className={ServicesCss.delivery}>
                             <h4 className={ServicesCss.serviceName} name="services-name">free and fast delivery</h4>

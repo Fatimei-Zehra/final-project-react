@@ -91,3 +91,11 @@
     color: #fff;
     transition: ease-in-out 0.1s;
 }
+
+.mobileCodes{
+    display: none;
+}
+
+.plansetCodes{
+    display: none;
+}
