@@ -35,24 +35,15 @@ function AppContent() {
         <Route path='/Home' element={<Home />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Wishlist" element={<WishlistPage />} />
-
-        <Route path='/About' element={<About />} />
-        <Route path='/Home' element={<Home />} />
+        <Route path="/SignUp" element={<SignUp />} />
         <Route path='/Contact' element={< Contact />} />
       </Routes>
-      {location.pathname !== "/Login" &&
+      {
+        location.pathname !== "/Login" &&
         location.pathname !== "/Wishlist" &&
+        location.pathname !== "/SignUp" &&
         location.pathname !== "/About" &&
-        location.pathname !== "/Contact" &&
-        (
-
-        <Route path="/SignUp" element={<SignUp />} />
-
-        
-      </Routes>
-      {location.pathname !== "/Login" &&
-        location.pathname !== "/Wishlist" &&
-        location.pathname !=="/SignUp" && (
+        location.pathname !== "/Contact" && (
 
           <>
 
@@ -65,8 +56,9 @@ function AppContent() {
             <Products />
             <Services />
           </>
-        )}
-      <Footer />
+        )
+      }
+      < Footer />
     </div >
 
   )
