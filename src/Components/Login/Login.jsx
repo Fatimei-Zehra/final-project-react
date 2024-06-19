@@ -3,7 +3,7 @@ import styles from "../Login/Login.module.css"
 import mediaCss from "../Login/media.css"
 import svg  from "../../Images/Login/login.jpg"
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../Login/login.firebase.js'
+
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -13,7 +13,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      signInWithEmailAndPassword(auth, email, password, error);
+      signInWithEmailAndPassword( email, password, error);
       console.log('Giriş başarılı');
     } catch (error) {
       setError(error.message);
