@@ -12,19 +12,17 @@ import { Link } from 'react-router-dom'
 import Wishlist from '../Wishlist/Wishlist'
 import Search from '../Search/Search'
 import Cart from '../Cart/Cart'
+import { useTranslation } from 'react-i18next'
 
-// import { useTranslation } from 'react-i18next'
-// import i18n from '../../i18/i18n'
 
 
 export default function Header() {
-    // const { t, i18n } = useTranslation()
+    const { i18n } = useTranslation()
 
-    // const clickHandle = async lang => {
-    //     await i18n.changeLanguage(lang)
-    // onClick={() => clickHandle('en')}
+    // const clickChange=(e)=>{
+    //     i18n.changeLanguage(e.target.value)
     // }
-
+    // onChange={clickChange} value={i18n.language}
     return (
         <div>
             {/* LAYER CODES START */}
@@ -37,7 +35,7 @@ export default function Header() {
                         </div>
 
 
-                        <select className={styles.languages} id='languages'>
+                        <select className={styles.languages} id='languages' >
                             <option value="english" >English</option>
                             <option value="azerbaijan" >Azerbaijan</option>
                             <option value="russian">Russian</option>
