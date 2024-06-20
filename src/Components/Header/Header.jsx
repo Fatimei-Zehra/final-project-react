@@ -13,16 +13,20 @@ import Wishlist from '../Wishlist/Wishlist'
 import Search from '../Search/Search'
 import Cart from '../Cart/Cart'
 import { useTranslation } from 'react-i18next'
+import i18n from '../../i18/i18n'
+
 
 
 
 export default function Header() {
     const { i18n } = useTranslation()
+    const { t } = useTranslation();
 
-    // const clickChange=(e)=>{
-    //     i18n.changeLanguage(e.target.value)
-    // }
-    // onChange={clickChange} value={i18n.language}
+
+    const clickChange = (e) => {
+        i18n.changeLanguage(e.target.value)
+    }
+
     return (
         <div>
             {/* LAYER CODES START */}
@@ -30,14 +34,16 @@ export default function Header() {
                 <div className="container">
                     <div className={styles.headerLayerItems}>
                         <div className={styles.layer} id='layer'>
-                            <p className={`${styles.headerLayerP} ${GlobalModuleCss.fontPoppins}`} id='layer-p'>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
+                            <p className={`${styles.headerLayerP} ${GlobalModuleCss.fontPoppins}`} id='layer-p'>
+                                {t("Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!")}
+                            </p>
                             <a href="#" className={styles.headerLayerA} id='layer-a'>ShopNow</a>
                         </div>
 
 
-                        <select className={styles.languages} id='languages' >
-                            <option value="english" >English</option>
-                            <option value="azerbaijan" >Azerbaijan</option>
+                        <select className={styles.languages} id='languages' onChange={clickChange} value={i18n.language} >
+                            <option value="en" >English</option>
+                            <option value="az" >Azerbaijan</option>
                             <option value="russian">Russian</option>
                         </select>
 
