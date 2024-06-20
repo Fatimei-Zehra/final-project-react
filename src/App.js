@@ -4,7 +4,7 @@ import Error from '../src/Components/Error/Error';
 
 
 
-import Adversiting from './Components/Advertising/Adversiting';
+//import Adversiting from './Components/Advertising/Adversiting';
 
 import SignUp from '../src/Components/SignUp/SignUp';
 
@@ -31,10 +31,21 @@ import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 
 function AppContent() {
   const location = useLocation();
+
+  const shouldShowContent = [
+    '/',
+    '/About',
+    '/Home',
+    '/Login',
+    '/Wishlist',
+    '/SignUp',
+    '/Contact'
+  ].includes(location.pathname);
+
+
   return (
     <div>
-      <Header />
-      <Error />
+    <Header />
       <Routes>
         <Route path='/About' element={<About />} />
         <Route path='/Home' element={<Home />} />
@@ -44,31 +55,32 @@ function AppContent() {
         <Route path='/Contact' element={< Contact />} />
       </Routes>
 
-      {
-        location.pathname !== "/Login" &&
-        location.pathname !== "/Wishlist" &&
-        location.pathname !== "/SignUp" &&
-        location.pathname !== "/About" &&
-        location.pathname !== "/Contact" && (
+      {shouldShowContent ? (
+        <>
+          {location.pathname !== "/Login" &&
+          location.pathname !== "/Wishlist" &&
+          location.pathname !== "/SignUp" &&
+          location.pathname !== "/About" &&
+          location.pathname !== "/Contact" && (
+            <>
+              <Main />
+              <Timer />
+              <MainSlider />
+              <Categories />
+              <Selling />
+             {/* <Advertising />*/}
+              <Products />
+              <Services />
+            </>
+          )}
+        </>
+      ) : (
+        <Error />
+      )}
 
-          <>
-
-            <Main />
-            <Timer />
-            <MainSlider />
-            <Categories />
-            <Selling />
-            <Adversiting />
-            <Products />
-            <Services />
-          </>
-        )
-      }
-      < Footer />
-    </div >
-
-
-  )
+      <Footer />
+    </div>
+  );
 }
 
 function App() {
