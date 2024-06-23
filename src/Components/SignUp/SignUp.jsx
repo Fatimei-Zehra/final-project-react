@@ -5,7 +5,7 @@ import svg  from "../../Images/Login/login.jpg"
 import { FcGoogle } from 'react-icons/fc'
 import SignUpMediacss from '../SignUp/SignUp.media.css'
 import {createUserWithEmailAndPassword } from 'firebase/auth'
-import { auth } from '../SignUp/firebase.js'
+import { auth } from '../../firebase/firebase.js'
 import { Link } from 'react-router-dom'
 
 
