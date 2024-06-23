@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styles from '../Account/Account.module.css'
 import mediacss from '../Account/Account.media.css'
 import {createUserWithEmailAndPassword } from 'firebase/auth'
-import { auth } from '../Account/Account.firebase.js';
+import { auth } from '../../firebase/firebase.js';
+import { Link } from "react-router-dom";
 
 
   const Profile = () => {
@@ -29,7 +30,17 @@ import { auth } from '../Account/Account.firebase.js';
   return (
     <div>
       <div id='content' className={styles.content}>
-        <aside id='sidebar' className={styles.sidebar}>
+      <div className="container">
+        <div className={styles.pageLink} id='page-link'>
+          <Link to='/Home' className={styles.homePage} id='homePage'>Home /</Link>
+          <p className={styles.accountPage} id='accountPage'>My Account</p>
+          <div className={styles.welcomepage}>
+          <p className={styles.welcomePage} id='accountPage'>Welcome!</p>
+          <p className={styles.namePage} id='accountPage'>Md Rimel</p>  
+          </div>
+          </div>
+          <div className={styles.flex}>
+        <div id='sidebar' className={styles.sidebar}>
             <h3 className={styles.sidebarH3}>Manage My Account</h3>
           <ul className={styles.sidebarUl}>
             <li className={styles.sidebarLi} >My Profile</li>
@@ -42,7 +53,7 @@ import { auth } from '../Account/Account.firebase.js';
             <li className={styles.sidebarLi}>My Cancellations</li>
        </ul>
        <h3 className={styles.sidebarH3}>My WishList</h3>
-        </aside>
+        </div>
         <div id='edit' className={styles.Edit}>
           <h2 className={styles.editH2}>Edit Your Profile</h2>
           <div className={styles.Account}>
@@ -83,13 +94,14 @@ import { auth } from '../Account/Account.firebase.js';
               </div>
             <div id='btns' className={styles.buttons}>
              <button onClick={handleSubmit}  id='submit' className={styles.submitBtn} type="submit" >Save Changes</button>
+             </div>
                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
+     </div>
     </div>
   )
 }
