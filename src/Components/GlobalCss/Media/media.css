@@ -924,11 +924,281 @@
 
 /* !SECTION STATISTCIS DESKTOP CODES START............................................................................... */
 @media screen and (max-width: 1392px) {
-    [statistics] {
+    [statisticsMedia] {
         width: 260px !important;
         height: 220px !important;
     }
 }
+
+
+@media screen and (max-width: 1372px) {
+    [statisticsMedia] {
+        width: 250px !important;
+    }
+}
+
+
+@media screen and (max-width: 1270px) {
+    [statisticsMedia] {
+        width: 225px !important;
+    }
+
+    #textContentShop,
+    #textContentDollar,
+    #textContentShopBag,
+    #textContentMoneyBag {
+        font-size: 14px;
+    }
+
+    #quantity-first,
+    #quantity-second,
+    #quantity-third,
+    #quantity-four {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1142px) {
+    [statisticsMedia] {
+        width: 200px !important;
+        height: 195px !important;
+    }
+
+    #textContentShop,
+    #textContentDollar,
+    #textContentShopBag,
+    #textContentMoneyBag {
+        font-size: 13px;
+    }
+
+    #quantity-first,
+    #quantity-second,
+    #quantity-third,
+    #quantity-four {
+        font-size: 25px;
+    }
+
+    [statisticsIcon] {
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 25px !important;
+    }
+}
+
+
+@media screen and (max-width: 1017px) {
+    [statisticsMedia] {
+        width: 190px !important;
+    }
+}
+
+@media screen and (max-width: 967px) {
+    [statisticsMedia] {
+        width: 175px !important;
+        height: 180px !important;
+    }
+
+    #textContentShop,
+    #textContentDollar,
+    #textContentShopBag,
+    #textContentMoneyBag {
+        font-size: 12px;
+    }
+
+    #quantity-first,
+    #quantity-second,
+    #quantity-third,
+    #quantity-four {
+        font-size: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 892px) {
+    [statisticsMedia] {
+        width: 165px !important;
+        height: 175px !important;
+    }
+
+    #textContentShop,
+    #textContentDollar,
+    #textContentShopBag,
+    #textContentMoneyBag {
+        font-size: 11px;
+    }
+}
+
+
+@media screen and (max-width: 831px) {
+    [statisticsMedia] {
+        width: 150px !important;
+        height: 155px !important;
+    }
+
+    #textContentShop,
+    #textContentDollar,
+    #textContentShopBag,
+    #textContentMoneyBag {
+        font-size: 10px;
+    }
+
+    #quantity-first,
+    #quantity-second,
+    #quantity-third,
+    #quantity-four {
+        font-size: 15px;
+    }
+}
+
+/* !SECTION STATISTCIS DESKTOP CODES END......................................................................................... */
+
+
+/* !SECTION FOUNDERS DESKTOP CODES START......................................................................................... */
+
+
+@media screen and (max-width: 1396px) {
+
+    #first-founder,
+    #second-founder,
+    #third-founder {
+        width: 340px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+
+    #first-founder,
+    #second-founder,
+    #third-founder {
+        width: 315px;
+
+    }
+}
+
+
+@media screen and (max-width: 1198px) {
+
+    #first-founder,
+    #second-founder,
+    #third-founder {
+        width: 310px;
+    }
+
+    #first-founder-name,
+    #second-founder-name,
+    #third-founder-name {
+        font-size: 25px;
+    }
+
+    #first-founder-professia,
+    #second-founder-professia,
+    #third-founder-professia {
+        font-size: 14px;
+    }
+
+    [socialLinks] {
+        /* width: 26% !important; */
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width: 1198px) {
+
+    #first-founder,
+    #second-founder,
+    #third-founder {
+        width: 285px;
+        height: 335px;
+    }
+
+}
+
+@media screen and (max-width: 1075px) {
+
+    #first-founder,
+    #second-founder,
+    #third-founder {
+        width: 260px;
+        height: 335px;
+    }
+
+    #first-founder-name,
+    #second-founder-name,
+    #third-founder-name {
+        font-size: 23px;
+    }
+
+    #first-founder-professia,
+    #second-founder-professia,
+    #third-founder-professia {
+        font-size: 13px;
+        padding-top: 8px;
+    }
+
+    [socialLinks] {
+        font-size: 18px !important;
+    }
+}
+
+
+@media screen and (max-width: 985px) {
+
+    #first-founder,
+    #second-founder,
+    #third-founder {
+        width: 230px;
+        height: 305px;
+    }
+}
+
+
+@media screen and (max-width: 871px) {
+
+
+    #first-founder,
+    #second-founder,
+    #third-founder {
+        width: 210px;
+        height: 250px;
+    }
+
+    #first-founder-name,
+    #second-founder-name,
+    #third-founder-name {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+
+    #first-founder-professia,
+    #second-founder-professia,
+    #third-founder-professia {
+        font-size: 11px;
+
+    }
+
+    [socialLinks] {
+        font-size: 15px !important;
+    }
+
+}
+
+/* !SECTION FOUNDERS DESKTOP CODES ENDT......................................................................................... */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2066,13 +2336,171 @@
 
 /* !SECTION IMAGE OUR STORY PLANSET CODES END RESPONSIVE ........................................................................ */
 
+/* !SECTION STATISTCIS PlANSET CODES START............................................................................... */
+
+
+@media screen and (max-width: 693px) {
+    [statisticsMedia] {
+        width: 135px !important;
+        height: 145px !important;
+    }
+
+    #textContentShop,
+    #textContentDollar,
+    #textContentShopBag,
+    #textContentMoneyBag {
+        font-size: 9px;
+    }
+
+    [statisticsIcon] {
+        width: 40px !important;
+        height: 40px !important;
+        font-size: 20px !important;
+    }
+
+}
+
+
+@media screen and (max-width: 616px) {
+    [statisticsMedia] {
+        width: 125px !important;
+        height: 135px !important;
+    }
+
+    #textContentShop,
+    #textContentDollar,
+    #textContentShopBag,
+    #textContentMoneyBag {
+        font-size: 8px;
+    }
+}
+
+
+@media screen and (max-width: 567px) {
+
+    [statisticsMedia] {
+        width: 120px !important;
+        height: 125px !important;
+    }
+
+    [statisticsIcon] {
+        width: 35px !important;
+        height: 35px !important;
+        font-size: 15px !important;
+        margin-bottom: 17px !important;
+    }
+
+}
+
+/* !SECTION STATISTCIS PlANSET CODES END............................................................................... */
 
 
 
 
+/* !SECTION FOUNDERS DESKTOP CODES START......................................................................................... */
+@media screen and (max-width: 706px) {
+
+    #first-founder,
+    #second-founder,
+    #third-founder {
+        width: 185px;
+        height: 205px;
+    }
+
+    #first-founder-name,
+    #second-founder-name,
+    #third-founder-name {
+        font-size: 19px;
+        padding-top: 10px;
+    }
+
+    #first-founder-professia,
+    #second-founder-professia,
+    #third-founder-professia {
+        font-size: 9px;
+        padding-top: 6px;
+    }
+
+    [socialLinks] {
+        font-size: 12px !important;
+    }
+
+}
 
 
+@media screen and (max-width: 626px) {
 
+    #first-founder,
+    #second-founder,
+    #third-founder {
+        width: 165px;
+        height: 205px;
+    }
+
+    #first-founder-name,
+    #second-founder-name,
+    #third-founder-name {
+        font-size: 15px;
+        padding-top: 5px;
+    }
+
+    #first-founder-professia,
+    #second-founder-professia,
+    #third-founder-professia {
+        font-size: 8px;
+        padding: 6px 0px;
+    }
+}
+
+@media screen and (max-width: 558px) {
+
+    #first-founder,
+    #second-founder,
+    #third-founder {
+        width: 150px;
+        height: 180px;
+    }
+
+    [socialLinks] {
+        font-size: 10px !important;
+    }
+
+}
+
+
+@media screen and (max-width: 507px) {
+
+    #first-founder,
+    #second-founder,
+    #third-founder {
+        width: 137px;
+        height: 175px;
+    }
+}
+
+@media screen and (max-width: 462px) {
+    
+    #first-founder, #second-founder, #third-founder {
+        width: 130px;
+        height: 160px;
+    }
+
+}
+
+
+@media screen and (max-width: 437px) {
+
+    #first-founder, #second-founder, #third-founder {
+        width: 120px;
+        height: 150px;
+    }
+
+    [socialLinks] {
+        font-size: 8px !important;
+      
+    }
+}
+/* !SECTION FOUNDERS DESKTOP CODES END......................................................................................... */
 
 
 
@@ -2213,18 +2641,28 @@
         margin-bottom: 30px !important;
     }
 
-    #phone, #computer, #watch, #camera, #headphone, #gamepad {
+    #phone,
+    #computer,
+    #watch,
+    #camera,
+    #headphone,
+    #gamepad {
         width: 100px;
         height: 100px;
     }
 
-    #phoneText, #computerText, #watchText, #cameraText, #headphoneText, #gamepadText {
+    #phoneText,
+    #computerText,
+    #watchText,
+    #cameraText,
+    #headphoneText,
+    #gamepadText {
         font-size: 30px;
     }
 }
 
 @media screen and (max-width:300px) {
-    [categoryBox]{
+    [categoryBox] {
         height: 250px !important;
         padding: 38px 20px !important;
     }
@@ -2313,9 +2751,10 @@
 
 @media screen and (max-width: 401px) {
 
-    #productMobCodes{
+    #productMobCodes {
         width: 100%;
     }
+
     [productSize] {
         /* width: 348px !important; */
         width: 100% !important;
@@ -2402,4 +2841,39 @@
     #aboutPage {
         font-size: 11px;
     }
+}
+
+
+
+/* !SECTION FOUNDERS MOBILE CODES START......................................................................................... */
+@media screen and (max-width: 401px) {
+#founders{
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+[foundersItem]{
+    width: 100% !important;
+}
+
+#first-founder, #second-founder, #third-founder {
+    width: 100%;
+    height: 400px;
+}
+
+#first-founder-name, #second-founder-name, #third-founder-name {
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+#first-founder-professia, #second-founder-professia, #third-founder-professia {
+    font-size: 12px;
+    padding: 10px 0px;
+}
+
+[socialLinks] {
+    font-size: 20px !important;
+    padding-bottom: 20px;
+}
 }
