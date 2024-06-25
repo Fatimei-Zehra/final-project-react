@@ -7,50 +7,47 @@ import { TbMoneybag } from "react-icons/tb";
 import MediaStyle from "../GlobalCss/Media/media.css"
 
 
-
-
-
 function Statistics() {
     return (
         <div>
             <div className={StatisticsCss.statistics} id='statistics'>
                 <div className={StatisticsCss.statisticsItem} statisticsMedia="statistic-items">
-                    <div className={StatisticsCss.statisticsIcon} >
-                        <CiShop className={StatisticsCss.shopIcon} id='shop' />
+                    <div className={StatisticsCss.statisticsIcon} statisticsIcon="icon">
+                        <CiShop className={StatisticsCss.shopIcon} />
                     </div>
                     <div className={StatisticsCss.delivery}>
-                        <h4 className={StatisticsCss.quantity}  >10.5k</h4>
-                        <p className={StatisticsCss.aboutService}>Sallers active our site</p>
+                        <h4 className={StatisticsCss.quantity} id='quantity-first' >10.5k</h4>
+                        <p className={StatisticsCss.aboutService} id='textContentShop'>Sallers active our site</p>
                     </div>
                 </div>
 
                 <div className={StatisticsCss.statisticsItem} statisticsMedia="statistic-items" >
-                    <div className={StatisticsCss.statisticsIcon} >
+                    <div className={StatisticsCss.statisticsIcon}statisticsIcon="icon" >
                         <PiCurrencyCircleDollarLight className={StatisticsCss.priceIcon} />
                     </div>
                     <div className={StatisticsCss.delivery}>
-                        <h4 className={StatisticsCss.quantity}  >33k</h4>
-                        <p className={StatisticsCss.aboutService}>Mopnthly Produduct Sale</p>
+                        <h4 className={StatisticsCss.quantity}  id='quantity-second'>33k</h4>
+                        <p className={StatisticsCss.aboutService} id='textContentDollar'>Mopnthly Produduct Sale</p>
                     </div>
                 </div>
 
                 <div className={StatisticsCss.statisticsItem} statisticsMedia="statistic-items" >
-                    <div className={StatisticsCss.statisticsIcon} >
+                    <div className={StatisticsCss.statisticsIcon}statisticsIcon="icon" >
                         <MdOutlineShoppingBag className={StatisticsCss.shopBagIcon} />
                     </div>
                     <div className={StatisticsCss.delivery}>
-                        <h4 className={StatisticsCss.quantity}  >45.5k</h4>
-                        <p className={StatisticsCss.aboutService}>Mopnthly Produduct Sale</p>
+                        <h4 className={StatisticsCss.quantity} id='quantity-third'  >45.5k</h4>
+                        <p className={StatisticsCss.aboutService} id='textContentShopBag'>Mopnthly Produduct Sale</p>
                     </div>
                 </div>
 
                 <div className={StatisticsCss.statisticsItem}  statisticsMedia="statistic-items">
-                    <div className={StatisticsCss.statisticsIcon} >
+                    <div className={StatisticsCss.statisticsIcon} statisticsIcon="icon">
                         <TbMoneybag  className={StatisticsCss.moneyBagIcon}/>
                     </div>
                     <div className={StatisticsCss.delivery}>
-                        <h4 className={StatisticsCss.quantity}  >25k</h4>
-                        <p className={StatisticsCss.aboutService}>Anual gross sale in our site</p>
+                        <h4 className={StatisticsCss.quantity}  id='quantity-four' >25k</h4>
+                        <p className={StatisticsCss.aboutService}id='textContentMoneyBag'>Anual gross sale in our site</p>
                     </div>
                 </div>
             </div>

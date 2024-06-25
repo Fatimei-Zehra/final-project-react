@@ -35,16 +35,16 @@ function Navbar() {
           </li>
           <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list">
             <Link to='/Contact' className={styles.linkName}>
-              contact
+              {t("contact")}
             </Link></li>
           <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list">
             <Link to="/About" className={styles.linkName}>
-              about
+              {t("about")}
             </Link>
           </li>
           <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list">
             <Link to="/SignUp" className={styles.linkName}>
-              sign up
+             {t("sign up")}
             </Link>
           </li>
         </ul>

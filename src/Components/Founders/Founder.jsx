@@ -6,35 +6,37 @@ import { FaLinkedinIn } from "react-icons/fa";
 import founderFisrt from "../../Images/Founders/founder1.png"
 import founderSecond from "../../Images/Founders/founder1.png"
 import founderThird from "../../Images/Founders/founder1.png"
+import MediaStyle from "../GlobalCss/Media/media.css"
+
 
 
 function Founder() {
     return (
-        <div className={FounderCss.founders}>
-            <div className="founders-items">
-                <div className={FounderCss.foundersBg}>
+        <div className={FounderCss.founders} id='founders'>
+            <div className="founders-items" foundersItem="founders">
+                <div className={FounderCss.foundersBg} id='first-founder'>
                     <img src={founderFisrt} alt="" />
                 </div>
                 <div>
-                    <h3 className={FounderCss.founderName}>Tom Cruise</h3>
-                    <p className={FounderCss.founderProfessia}>Founder & Chairman</p>
+                    <h3 className={FounderCss.founderName} id='first-founder-name'>Tom Cruise</h3>
+                    <p className={FounderCss.founderProfessia} id='first-founder-professia'>Founder & Chairman</p>
                 </div>
-                <div className={FounderCss.socialLinks}>
+                <div className={FounderCss.socialLinks} socialLinks="founder-social-links">
                     <FiTwitter  />
                     <FaInstagram  />
                     <FaLinkedinIn />
                 </div>
             </div>
 
-            <div className="founders-items">
-                <div  className={FounderCss.foundersBg}>
+            <div className="founders-items" foundersItem="founders">
+                <div  className={FounderCss.foundersBg} id='second-founder'>
                     <img src={founderFisrt} alt="" />
                 </div>
                 <div>
-                    <h3 className={FounderCss.founderName}>Tom Cruise</h3>
-                    <p className={FounderCss.founderProfessia}>Founder & Chairman</p>
+                    <h3 className={FounderCss.founderName}  id='second-founder-name'>Tom Cruise</h3>
+                    <p className={FounderCss.founderProfessia} id='second-founder-professia'>Founder & Chairman</p>
                 </div>
-                <div className={FounderCss.socialLinks}>
+                <div className={FounderCss.socialLinks} socialLinks="founder-social-links">
                     <FiTwitter  />
                     <FaInstagram  />
                     <FaLinkedinIn />
@@ -42,15 +44,15 @@ function Founder() {
             </div>
 
 
-            <div className="founders-items">
-                <div  className={FounderCss.foundersBg}>
+            <div className="founders-items" foundersItem="founders">
+                <div  className={FounderCss.foundersBg} id='third-founder'>
                     <img src={founderFisrt} alt="" />
                 </div>
                 <div>
-                    <h3 className={FounderCss.founderName}>Tom Cruise</h3>
-                    <p className={FounderCss.founderProfessia}>Founder & Chairman</p>
+                    <h3 className={FounderCss.founderName}  id='third-founder-name'>Tom Cruise</h3>
+                    <p className={FounderCss.founderProfessia} id='third-founder-professia'>Founder & Chairman</p>
                 </div>
-                <div className={FounderCss.socialLinks}>
+                <div className={FounderCss.socialLinks} socialLinks="founder-social-links">
                     <FiTwitter  />
                     <FaInstagram  />
                     <FaLinkedinIn className={FounderCss.founderInstagram} />
