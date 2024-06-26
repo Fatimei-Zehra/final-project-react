@@ -8,7 +8,7 @@ import Timer from "../src/Components/Timer/Timer";
 import Products from './Components/OurProducts/Products';
 import Services from './Components/Services/Services';
 
-import Footer from "../src/Components/Footer/Footer";
+
 
 import Footer from '../src/Components/Footer/Footer'
 
@@ -21,7 +21,7 @@ import Home from './Components/Home';
 import Contact from './Components/Contact/Contact';
 
 
-import Cart from './Components/Cart/Cart'
+//import Cart from './Components/Cart/Cart'
 
 
 
@@ -59,8 +59,8 @@ function AppContent() {
   return (
     <div>
       <Header />
-      <Cart /> 
-     {/* <Account />
+     {/* <Cart /> 
+     <Account /> */}
     
 
       <Routes>
@@ -95,12 +95,7 @@ function AppContent() {
     </div>
 
 
-      <Footer />
-    </div>
-  );
-
-    < Footer /> */}
-    </div >
+  
 
 
   )

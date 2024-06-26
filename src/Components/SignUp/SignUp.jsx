@@ -1,4 +1,3 @@
-
 import React, {useState}  from 'react'
 import { useNavigate } from 'react-router-dom'
 import styles from "../SignUp/SignUp.module.css"
@@ -54,8 +53,6 @@ const validateInputs = () => {
   return (
     <div>
         <div id='account' className={styles.Account}>
-      <div id='acc' className={styles.acc}>
-        <img src={svg} alt='Login' id='image' className={styles.accImg} /> 
     <div className={styles.Account}>
       <div className={styles.acc}>
         <img src={svg} alt='Login' id='image' className={styles.accImg} />
@@ -68,7 +65,7 @@ const validateInputs = () => {
         <input value={password} onChange={(e) => setPassword(e.target.value)}  id='account-input' placeholder='Password' type='password'  className={`${styles.textInput} ${inputErrors.password ? styles.error : ''}`}></input>
         <div className={styles.forget}>
         <button onClick={handleSignUp} id='account-btn' className={styles.AccountButton}>Create Account</button> 
-        <button id='Google-btn' className={styles.GoogleButton}> <FcGoogle className={styles.icon}/> Sign up with Google</button> 
+        <button id='Google-btn' className={styles.GoogleButton}> <FcGoogle className={styles.icon}/>Sign up with Google</button> 
         <div id='p' className={styles.P}>
         <p className={styles.forgetP} id='forget-pass'>Already have account?</p>
         {/*  id='acc-p'></p> */}
@@ -81,7 +78,6 @@ const validateInputs = () => {
       </div>
     </div>
   </div>
-</div>
   );
 };
 

@@ -46,6 +46,7 @@
     color: #fff;
     padding: 16px 140px;
     cursor: pointer;
+    white-space: nowrap;
   }
   
   .icon{
@@ -62,7 +63,7 @@
     cursor: pointer;
     background-color: #fff;
     display: flex;
-    
+    white-space: nowrap;
   }
   
   
