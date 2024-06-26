@@ -29,6 +29,10 @@
   padding: 10px 0px;
 }
 
+.error{
+border-bottom: 1px solid red;
+}
+
 .forget {
   display: flex;
   align-items: center;

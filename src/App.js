@@ -21,7 +21,11 @@ import Home from './Components/Home';
 import Contact from './Components/Contact/Contact';
 
 
+//import Cart from './Components/Cart/Cart'
+
+
 import Cart from './Components/Cart/Cart'
+
 
 
 
@@ -59,8 +63,8 @@ function AppContent() {
   return (
     <div>
       <Header />
-      <Cart /> 
-     {/* <Account />
+     {/* <Cart /> 
+     {/* <Account /> */}
     
 
       <Routes>
@@ -99,11 +103,10 @@ function AppContent() {
     </div>
   );
 
-    < Footer /> */}
-    </div >
+    
 
 
-  )
+  
 }
 
 function App() {
