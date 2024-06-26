@@ -10,18 +10,17 @@ const HeartIconToggle = () => {
   const [isClicked, setIsClicked] = useState(false);
 
   const handleClick = () => {
-    setIsClicked(!isClicked); // Toggle the state on click
+    setIsClicked(!isClicked);
   };
-
   return (
     <div>
       {isClicked ? (
-        <IoMdHeart 
+        <IoMdHeart
           onClick={handleClick}
           color="red"
           size={30}
           style={{ cursor: 'pointer' }}
-          className={`${OurProductsStyle.svg} ${OurProductsStyle.svgHeart}`}    />
+          className={`${OurProductsStyle.svg} ${OurProductsStyle.svgHeart}`} />
       ) : (
         <CiHeart
           onClick={handleClick}
@@ -29,10 +28,11 @@ const HeartIconToggle = () => {
           size={30}
           fontWeight={700}
           style={{ cursor: 'pointer' }}
-          className={`${OurProductsStyle.svg} ${OurProductsStyle.svgHeart}`}  />
+          className={`${OurProductsStyle.svg} ${OurProductsStyle.svgHeart}`} />
       )}
     </div>
   );
 };
+
 
 export default HeartIconToggle;
