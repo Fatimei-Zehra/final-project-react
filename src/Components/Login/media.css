@@ -219,11 +219,31 @@
     }
 
    #login-btn{
-    font-size: 9px;
+    font-size: 8px;
    }
 
     #forget-pass{
-      font-size: 8px;
+      font-size: 7px;
+    }
+
+  }
+
+  @media screen and (max-width: 400px) {
+    #image {
+     display: none;
+    }
+
+    #login-text-items {
+    margin-left: 27%;
+    margin-top: 3%;  
+    }
+
+   #login-btn{
+    font-size: 8px;
+   }
+
+    #forget-pass{
+      font-size: 7px;
     }
 
   }
