@@ -14,20 +14,20 @@
 
 export const customProductArray = [
     {
-        id: 12, type: 'woman', title: "Woman's Fashion",
+        id: 12, type: 'woman', title:  t("Woman’s Fashion"),
 
         children: [
             {
                 id: 1, title: 'Clothes', desc: 'lorem  bla bla bla', children: [
                     { id: 2, title: 'Dress' }, { id: 4, title: 'T-shirt' },
-                    { id: 5, title: 'Jeans' },{ id: 6, title: 'Write a check' },
-                    { id: 7, title: 'Mont' },{ id: 8, title: 'Trousers' },
-                    { id: 9, title: 'Blouse' },{ id: 10, title: 'Jacket' },
-                    { id: 11, title: 'Skirt' },{ id: 12, title: 'Shirt' }
+                    { id: 5, title: 'Jeans' }, { id: 6, title: 'Write a check' },
+                    { id: 7, title: 'Mont' }, { id: 8, title: 'Trousers' },
+                    { id: 9, title: 'Blouse' }, { id: 10, title: 'Jacket' },
+                    { id: 11, title: 'Skirt' }, { id: 12, title: 'Shirt' }
                 ]
             },
             {
-                id:2, title:'Shoe', desc:'bla bla', children:[
+                id: 2, title: 'Shoe', desc: 'bla bla', children: [
                     { id: 2, title: 'Heeled shoes' }, { id: 4, title: 'Sandals' },
                     { id: 5, title: 'Sneaker' }, { id: 6, title: 'Casual Shoes' },
                     { id: 7, title: 'Bot' }, { id: 8, title: 'Boots' },
@@ -40,10 +40,10 @@ export const customProductArray = [
             {
                 id: 3, title: 'Bag', desc: 'lorem  bla bla bla', children: [
                     { id: 2, title: 'Shoulder Bag' }, { id: 4, title: 'Backpack' },
-                    { id: 5, title: 'School Bag' },{ id: 6, title: 'Handbag' },
-                    { id: 7, title: 'Mini Bag' },{ id: 8, title: 'Bag bag' },
-                    { id: 9, title: 'Product' },{ id: 10, title: 'Lorem bag' },
-                    { id: 11, title: 'Product' },{ id: 12, title: 'Product' }
+                    { id: 5, title: 'School Bag' }, { id: 6, title: 'Handbag' },
+                    { id: 7, title: 'Mini Bag' }, { id: 8, title: 'Bag bag' },
+                    { id: 9, title: 'Product' }, { id: 10, title: 'Lorem bag' },
+                    { id: 11, title: 'Product' }, { id: 12, title: 'Product' }
                 ]
             },
 
@@ -57,7 +57,7 @@ export const customProductArray = [
         children: [
             {
                 id: 1, title: 'Shoe', desc: 'lorem  bla bla bla', children: [
-                       { id: 13, title: 'Heeled shoes' }, { id: 14, title: 'Sandals' },
+                    { id: 13, title: 'Heeled shoes' }, { id: 14, title: 'Sandals' },
                     { id: 15, title: 'Sneaker' }, { id: 16, title: 'Casual shoes' },
                     { id: 17, title: 'Bot' }, { id: 18, title: 'Boots' },
                     { id: 19, title: 'Loafer' }, { id: 20, title: 'Lorem' },
@@ -65,7 +65,7 @@ export const customProductArray = [
                 ]
             },
             {
-                id:2, title:'Clothes', desc:'bla bla', children:[
+                id: 2, title: 'Clothes', desc: 'bla bla', children: [
                     { id: 2, title: 'shirts' }, { id: 4, title: 'shorts' },
                     { id: 9, title: 'Loafer' }, { id: 10, title: 'Lorem' },
                     { id: 11, title: 'Lorem' }, { id: 12, title: 'Lorem' },
@@ -75,7 +75,7 @@ export const customProductArray = [
 
             {
                 id: 3, title: 'Lorem', desc: 'lorem  bla bla bla', children: [
-                       { id: 2, title: 'Heeled shoes' }, { id: 4, title: 'Sandals' },
+                    { id: 2, title: 'Heeled shoes' }, { id: 4, title: 'Sandals' },
                     { id: 5, title: 'Sneaker' }, { id: 6, title: 'Casual shoes' },
                     { id: 7, title: 'Bot' }, { id: 8, title: 'Boots' },
                     { id: 9, title: 'Loafer' }, { id: 10, title: 'Lorem' },
@@ -83,7 +83,7 @@ export const customProductArray = [
                 ]
             },
             {
-                id:4, title:'Lorem2', desc:'bla bla', children:[
+                id: 4, title: 'Lorem2', desc: 'bla bla', children: [
                     { id: 2, title: 'shirts' }, { id: 4, title: 'shorts' },
                     { id: 9, title: 'Loafer' }, { id: 10, title: 'Lorem' },
                     { id: 11, title: 'Lorem' }, { id: 12, title: 'Lorem' },
@@ -108,7 +108,7 @@ export const customProductArray = [
                 ]
             },
             {
-                id:2, title:'clothes', desc:'bla bla', children:[
+                id: 2, title: 'clothes', desc: 'bla bla', children: [
                     { id: 2, title: 'Lorem2.1' }, { id: 4, title: 'Lorem2.2' },
                     { id: 11, title: 'Lorem2.3' }, { id: 12, title: 'Lorem2.4' },
                     { id: 9, title: 'Lorem2.5' }, { id: 10, title: 'Lorem2.6' },
@@ -123,7 +123,7 @@ export const customProductArray = [
     },
 
     {
-        id: 15, type: 'home', title:  "Home & Lifestyle",
+        id: 15, type: 'home', title: "Home & Lifestyle",
         children: [
             {
                 id: 1, title: 'Home', desc: 'lorem  bla bla bla', children: [
@@ -134,7 +134,7 @@ export const customProductArray = [
                 ]
             },
             {
-                id:2, title:'clothes', desc:'bla bla', children:[
+                id: 2, title: 'clothes', desc: 'bla bla', children: [
                     { id: 2, title: 'Lorem2.1' }, { id: 4, title: 'Lorem2.2' },
                     { id: 11, title: 'Lorem2.3' }, { id: 12, title: 'Lorem2.4' },
                     { id: 9, title: 'Lorem2.5' }, { id: 10, title: 'Lorem2.6' },
@@ -157,11 +157,11 @@ export const customProductArray = [
                     { id: 9, title: 'Lorem1.5' }, { id: 10, title: 'Lorem1.6' },
                     { id: 11, title: 'Lorem1.7' }, { id: 12, title: 'Lorem1.8' },
                     { id: 2, title: 'Lorem1.1' }, { id: 4, title: 'Lorem1.2' },
-                 
+
                 ]
             },
             {
-                id:2, title:'Clothes', desc:'bla bla', children:[
+                id: 2, title: 'Clothes', desc: 'bla bla', children: [
                     { id: 2, title: 'Lorem2.1' }, { id: 4, title: 'Lorem2.2' },
                     { id: 11, title: 'Lorem2.3' }, { id: 12, title: 'Lorem2.4' },
                     { id: 9, title: 'Lorem2.5' }, { id: 10, title: 'Lorem2.6' },
@@ -186,7 +186,7 @@ export const customProductArray = [
                 ]
             },
             {
-                id:2, title:' Sport Clothes', desc:'bla bla', children:[
+                id: 2, title: ' Sport Clothes', desc: 'bla bla', children: [
                     { id: 2, title: 'Lorem2.1' }, { id: 4, title: 'Lorem2.2' },
                     { id: 11, title: 'Lorem2.3' }, { id: 12, title: 'Lorem2.4' },
                     { id: 9, title: 'Lorem2.5' }, { id: 10, title: 'Lorem2.6' },
@@ -211,7 +211,7 @@ export const customProductArray = [
                 ]
             },
             {
-                id:2, title:' Baby Clothes', desc:'bla bla', children:[
+                id: 2, title: ' Baby Clothes', desc: 'bla bla', children: [
                     { id: 2, title: 'Lorem2.1' }, { id: 4, title: 'Lorem2.2' },
                     { id: 11, title: 'Lorem2.3' }, { id: 12, title: 'Lorem2.4' },
                     { id: 9, title: 'Lorem2.5' }, { id: 10, title: 'Lorem2.6' },
@@ -220,7 +220,7 @@ export const customProductArray = [
             },
 
             {
-                id:3, title:'Baby Clothes2', desc:'bla bla', children:[
+                id: 3, title: 'Baby Clothes2', desc: 'bla bla', children: [
                     { id: 2, title: 'Lorem3.1' }, { id: 4, title: 'Lorem3.2' },
                     { id: 11, title: 'Lorem3.3' }, { id: 12, title: 'Lorem3.4' },
                     { id: 9, title: 'Lorem3.5' }, { id: 10, title: 'Lorem2.6' },
@@ -245,7 +245,7 @@ export const customProductArray = [
                 ]
             },
             {
-                id:2, title:'Clothes', desc:'bla bla', children:[
+                id: 2, title: 'Clothes', desc: 'bla bla', children: [
                     { id: 2, title: 'Lorem2.1' }, { id: 4, title: 'Lorem2.2' },
                     { id: 11, title: 'Lorem2.3' }, { id: 12, title: 'Lorem2.4' },
                     { id: 9, title: 'Lorem2.5' }, { id: 10, title: 'Lorem2.6' },
@@ -270,7 +270,7 @@ export const customProductArray = [
                 ]
             },
             {
-                id:2, title:'Clothes', desc:'bla bla', children:[
+                id: 2, title: 'Clothes', desc: 'bla bla', children: [
                     { id: 2, title: 'Lorem2.1' }, { id: 4, title: 'Lorem2.2' },
                     { id: 11, title: 'Lorem2.3' }, { id: 12, title: 'Lorem2.4' },
                     { id: 9, title: 'Lorem2.5' }, { id: 10, title: 'Lorem2.6' },

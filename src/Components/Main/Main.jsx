@@ -25,7 +25,7 @@ function Main() {
                     </div>
 
                     <div className={MainStyle.sliderBox} id='slider-box'>
-                        <Slider />
+                        {/* <Slider /> */}
                     </div>
 
                 </div>

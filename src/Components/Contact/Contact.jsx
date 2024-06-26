@@ -2,6 +2,7 @@ import React from 'react'
 import ContactCss from "./Contact.module.css"
 import { Link } from "react-router-dom"
 import { LuPhone } from "react-icons/lu";
+import { FaRegEnvelope } from "react-icons/fa6";
 import { useTranslation } from 'react-i18next'
 import { useRef } from 'react';
 
@@ -44,7 +45,8 @@ function Contact() {
                     <div className={ContactCss.contactInformation}>
                         <div className="contact-for-call">
                             <div className={ContactCss.callUs}>
-                                <LuPhone className={ContactCss.phoneIcon} />
+                                <div className={ContactCss.phoneIcon}> <LuPhone /></div>
+
                                 <p className={ContactCss.callUsText}>Call To Us</p>
                             </div>
 
@@ -58,7 +60,8 @@ function Contact() {
 
                         <div className='contact-from-writte'>
                             <div className={ContactCss.callUs}>
-                                <LuPhone />
+                                <div className={ContactCss.phoneIcon}><FaRegEnvelope /></div>
+
                                 <p className={ContactCss.callUsText} >Write To Us</p>
                             </div>
                             <div>

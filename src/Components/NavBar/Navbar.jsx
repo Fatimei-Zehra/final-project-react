@@ -44,7 +44,7 @@ function Navbar() {
           </li>
           <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list">
             <Link to="/SignUp" className={styles.linkName}>
-             {t("sign up")}
+             {t("sign Up")}
             </Link>
           </li>
         </ul>

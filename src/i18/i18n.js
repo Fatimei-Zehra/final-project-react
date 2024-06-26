@@ -14,7 +14,7 @@ const resources = {
             home: "Ana səifə",
             contact: "Əlaqə",
             Contact: "Əlaqə",
-            "Sign Up": "Abunə olun",
+            "sign Up": "Abunə olun",
             about:"Haqqımızda",
             // Exclusive: "Eksklüziv",
             "Woman’s Fashion": "Qadın Moda",

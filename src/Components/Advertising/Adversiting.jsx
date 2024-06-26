@@ -8,7 +8,7 @@ import MediaStyle from "../GlobalCss/Media/media.css"
 
 function Adversiting() {
     const calculateTime = () => {
-        const targetDate = new Date("2024-06-22");
+        const targetDate = new Date("2024-06-30");
         const now = new Date(); //indiki vaxtimiz
         const difference = targetDate - now; //bize hansi tarix lazmdisa ondan indiki vaxt arasindaki ferqi hesabla
 
