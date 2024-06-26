@@ -1,3 +1,4 @@
+
 import React, {useState}  from 'react'
 import { useNavigate } from 'react-router-dom'
 import styles from "../SignUp/SignUp.module.css"
@@ -7,6 +8,8 @@ import SignUpMediacss from '../SignUp/SignUp.media.css'
 import {createUserWithEmailAndPassword } from 'firebase/auth'
 import { auth } from '../../firebase/firebase.js'
 import { Link } from 'react-router-dom'
+
+
 
 
 
@@ -28,6 +31,7 @@ const SignUp = () => {
       createUserWithEmailAndPassword(auth, email, password, name);
       navigate('/login');
       console.log('Qeydiyyat olundu');
+
     } catch (error) {
       console.log(error);
     }
@@ -46,13 +50,16 @@ const validateInputs = () => {
 };
 
 
+
   return (
     <div>
         <div id='account' className={styles.Account}>
       <div id='acc' className={styles.acc}>
         <img src={svg} alt='Login' id='image' className={styles.accImg} /> 
+    <div className={styles.Account}>
+      <div className={styles.acc}>
+        <img src={svg} alt='Login' id='image' className={styles.accImg} />
       </div>
-
       <div className={styles.text} id='account-text-items'>
         <h1 id='account-items-text' className={styles.textH1}>Create an account</h1>
         <p id='account-p' className={styles.textP}>Enter your details below</p>
@@ -71,9 +78,11 @@ const validateInputs = () => {
         </div> 
         </div>
         </div>
+      </div>
     </div>
-    </div>
-  )
-}
+  </div>
+</div>
+  );
+};
 
-export default SignUp; 
+export default SignUp;
