@@ -7,8 +7,12 @@ import ImageChair from '../../Images/MainSliderImages/273c46e1c3dc0a8915c4b031d0
 import { LuEye } from "react-icons/lu";
 import { CiHeart } from "react-icons/ci";
 import { FaStar } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
+
 
 function MainSlider() {
+    const { t } = useTranslation();
+
     return (
         <div className='container'>
             <div className={styles.slider}>
@@ -26,12 +30,12 @@ function MainSlider() {
 
                                 </div>
                             </div>
-                            <button className={styles.buttonActive}>Add to Card</button>
+                            <button className={styles.buttonActive}>{t( "Add To Card")}</button>
                         </div>
 
                     </div>
                     <div className={styles.downSide}>
-                        <h1 className={styles.downSideText}>HAVIT HV-G92 Gamepad</h1>
+                        <h1 className={styles.downSideText}>{t("HAVIT HV-G92 Gamepad")}</h1>
                         <div className={styles.price}>
                             <span className={styles.firstPrice}>$120</span>
                             <span className={styles.line}>$160</span>
@@ -64,14 +68,14 @@ function MainSlider() {
 
                                 </div>
                             </div>
-                            <button className={styles.buttonActive}>Add to Card</button>
+                            <button className={styles.buttonActive}>{t( "Add To Card")}</button>
                         </div>
 
 
                     </div>
 
                     <div className={styles.downSide}>
-                        <h1 className={styles.downSideText}>AK-900 Wired Keyboard</h1>
+                        <h1 className={styles.downSideText}>{t("AK-900 Wired Keyboard")}</h1>
                         <div className={styles.price}>
                             <span className={styles.firstPrice}>$960</span>
                             <span className={styles.line}>$1160</span>
@@ -108,14 +112,14 @@ function MainSlider() {
 
                                 </div>
                             </div>
-                            <button className={styles.buttonActive}>Add to Card</button>
+                            <button className={styles.buttonActive}>{t( "Add To Card")}</button>
                         </div>
 
 
                     </div>
 
                     <div className={styles.downSide}>
-                        <h1 className={styles.downSideText}>IPS LCD Gaming Monitor</h1>
+                        <h1 className={styles.downSideText}>{t("IPS LCD Gaming Monitor")}</h1>
                         <div className={styles.price}>
                             <span className={styles.firstPrice}>$370</span>
                             <span className={styles.line}>$400</span>
@@ -153,14 +157,14 @@ function MainSlider() {
 
                                 </div>
                             </div>
-                            <button style={styles.buttonActive}>Add to Card</button>
+                            <button style={styles.buttonActive}>{t( "Add To Card")}</button>
                         </div>
 
 
                     </div>
 
                     <div className={styles.downSide}>
-                        <h1 className={styles.downSideText}>S-Series Comfort Chair</h1>
+                        <h1 className={styles.downSideText}>{t("S-Series Comfort Chair")}</h1>
                         <div className={styles.price}>
                             <span className={styles.firstPrice}>$375</span>
                             <span className={styles.line}>$400</span>
@@ -200,12 +204,12 @@ function MainSlider() {
 
                                 </div>
                             </div>
-                            <button className={styles.buttonActive}>Add to Card</button>
+                            <button className={styles.buttonActive}>{t( "Add To Card")}</button>
                         </div>
 
                     </div>
                     <div className={styles.downSide}>
-                        <h1 className={styles.downSideText}>HAVIT HV-G92 Gamepad</h1>
+                        <h1 className={styles.downSideText}>{t("HAVIT HV-G92 Gamepad")}</h1>
                         <div className={styles.price}>
                             <span className={styles.firstPrice}>$120</span>
                             <span className={styles.line}>$160</span>
@@ -241,12 +245,12 @@ function MainSlider() {
 
                                 </div>
                             </div>
-                            <button className={styles.buttonActive}>Add to Card</button>
+                            <button className={styles.buttonActive}>{t( "Add To Card")}</button>
                         </div>
 
                     </div>
                     <div className={styles.downSide}>
-                        <h1 className={styles.downSideText}>HAVIT HV-G92 Gamepad</h1>
+                        <h1 className={styles.downSideText}>{t("HAVIT HV-G92 Gamepad")}</h1>
                         <div className={styles.price}>
                             <span className={styles.firstPrice}>$120</span>
                             <span className={styles.line}>$160</span>
@@ -267,7 +271,7 @@ function MainSlider() {
                 </div>
             </div>
             <div className={styles.view}>
-                <button >View All Products</button>
+                <button >{t( "View Products All")}</button>
             </div>
         </div>
 

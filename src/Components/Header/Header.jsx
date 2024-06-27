@@ -4,7 +4,6 @@ import styles from "../Header/Header.module.css"
 import GlobalModuleCss from "../GlobalCss/global.module.css"
 import MediaStyle from "../GlobalCss/Media/media.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import Navbar from "../NavBar/Navbar"
 import DropMenu from '../DropMenu/DropMenu'
@@ -37,7 +36,7 @@ export default function Header() {
                             <p className={`${styles.headerLayerP} ${GlobalModuleCss.fontPoppins}`} id='layer-p'>
                                 {t("Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!")}
                             </p>
-                            <a href="#" className={styles.headerLayerA} id='layer-a'>ShopNow</a>
+                            <a href="#" className={styles.headerLayerA} id='layer-a'>{t("ShopNow")}</a>
                         </div>
 
 
@@ -70,7 +69,6 @@ export default function Header() {
 
                         <div id='planset-header-icons' className={styles.plansetHeaderIcons}>
                             <Wishlist />
-                           
                         </div>
 
 
@@ -79,7 +77,7 @@ export default function Header() {
                         <div className={styles.headerComponents} id='header-components'>
                             <Search />
                             <Wishlist />
-                           
+
                         </div>
 
                     </div>
@@ -110,15 +108,14 @@ export default function Header() {
                 <div id='header-mobile-nav'>
                     <div className="container">
                         <div id='mobile-nav-items'>
-                            <div id='mobile-nav-icon'>
-                                <FontAwesomeIcon icon={faBars} id='menu-icon' />
-                                {/* <DropMenu/> */}
+                            <div id='mobile-nav-icon'>    
+                                <DropMenu />
                             </div>
 
                             <div id='mobile-right-icon'>
                                 <FontAwesomeIcon icon={faSearch} />
                                 <Wishlist />
-                                
+
                             </div>
                         </div>
                     </div>

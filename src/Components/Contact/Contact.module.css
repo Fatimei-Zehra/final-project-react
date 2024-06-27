@@ -109,9 +109,10 @@
 .btnSend{
     display: flex;
     justify-content: end;
+    cursor: pointer;
 }
 
-/* //nese bilmirem ne */
+
 
 
 .callNum {

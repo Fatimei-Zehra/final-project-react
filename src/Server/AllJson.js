@@ -14,7 +14,7 @@
 
 export const customProductArray = [
     {
-        id: 12, type: 'woman', title:  t("Woman’s Fashion"),
+        id: 12, type: 'woman', title: "Woman’s Fashion",
 
         children: [
             {
