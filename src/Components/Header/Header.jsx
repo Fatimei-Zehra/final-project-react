@@ -4,25 +4,28 @@ import styles from "../Header/Header.module.css"
 import GlobalModuleCss from "../GlobalCss/global.module.css"
 import MediaStyle from "../GlobalCss/Media/media.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import Navbar from "../NavBar/Navbar"
 import DropMenu from '../DropMenu/DropMenu'
 import { Link } from 'react-router-dom'
 import Wishlist from '../Wishlist/Wishlist'
 import Search from '../Search/Search'
-import Cart from '../Cart/Cart'
+
 import { useTranslation } from 'react-i18next'
+import i18n from '../../i18/i18n'
+
 
 
 
 export default function Header() {
     const { i18n } = useTranslation()
+    const { t } = useTranslation();
 
-    // const clickChange=(e)=>{
-    //     i18n.changeLanguage(e.target.value)
-    // }
-    // onChange={clickChange} value={i18n.language}
+
+    const clickChange = (e) => {
+        i18n.changeLanguage(e.target.value)
+    }
+
     return (
         <div>
             {/* LAYER CODES START */}
@@ -30,14 +33,16 @@ export default function Header() {
                 <div className="container">
                     <div className={styles.headerLayerItems}>
                         <div className={styles.layer} id='layer'>
-                            <p className={`${styles.headerLayerP} ${GlobalModuleCss.fontPoppins}`} id='layer-p'>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
-                            <a href="#" className={styles.headerLayerA} id='layer-a'>ShopNow</a>
+                            <p className={`${styles.headerLayerP} ${GlobalModuleCss.fontPoppins}`} id='layer-p'>
+                                {t("Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!")}
+                            </p>
+                            <a href="#" className={styles.headerLayerA} id='layer-a'>{t("ShopNow")}</a>
                         </div>
 
 
-                        <select className={styles.languages} id='languages' >
-                            <option value="english" >English</option>
-                            <option value="azerbaijan" >Azerbaijan</option>
+                        <select className={styles.languages} id='languages' onChange={clickChange} value={i18n.language} >
+                            <option value="en" >English</option>
+                            <option value="az" >Azerbaijan</option>
                             <option value="russian">Russian</option>
                         </select>
 
@@ -64,7 +69,6 @@ export default function Header() {
 
                         <div id='planset-header-icons' className={styles.plansetHeaderIcons}>
                             <Wishlist />
-                            <Cart />
                         </div>
 
 
@@ -73,7 +77,7 @@ export default function Header() {
                         <div className={styles.headerComponents} id='header-components'>
                             <Search />
                             <Wishlist />
-                            <Cart />
+
                         </div>
 
                     </div>
@@ -104,15 +108,14 @@ export default function Header() {
                 <div id='header-mobile-nav'>
                     <div className="container">
                         <div id='mobile-nav-items'>
-                            <div id='mobile-nav-icon'>
-                                <FontAwesomeIcon icon={faBars} id='menu-icon' />
-                                {/* <DropMenu/> */}
+                            <div id='mobile-nav-icon'>    
+                                <DropMenu />
                             </div>
 
                             <div id='mobile-right-icon'>
                                 <FontAwesomeIcon icon={faSearch} />
                                 <Wishlist />
-                                <Cart />
+
                             </div>
                         </div>
                     </div>

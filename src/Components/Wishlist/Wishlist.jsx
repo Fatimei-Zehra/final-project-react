@@ -12,9 +12,6 @@ const Wishlist=()=> {
       <Link to="/Wishlist">
       <FontAwesomeIcon icon={faHeart} className={wishlistStyle.wishlistIcon} id='wishlist' />
       </Link>
-   
-
-
     </div>
   )
 }

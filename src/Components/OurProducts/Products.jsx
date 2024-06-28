@@ -11,17 +11,21 @@ import products from "../../Server/Products";
 import Wishlist from '../Wishlist/WishlistPage';
 import Raiting from "./Raiting"
 import WishProduct from "./WishProducts"
+
 import { Link } from 'react-router-dom';
+
+import { useTranslation } from "react-i18next";
+
+
 const ProductList = () => {
   const [wishlist, setWishlist] = useState([]);
-
-  // Function to handle adding/removing from wishlist
+  const { t } = useTranslation();
   const handleWishlistClick = (productId) => {
     if (wishlist.includes(productId)) {
-      // If already in wishlist, remove it
+
       setWishlist(wishlist.filter(id => id !== productId));
     } else {
-      // Otherwise, add to wishlist
+
       setWishlist([...wishlist, productId]);
     }
 
@@ -77,9 +81,9 @@ const ProductList = () => {
           </div>
         ))}
       </div>
-      {/* <Wishlist wishlist={wishlist} /> */}
+      <Wishlist wishlist={wishlist} />
       <div className={OurProductsStyle.viewAllProducts}>
-        <button className={OurProductsStyle.viewButton}>View All Products</button>
+        <button className={OurProductsStyle.viewButton}>{t("View All Products")}</button>
       </div>
 
     </div>

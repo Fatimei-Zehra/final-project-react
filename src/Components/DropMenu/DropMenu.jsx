@@ -1,100 +1,105 @@
 // import React from 'react'
-// import GlobalCss from "../GlobalCss/global.css"
-// import GlobalModuleCss from "../GlobalCss/global.module.css"
-// import MediaStyle from "../GlobalCss/Media/media.css"
-// import DropMenuStyle from "../DropMenu/DropMenu.module.css"
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faBars } from '@fortawesome/free-solid-svg-icons';
-// import { Link } from "react-router-dom"
-// import { useState } from 'react'
-
-
+// import { SidebarData } from '../../Server/Sidebar'
+// import { Link } from 'react-router-dom'
+// import { HiMenu } from "react-icons/hi";
 
 // function DropMenu() {
+//     return (
+//         <div>
+//             <HiMenu />
 
-//   // const [drawerOpen, setDrawerOpen] = useState(false);
-
-//   // function handleOpenDrawerButton() {
-//   //   setDrawerOpen(!drawerOpen);
-//   // }
-
-//   // function handleBackdropClick() {
-//   //   setDrawerOpen(false);
-//   // }
-
-//   return (
-
-//     <div>
-//       <FontAwesomeIcon icon={faBars} className={DropMenuStyle.menuIcon}  />
-
-//       <nav className={DropMenuStyle.mobileNav} id='nav' >
-//         <ul className={DropMenuStyle.list}>
-//           <li className={`${DropMenuStyle.mobileListLi} ${GlobalModuleCss.fontPoppins} `} responsive="list" >
-//             <Link to="/Home" className={DropMenuStyle.mobileLinkName} style={{color:"white"}}>
-//               home
-//             </Link>
-//           </li>
-//           <li className={`${DropMenuStyle.mobileListLi} ${GlobalModuleCss.fontPoppins} `} responsive="list">
-//             <Link to='/Contact' className={DropMenuStyle.linkName}>
-//               contact
-//             </Link></li>
-//           <li className={`${DropMenuStyle.mobileListLi} ${GlobalModuleCss.fontPoppins} `} responsive="list">
-//             <Link to="/About" className={DropMenuStyle.mobileLinkName}>
-//               about
-//             </Link>
-//           </li>
-//           <li className={`${DropMenuStyle.mobileListLi} ${GlobalModuleCss.fontPoppins} `} responsive="list">
-//             <Link to="/Login" className={DropMenuStyle.mobileLinkName}>
-//               sign up
-//             </Link>
-//           </li>
-//         </ul>
-//       </nav>
-
-//     </div>
-//   )
+//             {
+//                 SidebarData.map((item, index) => {
+//                     return (
+//                         <div key={index}>
+//                             <Link to={item.path}>
+//                                 <span>{item.title}</span>
+//                             </Link>
+//                         </div>
+//                     )
+//                 })
+//             }
+//         </div>
+//     )
 // }
-
 // export default DropMenu
 
-// ...........................................................................
 
+// import React, { useState } from 'react';
+// import { SidebarData } from '../../Server/Sidebar';
+// import { Link } from 'react-router-dom';
+// import { HiMenu } from 'react-icons/hi';
 
-// const DropMenu = () => {
-//   const [hoverCategory, setHoverCategory] = useState(null);
+// function DropMenu() {
+//     const [isOpen, setIsOpen] = useState(false);
 
-//   return (
-//     <div>
-//       <FontAwesomeIcon icon={faBars} className={DropMenuStyle.menuIcon} />
+//     const toggleMenu = () => {
+//         setIsOpen(!isOpen);
+//     };
 
-//       <nav className={DropMenuStyle.mobileNav} id='nav' >
-//         <ul className={DropMenuStyle.list}>
-//           <li className={`${DropMenuStyle.mobileListLi} ${DropMenuStyle.fontPoppins}`}>
-//             <Link to="/Home" className={DropMenuStyle.mobileLinkName} style={{ color: "white" }}>
-//               home
-//             </Link>
-//           </li>
-//           <li className={`${DropMenuStyle.mobileListLi} ${DropMenuStyle.fontPoppins}`}>
-//             <Link to='/Contact' className={DropMenuStyle.linkName}>
-//               contact
-//             </Link>
-//           </li>
-//           <li className={`${DropMenuStyle.mobileListLi} ${DropMenuStyle.fontPoppins}`}>
-//             <Link to="/About" className={DropMenuStyle.mobileLinkName}>
-//               about
-//             </Link>
-//           </li>
-//           <li className={`${DropMenuStyle.mobileListLi} ${DropMenuStyle.fontPoppins}`}>
-//             <Link to="/Login" className={DropMenuStyle.mobileLinkName}>
-//               sign up
-//             </Link>
-//           </li>
-//         </ul>
-//         <Categories setHoverCategory={setHoverCategory} />
-//       </nav>
+//     return (
+//         <div>
+//             <HiMenu onClick={toggleMenu} />
 
-//     </div>
-//   );
-// };
+//             {isOpen && (
+//                 <div>
+//                     {SidebarData.map((item, index) => (
+//                         <div key={index}>
+//                             <Link to={item.path}>
+//                                 <span>{item.title}</span>
+//                             </Link>
+//                         </div>
+//                     ))}
+//                 </div>
+//             )}
+//         </div>
+//     );
+// }
 
 // export default DropMenu;
+
+
+
+import React, { useState } from 'react';
+import { SidebarData } from '../../Server/Sidebar';
+import { Link } from 'react-router-dom';
+import { HiMenu,HiX  } from 'react-icons/hi';
+import styles from './DropMenu.module.css'; // Import CSS module for styling
+
+function DropMenu() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
+
+    return (
+        <div className={styles.dropMenu}>
+            <HiMenu className={styles.menuIcon} onClick={toggleMenu} />
+
+            <div className={`${styles.sidebar} ${isOpen ? styles.open : ''}`}>
+                <div className={styles.sidebarHeader}>
+                    <HiX className={styles.closeIcon} onClick={closeMenu} />
+                </div>
+                {SidebarData.map((category, index) => (
+                    <div key={index} className={styles.category}>
+                        <h2>{category.title}</h2>
+                        {/* <ul className={styles.categoryMenu}>
+                            {category.submenu.map((item, idx) => (
+                                <li key={idx}>
+                                    <Link to={item.path}>{item.title}</Link>
+                                </li>
+                            ))}
+                        </ul> */}
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+}
+
+export default DropMenu;
