@@ -16,20 +16,22 @@ import About from "../src/Components/About/About";
 import Home from './Components/Home';
 import Contact from './Components/Contact/Contact';
 import Cart from './Components/Cart/Cart'
-
+import { Addproducts } from './Admin/Addproducts';
 
 // ROOTER CODES
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { Switch } from '@mui/material';
 
 function AppContent() {
   const location = useLocation();
   return (
     <div>
+       <Addproducts />
       <Header />
       {/* <Cart />  */}
 
-    
-     {/* <Account /> */}
+
+      {/* <Account /> */}
 
 
       <Routes>
@@ -39,6 +41,7 @@ function AppContent() {
         <Route path="/Wishlist" element={<WishlistPage />} />
         <Route path="/SignUp" element={<SignUp />} />
         <Route path='/Contact' element={<Contact />} />
+        <Route path='/Addproducts' element={<Addproducts />} />
       </Routes>
 
       {
@@ -46,6 +49,7 @@ function AppContent() {
         location.pathname !== "/Wishlist" &&
         location.pathname !== "/SignUp" &&
         location.pathname !== "/About" &&
+
         location.pathname !== "/Contact" && (
           <>
             <Main />
@@ -56,6 +60,8 @@ function AppContent() {
             <Adversiting />
             <Products />
             <Services />
+
+           
           </>
         )
       }
@@ -64,11 +70,11 @@ function AppContent() {
     </div>
   );
 
-    
 
 
 
-  
+
+
 }
 
 function App() {
@@ -76,6 +82,9 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <AppContent />
+        <Switch>
+          <Route path='/Addproducts' Component={Addproducts} />
+        </Switch>
       </BrowserRouter>
     </div>
   );
