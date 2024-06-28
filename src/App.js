@@ -19,7 +19,7 @@ import Checkout from './Components/Checkout/Checkout';
 import About from "../src/Components/About/About"
 import Home from './Components/Home';
 import Contact from './Components/Contact/Contact';
-
+import ProductView from './Components/ProductView/ProductView';
 
 // ROOTER CODES
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
@@ -37,6 +37,7 @@ function AppContent() {
         <Route path="/Wishlist" element={<WishlistPage />} />
         <Route path="/SignUp" element={<SignUp />} />
         <Route path='/Contact' element={< Contact />} />
+        <Route path='/ProductView' element={<ProductView />} />
       </Routes>
 
       {
@@ -44,7 +45,8 @@ function AppContent() {
         location.pathname !== "/Wishlist" &&
         location.pathname !== "/SignUp" &&
         location.pathname !== "/About" &&
-        location.pathname !== "/Contact" && (
+        location.pathname !== "/Contact" && 
+        location.pathname !== "/ProductView"&&(
 
           <>
 
@@ -56,9 +58,11 @@ function AppContent() {
             <Adversiting />
             <Products />
             <Services />
+            
           </>
         )
       }
+
       < Footer />
     </div >
 

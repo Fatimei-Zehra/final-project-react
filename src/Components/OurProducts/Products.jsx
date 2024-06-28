@@ -11,7 +11,7 @@ import products from "../../Server/Products";
 import Wishlist from '../Wishlist/WishlistPage';
 import Raiting from "./Raiting"
 import WishProduct from "./WishProducts"
-
+import { Link } from 'react-router-dom';
 const ProductList = () => {
   const [wishlist, setWishlist] = useState([]);
 
@@ -49,7 +49,7 @@ const ProductList = () => {
 
               <div className={OurProductsStyle.iconsBox} id='prod-icon1'>
                 <WishProduct />
-                <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`} />
+                <Link to="/ProductView"> <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`}  /></Link>
               </div>
 
               <button className={OurProductsStyle.addToCart}>Add To Cart</button>
