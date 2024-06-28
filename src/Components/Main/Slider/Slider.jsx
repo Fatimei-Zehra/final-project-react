@@ -1,12 +1,11 @@
-// import React from 'react'
-// import SliderStyle from "../Slider/Slider.module.css";
-// import MediaStyle from "../../GlobalCss/Media/media.css"
-// import appleImg from "../../../Images/MainImages/Apple_logo.png"
-// import iphoneImg from "../../../Images/MainImages/iphone.jpg"
-// import GlobalModuleCss from "../../GlobalCss/global.module.css"
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-// import { useState, useTranslation, useEffect } from 'react';
+import React from 'react'
+import SliderStyle from "../Slider/Slider.module.css";
+import MediaStyle from "../../GlobalCss/Media/media.css"
+import appleImg from "../../../Images/MainImages/Apple_logo.png"
+import iphoneImg from "../../../Images/MainImages/iphone.jpg"
+import GlobalModuleCss from "../../GlobalCss/global.module.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 // const sliderData = [
 //     {
@@ -42,136 +41,37 @@
 // ];
 
 
-// function Slider() {
-//       const [currentIndex, setCurrentIndex] = useState(0);
-//       useEffect(() => {
-//         const interval = setInterval(() => {
-//           setCurrentIndex((prevIndex) => (prevIndex + 1) % sliderData.length);
-//         }, 3000);
-//         return () => clearInterval(interval);
-//       }, []);
-//     //   const { t } = useTranslation();
-//       return (
-//         <div className={SliderStyle.sliderContainer}>
-//           <div
-//             className={SliderStyle.slider}
-//             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-//           >
-//             {sliderData.map((slide, index) => (
-//               <div key={index} className={SliderStyle.slide}>
-//                 <div className={SliderStyle.textContainer}>
-//                   <div className={SliderStyle.header}>
-//                     <img src={slide.logo} alt="Logo" />
-//                     <p className={SliderStyle.series}>{slide.series}</p>
-//                   </div>
-//                   <p className={SliderStyle.description}>{slide.description}</p>
-//                   <a className={SliderStyle.shopNow} href="#">
-//                     Shop Now
-//                     <span>
-//                       <FontAwesomeIcon
-//                         icon={faArrowRight}
-//                         className={SliderStyle.shopNowIcon}
-//                       />
-//                     </span>
-//                   </a>
-//                 </div>
-//                 <div className={SliderStyle.imageContainer}>
-//                   <img src={slide.image} alt="Slide" />
-//                 </div>
-//               </div>
-//             ))}
-//           </div>
-//           <div className={SliderStyle.dotsContainer}>
-//             {sliderData.map((_, index) => (
-//               <span
-//                 key={index}
-//                 className={`${SliderStyle.dot} ${
-//                   index === currentIndex ? SliderStyle.active : ""
-//                 }`}
-//               ></span>
-//             ))}
-//           </div>
-//         </div>
-//       );
-//     }
-//     export default Slider;
-    
+function Slider() {
+    return (
+        <div className={SliderStyle.slider} id='slider'>
+            <div className={SliderStyle.sliderLeftItems} id='slider-left-items'>
+                <div className={SliderStyle.sliderLeftFirstItems}>
+                    <img src={appleImg} alt="photo" id='img-logo' />
+                    <p className={`${SliderStyle.phoneModel} ${GlobalModuleCss.fontPopppins}`} id='phone-series'>iPhone 14 Series</p>
+                </div>
 
+                <div className={SliderStyle.saleInfo}>
+                    <h1 className={`${SliderStyle.phoneAbout} ${GlobalModuleCss.fontInter}`} id='about-sale'>Up to 10% <br /> off Voucher</h1>
+                </div>
 
+                <div className={SliderStyle.shopNowIphone}>
+                    <div className={SliderStyle.shop}>
+                        <p className={`${SliderStyle.shopText} ${GlobalModuleCss.fontPopppins}`} id='shop-now'>Shop Now</p>
+                    </div>
 
+                    <FontAwesomeIcon icon={faArrowRight} className={SliderStyle.rightIcon} />
+                </div>
+            </div>
 
+            <div className={SliderStyle.sliderRightItems} id='slider-right-items'>
+                <img src={iphoneImg} alt="" className={SliderStyle.sliderImg} id='phone-model' />
+            </div>
 
+        </div>
+    )
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function Slider() {
-
-//     const [currentIndex, setCurrentIndex] = useState(0);
-//     useEffect(() => {
-//         const interval = setInterval(() => {
-//             setCurrentIndex((prevIndex) => (prevIndex + 1) % sliderData.length);
-//         }, 3000);
-//         return () => clearInterval(interval);
-//     }, []);
-//     const { t } = useTranslation();
-//     return (
-//         <div className={SliderStyle.slider} id='slider'>
-//             <div className={SliderStyle.sliderLeftItems} id='slider-left-items' style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-//                 <div className={SliderStyle.sliderLeftFirstItems}>
-//                     <img src={appleImg} alt="photo" id='img-logo' />
-//                     <p className={`${SliderStyle.phoneModel} ${GlobalModuleCss.fontPopppins}`} id='phone-series'>iPhone 14 Series</p>
-//                 </div>
-
-//                 <div className={SliderStyle.saleInfo}>
-//                     <h1 className={`${SliderStyle.phoneAbout} ${GlobalModuleCss.fontInter}`} id='about-sale'>Up to 10% <br /> off Voucher</h1>
-//                 </div>
-
-//                 <div className={SliderStyle.shopNowIphone}>
-//                     <div className={SliderStyle.shop}>
-//                         <p className={`${SliderStyle.shopText} ${GlobalModuleCss.fontPopppins}`} id='shop-now'>Shop Now</p>
-//                     </div>
-
-//                     <FontAwesomeIcon icon={faArrowRight} className={SliderStyle.rightIcon} />
-//                 </div>
-//             </div>
-
-            
-
-//             {/* <div className={SliderStyle.sliderRightItems} id='slider-right-items'>
-//                 <img src={iphoneImg} alt="" className={SliderStyle.sliderImg} id='phone-model' />
-//             </div> */}
-
-//         </div>
-//     )
-// }
-
-// export default Slider
+export default Slider
 
 
 
@@ -264,4 +164,56 @@
 //     image: Iphone5,
 //   },
 // ];
-// 
+// function Slider() {
+//   const [currentIndex, setCurrentIndex] = useState(0);
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setCurrentIndex((prevIndex) => (prevIndex + 1) % sliderData.length);
+//     }, 3000);
+//     return () => clearInterval(interval);
+//   }, []);
+//   const { t } = useTranslation();
+//   return (
+//     <div className={Sliderstyles.sliderContainer}>
+//       <div
+//         className={Sliderstyles.slider}
+//         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+//       >
+//         {sliderData.map((slide, index) => (
+//           <div key={index} className={Sliderstyles.slide}>
+//             <div className={Sliderstyles.textContainer}>
+//               <div className={Sliderstyles.header}>
+//                 <img src={slide.logo} alt="Logo" />
+//                 <p className={Sliderstyles.series}>{slide.series}</p>
+//               </div>
+//               <p className={Sliderstyles.description}>{slide.description}</p>
+//               <a className={Sliderstyles.shopNow} href="#">
+//                 {t("Shop Now")}
+//                 <span>
+//                   <FontAwesomeIcon
+//                     icon={faArrowRight}
+//                     className={Sliderstyles.shopNowIcon}
+//                   />
+//                 </span>
+//               </a>
+//             </div>
+//             <div className={Sliderstyles.imageContainer}>
+//               <img src={slide.image} alt="Slide" />
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+//       <div className={Sliderstyles.dotsContainer}>
+//         {sliderData.map((_, index) => (
+//           <span
+//             key={index}
+//             className={`${Sliderstyles.dot} ${
+//               index === currentIndex ? Sliderstyles.active : ""
+//             }`}
+//           ></span>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
+// export default Slider;

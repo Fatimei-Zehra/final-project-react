@@ -10,6 +10,7 @@ import DropMenu from '../DropMenu/DropMenu'
 import { Link } from 'react-router-dom'
 import Wishlist from '../Wishlist/Wishlist'
 import Search from '../Search/Search'
+import Cart2 from "../Cart/Cart2"
 
 import { useTranslation } from 'react-i18next'
 import i18n from '../../i18/i18n'
@@ -69,6 +70,7 @@ export default function Header() {
 
                         <div id='planset-header-icons' className={styles.plansetHeaderIcons}>
                             <Wishlist />
+                            <Cart2 />
                         </div>
 
 
@@ -77,7 +79,7 @@ export default function Header() {
                         <div className={styles.headerComponents} id='header-components'>
                             <Search />
                             <Wishlist />
-
+                            <Cart2 />
                         </div>
 
                     </div>
@@ -108,7 +110,7 @@ export default function Header() {
                 <div id='header-mobile-nav'>
                     <div className="container">
                         <div id='mobile-nav-items'>
-                            <div id='mobile-nav-icon'>    
+                            <div id='mobile-nav-icon'>
                                 <DropMenu />
                             </div>
 

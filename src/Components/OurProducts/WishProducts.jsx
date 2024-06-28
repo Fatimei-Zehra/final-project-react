@@ -1,83 +1,40 @@
-// import React, { useState } from 'react';
-// import { CiHeart } from "react-icons/ci";
-// import { IoMdHeart } from "react-icons/io";
-// import OurProductsStyle from "../OurProducts/OurProducts.module.css"
-
-
+import React, { useState, useEffect,useRef } from 'react';
+import { IoMdHeart, IoMdHeartEmpty } from 'react-icons/io';
+import { db } from "../../firebase/firebase";
+import OurProductsStyle from "./OurProducts.module.css";
+// import products from "../../Server/Products";
+// import { setDoc, collection, addDoc } from "firebase/firestore";
 
 
 // const HeartIconToggle = () => {
 //   const [isClicked, setIsClicked] = useState(false);
 
-//   const handleClick = () => {
-//     setIsClicked(!isClicked);
-//   };
+//   const idRef = useRef(null);
+//   const emailRef = useRef(null);
+//   const priceRef = useRef(null);
+//   const descriptionRef = useRef(null);
 
+//   const clickProducts = async (e) => {
+//     e.preventDefault();
+//     const productId = idRef;
+//     const productName = emailRef;
+//     const productPrice = priceRef;
+//     const productDescription = descriptionRef;
 
-//   return (
-//     <div>
-//       {isClicked ? (
-//         <IoMdHeart
-//           onClick={handleClick}
-//           color="red"
-//           size={30}
-//           style={{ cursor: 'pointer' }}
-//           className={`${OurProductsStyle.svg} ${OurProductsStyle.svgHeart}`} />
-//       ) : (
-//         <CiHeart
-//           onClick={handleClick}
-//           color="black"
-//           size={30}
-//           fontWeight={700}
-//           style={{ cursor: 'pointer' }}
-//           className={`${OurProductsStyle.svg} ${OurProductsStyle.svgHeart}`} />
-//       )}
-//     </div>
-//   );
-// };
-
-
-// export default HeartIconToggle;
-
-
-
-// import React, { useState } from 'react';
-// import { IoMdHeart, IoMdHeartEmpty } from 'react-icons/io'; // Import heart icons
-// import {db} from "../../firebase/firebase"
-// import OurProductsStyle from "./OurProducts.module.css"
-
-// const HeartIconToggle = ({ productId }) => {
-//   const [isClicked, setIsClicked] = useState(false);
-
-//   const handleToggleFavorite = async () => {
-//     try {
-//       const favoritesRef = db.collection('Wishlist');
-//       const snapshot = await favoritesRef.where('productId', '==', productId).get();
-
-//       if (snapshot.empty) {
-//         // If product is not in favorites, add it
-//         await favoritesRef.add({ productId });
-//         setIsClicked(true);
-//         alert('Added to favorites!');
-//       } else {
-//         // If product is in favorites, remove it
-//         snapshot.forEach(doc => {
-//           favoritesRef.doc(doc.id).delete();
-//           setIsClicked(false);
-//           alert('Removed from favorites!');
-//         });
-//       }
-//     } catch (error) {
-//       console.error('Error toggling favorite: ', error);
-//       alert('Failed to toggle favorite. Please try again.');
+//     const productData = {
+//       id: productId,
+//       name: productName,
+//       price: productPrice,
+//       description: productDescription,
 //     }
-//   };
 
+//     await addDoc(collection(db, "Wishlist"), productData);
+//   };
 //   return (
 //     <div>
 //       {isClicked ? (
 //         <IoMdHeart
-//           onClick={handleToggleFavorite}
+//           onClick={{clickProducts }}
 //           color="red"
 //           size={30}
 //           style={{ cursor: 'pointer' }}
@@ -85,7 +42,7 @@
 //         />
 //       ) : (
 //         <IoMdHeartEmpty
-//           onClick={handleToggleFavorite}
+//         // onClick={{clickProducts }}
 //           color="black"
 //           size={30}
 //           fontWeight={700}
@@ -100,87 +57,45 @@
 // export default HeartIconToggle;
 
 
-import React, { useState, useEffect } from 'react';
-import { IoMdHeart, IoMdHeartEmpty } from 'react-icons/io';
-import { db } from "../../firebase/firebase";
-import OurProductsStyle from "./OurProducts.module.css";
-import products from "../../Server/Products";
 
-const HeartIconToggle = ({ productId }) => {
-  const [isClicked, setIsClicked] = useState(false);
-  const [alertMessage, setAlertMessage] = useState('');
 
-  useEffect(() => {
 
-    checkFavoriteStatus();
-  }, [productId]);
-
+// const addProductsToFirestore = async () => {
  
+//   try {
+//     // Loop through each product in productsItem array
+//     for (const product of productsItem) {
+//       // Add the product to Firestore collection "Products"
+//       await db.collection('Wishlist').add({
+//         id: product.id,
+//         name: product.name,
+//         price: product.price,
+//         description: product.description,
+//         image: product.image
+//       });
 
-  const checkFavoriteStatus = async () => {
-    try {
-      const favoritesRef = db.collection('Wishlist');
-      const snapshot = await favoritesRef.where('productId', '==', productId).get();
+//       console.log(`Product added: ${product.name}`);
+//     }
 
-      setIsClicked(!snapshot.empty);
-    } catch (error) {
-      console.error('Favori durumu kontrol edilirken hata oluştu:', error);
-    }
-  };
-
-
-  const handleToggleFavorite = async () => {
-    try {
-      const favoritesRef = db.collection('Wishlist');
-      const snapshot = await favoritesRef.where('productId', '==', productId).get();
+//     console.log('All products added to Firestore successfully!');
+//   } catch (error) {
+//     console.error('Error adding products to Firestore: ', error);
+//   }
+//   return (
+//     <div>
+//         <IoMdHeart  
+//           color="red"
+//           size={30}
+//           style={{ cursor: 'pointer' }}
+//           className={`${OurProductsStyle.svg} ${OurProductsStyle.svgHeart}`}
+//         />
      
-      if (snapshot.empty) {
-
-        await favoritesRef.add({ productId });
-        setIsClicked(true);
-        setAlertMessage('wisgliste elave olundu!');
-      } else {
-
-        snapshot.forEach(doc => {
-          favoritesRef.doc(doc.id).delete();
-          setIsClicked(false);
-          setAlertMessage('wishlistden silindi!');
-        });
-      }
-    } catch (error) {
-      console.error('wishliste elave edemmedin', error);
-      setAlertMessage('elave olunmadi');
-    }
-  };
+//     </div>
+//   );
+// };
 
 
-  const showAlert = () => {
-    alert(alertMessage);
-  };
+// export default addProductsToFirestore;
 
-  return (
-    <div>
-      {isClicked ? (
-        <IoMdHeart
-          onClick={() => { handleToggleFavorite(); showAlert(); }}
-          color="red"
-          size={30}
-          style={{ cursor: 'pointer' }}
-          className={`${OurProductsStyle.svg} ${OurProductsStyle.svgHeart}`}
-        />
-      ) : (
-        <IoMdHeartEmpty
-          onClick={() => { handleToggleFavorite(); showAlert(); }}
-          color="black"
-          size={30}
-          fontWeight={700}
-          style={{ cursor: 'pointer' }}
-          className={`${OurProductsStyle.svg} ${OurProductsStyle.svgHeart}`}
-        />
-      )}
-    </div>
-  );
-};
 
-export default HeartIconToggle;
 

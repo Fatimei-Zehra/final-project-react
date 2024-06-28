@@ -15,7 +15,8 @@ import Checkout from './Components/Checkout/Checkout';
 import About from "../src/Components/About/About";
 import Home from './Components/Home';
 import Contact from './Components/Contact/Contact';
-import Cart from './Components/Cart/Cart'
+import Cart2 from './Components/Cart/Cart2'
+
 
 
 // ROOTER CODES
@@ -26,12 +27,7 @@ function AppContent() {
   return (
     <div>
       <Header />
-      {/* <Cart />  */}
-
-    
      {/* <Account /> */}
-
-
       <Routes>
         <Route path='/About' element={<About />} />
         <Route path='/Home' element={<Home />} />
@@ -39,6 +35,7 @@ function AppContent() {
         <Route path="/Wishlist" element={<WishlistPage />} />
         <Route path="/SignUp" element={<SignUp />} />
         <Route path='/Contact' element={<Contact />} />
+        <Route path='/Cart' element={ <Cart2 /> } />
       </Routes>
 
       {
@@ -46,7 +43,8 @@ function AppContent() {
         location.pathname !== "/Wishlist" &&
         location.pathname !== "/SignUp" &&
         location.pathname !== "/About" &&
-        location.pathname !== "/Contact" && (
+        location.pathname !== "/Contact" &&
+        location.pathname !== "/Cart" && (
           <>
             <Main />
             <Timer />
