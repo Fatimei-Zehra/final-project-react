@@ -1,3 +1,15 @@
+
+import React, {useState}  from 'react'
+import { useNavigate } from 'react-router-dom'
+import styles from "../SignUp/SignUp.module.css"
+import svg  from "../../Images/Login/login.jpg"
+import { FcGoogle } from 'react-icons/fc'
+import SignUpMediacss from '../SignUp/SignUp.media.css'
+import {createUserWithEmailAndPassword } from 'firebase/auth'
+import { auth } from '../../firebase/firebase.js'
+import { Link } from 'react-router-dom'
+
+
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import styles from "../SignUp/SignUp.module.css";
@@ -6,6 +18,7 @@ import { FcGoogle } from 'react-icons/fc';
 import '../SignUp/SignUp.media.css';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../SignUp/firebase.js';
+
 
 const SignUp = () => {
   const [name, setName] = useState('');
@@ -26,9 +39,16 @@ const SignUp = () => {
   };
 
   return (
+
+    <div>
+        <div id='account' className={styles.Account}>
+      <div id='acc' className={styles.acc}>
+        <img src={svg} alt='Login' id='image' className={styles.accImg} /> 
+
     <div className={styles.Account}>
       <div className={styles.acc}>
         <img src={svg} alt='Login' id='image' className={styles.accImg} />
+
       </div>
 
       <div className={styles.text} id='account-text-items'>
@@ -57,6 +77,18 @@ const SignUp = () => {
           className={styles.textInput}
         />
         <div className={styles.forget}>
+
+        <button onClick={handleSignUp} id='account-btn' className={styles.AccountButton}>Create Account</button> 
+        <button id='Google-btn' className={styles.GoogleButton}> <FcGoogle className={styles.icon}/> Sign up with Google</button> 
+        <div id='p' className={styles.P}>
+        <p className={styles.forgetP} id='forget-pass'>Already have account?</p>
+        {/*  id='acc-p'></p> */}
+        <Link  to="/Login"  className={styles.AccountP}>
+        Log in
+        </Link>
+        </div> 
+        </div>
+
           <button onClick={handleSignUp} id='account-btn' className={styles.AccountButton}>
             Create Account
           </button>
@@ -69,6 +101,7 @@ const SignUp = () => {
               Log in
             </Link>
           </div>
+
         </div>
       </div>
     </div>
