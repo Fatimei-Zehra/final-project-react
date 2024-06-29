@@ -1,31 +1,66 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from '../Account/Account.module.css'
 import mediacss from '../Account/Account.media.css'
-import {createUserWithEmailAndPassword } from 'firebase/auth'
-import { auth } from '../../firebase/firebase.js';
+import { auth, db } from '../../firebase/firebase.js';
 import { Link } from "react-router-dom";
+import { doc, getDoc, updateDoc } from "firebase/firestore";
 
 
-  const Profile = () => {
-      const [firstname, setfirstName] = useState('');
-      const [lastname, setlastName] = useState('');
-      const [email, setEmail] = useState('');
-      const [address, setAddress] = useState('');
-      const [currentpassword, setcurrentPassword] = useState('');
-      const [newpassword, setnewPassword] = useState('');
-      const [confirmpassword, setconfirmPassword] = useState('');
-      const [error, setError] = useState('');
-      
-      
-      const handleSubmit = async (e) => {
-        e.preventDefault();
-        try {
-          createUserWithEmailAndPassword(auth, firstname, lastname, currentpassword, confirmpassword, newpassword, email, error);
-          console.log('Kayıt başarılı');
-        } catch (error) {
-          setError(error.message);
+const Profile = () => {
+  const [userData, setUserData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    address: '',
+    currentPassword: '',
+    newPassword: '',
+    confirmNewPassword: ''
+  });
+
+  useEffect(() => {
+    const fetchUserData = async () => {
+      const user = auth.currentUser;
+      if (user) {
+        const userDoc = await getDoc(doc(db, "users", user.uid));
+        if (userDoc.exists()) {
+          setUserData({
+            ...userData,
+            firstName: userDoc.data().firstName,
+            lastName: userDoc.data().lastName,
+            email: user.email,
+            address: userDoc.data().address
+          });
         }
-      };
+      }
+    };
+
+    fetchUserData();
+  }, []);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setUserData((prevData) => ({
+      ...prevData,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const user = auth.currentUser;
+    if (user) {
+      const userRef = doc(db, "users", user.uid);
+      await updateDoc(userRef, {
+        firstName: userData.firstName,
+        lastName: userData.lastName,
+        address: userData.address
+      });
+      if (userData.newPassword && userData.newPassword === userData.confirmNewPassword) {
+        await user.updatePassword(userData.newPassword);
+      }
+    }
+  };
+
 
   return (
     <div>
@@ -60,33 +95,33 @@ import { Link } from "react-router-dom";
             <div id='item' className={styles.item}>
             <div className={styles.AccountGroup}>
               <label className={styles.itemLabel}  htmlFor="firstName">First Name</label>
-              <input value={firstname} onChange={(e) => setfirstName(e.target.value)}  className={styles.itemInput}  type="text" id="firstName" name="firstName" defaultValue="Md" />
+              <input value={userData.firstName} onChange={handleChange}  className={styles.itemInput}  type="text" id="firstName" name="firstName" defaultValue="Md" />
             </div>
             <div className={styles.AccountGroup}>
               <label className={styles.itemLabel} htmlFor="lastName">Last Name</label>
-              <input  value={lastname} onChange={(e) => setlastName(e.target.value)}  className={styles.itemInput}  type="text" id="lastName" name="lastName" defaultValue="Rimel" />
+              <input  value={userData.lastName} onChange={handleChange}   className={styles.itemInput}  type="text" id="lastName" name="lastName" defaultValue="Rimel" />
             </div>
             </div>
             <div className={styles.item}>
             <div className={styles.AccountGroup}>
               <label  className={styles.itemLabel} htmlFor="email">Email</label>
-              <input value={email} onChange={(e) => setEmail(e.target.value)} className={styles.itemInput}   type="email" id="email" name="email" defaultValue="rimel111@gmail.com" />
+              <input value={userData.email}  className={styles.itemInput}   type="email" id="email" name="email" defaultValue="rimel111@gmail.com" />
             </div>
             <div className={styles.AccountGroup}>
               <label  className={styles.itemLabel} htmlFor="address">Address</label>
-              <input  value={address} onChange={(e) => setAddress(e.target.value)} className={styles.itemInput} type="text" id="address" name="address" defaultValue="Kingston, 5236, United State" />
+              <input value={userData.address} onChange={handleChange} className={styles.itemInput} type="text" id="address" name="address" defaultValue="Kingston, 5236, United State" />
             </div>
             </div>
             <h3>Password Changes</h3>
             <div className={styles.pass}>
             <div className={styles.AccountGroup}>
-              <input value={currentpassword} onChange={(e) => setcurrentPassword(e.target.value)} className={styles.passInput}  type="password" id="currentPassword" name="currentPassword" defaultValue="Current Passwod" />
+              <input  value={userData.currentPassword} onChange={handleChange} className={styles.passInput}  type="password" id="currentPassword" name="currentPassword" defaultValue="Current Passwod" />
             </div>
             <div className={styles.AccountGroup}>
-              <input value={newpassword} onChange={(e) => setnewPassword(e.target.value)} className={styles.passInput}   type="password" id="newPassword" name="newPassword" defaultValue="New Passwod" />
+              <input value={userData.newPassword} onChange={handleChange} className={styles.passInput}   type="password" id="newPassword" name="newPassword" defaultValue="New Passwod" />
             </div>
             <div className={styles.AccountGroup}>
-              <input value={confirmpassword} onChange={(e) => setconfirmPassword(e.target.value)} className={styles.passInput} type="password" id="confirmPassword" name="confirmPassword" defaultValue="Confirm New Passwod" />
+              <input  value={userData.confirmNewPassword} onChange={handleChange} className={styles.passInput} type="password" id="confirmPassword" name="confirmPassword" defaultValue="Confirm New Passwod" />
             </div>
             <div id='btn' className={styles.btn}>
             <div id='cncl' className={styles.cancel}>
