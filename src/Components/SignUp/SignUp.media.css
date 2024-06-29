@@ -61,6 +61,103 @@
 
   }
   
+  @media (max-width: 940px) {
+    #account-text-items{
+      padding: 10px;
+    }
+  
+    #account-items-text {
+      font-size: 22px;
+     
+    }
+  
+    #account-p{
+      font-size: 14px;
+    }
+  
+    #account-input {
+      padding: 8px;
+    }
+  
+    #account-btn {
+      padding: 8px 48px;
+    }
+
+    #Google-btn {
+      padding: 8px 16px;
+    }
+
+    #p{
+      margin-right: 60%;
+    }
+
+    #forget-pass {
+      font-size: 12px;
+     white-space: nowrap;
+    }
+
+    #acc-p {
+      font-size: 12px;
+     white-space: nowrap;
+    }
+
+    #image{
+      max-width: 90%;
+    
+    }
+  }
+  
+  /* Tablet için medya sorgusu */
+  @media (max-width: 768px) {
+    #account-text-items {
+   margin-left: 8%;
+   margin-right: 5%;
+    }
+  
+    #account-items-text{
+      font-size: 20px;
+      white-space: nowrap;
+    }
+  
+    #account-p {
+      font-size: 12px;
+    }
+  
+    #account-input {
+      padding: 6px;
+    }
+  
+    #account-btn {
+      padding: 6px 45px;
+      white-space: nowrap;
+    }
+
+    #Google-btn {
+      padding: 6px 12px;
+      white-space: nowrap;
+    }
+
+    #p{
+      margin-right: 60%;
+    }
+
+    #forget-pass {
+      font-size: 12px;
+     white-space: nowrap;
+    }
+
+    #acc-p {
+      font-size: 12px;
+     white-space: nowrap;
+    }
+
+    #image{
+      max-width: 100%;
+    
+    }
+  }
+  
+
   
   @media screen and (max-width: 450px) {
     #image {
@@ -68,16 +165,16 @@
     }
 
     #account-text-items {
-    margin-left: 10%;
+    margin-left: 25%;
     margin-top: 3%;  
     }
 
     #account-btn{
-        font-size: 10px;
+     padding: 6px 45px;
     }
 
     #Google-btn{
-        font-size: 10.5px;
+     padding: 6px 12px;
     }
 
    #forget-pass{
@@ -97,16 +194,16 @@
     }
 
     #account-text-items {
-    margin-left: 7%;
+    margin-left: 24%;
     margin-top: 3%;  
     }
 
     #account-btn{
-        font-size: 6px;
+      padding: 6px 45px;
     }
 
     #Google-btn{
-        font-size: 7.5px;
+      padding: 6px 12px; 
     }
 
    #forget-pass{
