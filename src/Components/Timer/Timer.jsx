@@ -4,10 +4,12 @@ import GlobalCss from "../GlobalCss/global.css"
 import GlobalModuleCss from "../GlobalCss/global.module.css"
 import MediaStyle from "../GlobalCss/Media/media.css"
 import { useState, useEffect } from 'react'
+import { useTranslation } from "react-i18next";
+
 
 const Timer = () => {
     const calculateTime = () => {
-        const targetDate = new Date("2024-06-22");
+        const targetDate = new Date("2024-06-30");
         const now = new Date(); //indiki vaxtimiz
         const difference = targetDate - now; //bize hansi tarix lazmdisa ondan indiki vaxt arasindaki ferqi hesabla
 
@@ -34,37 +36,39 @@ const Timer = () => {
         return () => clearTimeout(timer);
     });
 
+    const { t } = useTranslation();
+
     return (
         <div className="container">
 
             <div className={styles.rectangle} id='timer-mobile-rectangle'>
                 <div className={styles.red}></div>
-                <h1 className={`${GlobalModuleCss.fontPoppins} ${styles.rectangleText}`}>Today's</h1>
+                <h1 className={`${GlobalModuleCss.fontPoppins} ${styles.rectangleText}`}>{t("Today's")}</h1>
             </div>
 
             <div className={styles.frame} id='frame'>
                 <div className={styles.flash}>
-                    <h1 className='flash-sales'>Flash Sales</h1>
+                    <h1 className='flash-sales'>{t( "Flash Sales")}</h1>
                 </div>
 
                 <div className={styles.timer} id='timer'>
                     <div className={styles.timerSide}>
-                        <p className={styles.timerSideP}>Days</p>
+                        <p className={styles.timerSideP}>{t("Days")}</p>
                         <span className={styles.timerSideSpan} id='daysNum'>{timeLeft.days}</span>
                     </div>
                     <span className={styles.pair} id='dayPair'>:</span>
                     <div className={styles.timerSide}>
-                        <p className={styles.timerSideP}>Hours</p>
+                        <p className={styles.timerSideP}>{t("Hours")}</p>
                         <span className={styles.timerSideSpan} id='hoursNum'>{timeLeft.hours}</span>
                     </div>
                     <span className={styles.pair} id='hourPair'>:</span>
                     <div className={styles.timerSide}>
-                        <p className={styles.timerSideP}>Minutes</p>
+                        <p className={styles.timerSideP}>{t("Minutes")}</p>
                         <span className={styles.timerSideSpan} id='minutesNum'>{timeLeft.minutes}</span>
                     </div>
                     <span className={styles.pair} id='minPair'>:</span>
                     <div className={styles.timerSide}>
-                        <p className={styles.timerSideP}>Seconds</p>
+                        <p className={styles.timerSideP}>{t("Seconds")}</p>
                         <span className={styles.timerSideSpan} id='secondsNum'>{timeLeft.seconds}</span>
                     </div>
                 </div>

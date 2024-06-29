@@ -44,40 +44,11 @@ function Navbar() {
           </li>
           <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list">
             <Link to="/SignUp" className={styles.linkName}>
-             {t("sign up")}
+             {t("sign Up")}
             </Link>
           </li>
         </ul>
       </nav>
-
-
-      {/* NAVBAR MOVILE CODES */}
-      {/* <nav className={styles.nav} id='nav' >
-        <Link>
-          <FontAwesomeIcon icon={faBars} id='menu-icon' onClick={toggleSidebar} />
-        </Link>
-        <ul className={styles.list}>
-          <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list" >
-            <Link to="/Home" className={styles.linkName}>
-              home
-            </Link>
-          </li>
-          <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list">
-            <Link>
-              contact
-            </Link></li>
-          <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list">
-            <Link>
-              about
-            </Link>
-          </li>
-          <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list">
-            <Link to="/Login" className={styles.linkName}>
-              sign up
-            </Link>
-          </li>
-        </ul>
-      </nav> */}
 
 
     </>

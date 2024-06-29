@@ -32,8 +32,12 @@
     display: flex;
     flex-direction: column;
     margin-right: 30px;
+    cursor: pointer;
 }
 
+.sliderBox:hover button{
+    display: block;
+}
 .sliderBoxes {
     border-radius: 4px;
     background-color: #F5F5F5;
@@ -170,6 +174,7 @@
     border-radius: 0px 0px 4px 4px;
     position: absolute;
     cursor: pointer;
+    display: none;
 }
 
 .view button {
@@ -190,3 +195,4 @@
     align-items: center;
     margin-bottom: 80px;
 }
+
