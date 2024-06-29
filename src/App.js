@@ -24,6 +24,11 @@ import Contact from './Components/Contact/Contact';
 //import Cart from './Components/Cart/Cart'
 
 
+import Cart from './Components/Cart/Cart'
+
+
+
+
 
 
 
@@ -60,8 +65,10 @@ function AppContent() {
     <div>
       <Header />
      {/* <Cart /> 
+
      <Account /> */}
-    
+     {/* <Account /> */}
+
 
       <Routes>
         <Route path='/About' element={<About />} />
@@ -95,10 +102,16 @@ function AppContent() {
     </div>
 
 
+
+      <Footer />
+    </div>
+  );
+
+    
+
+
+
   
-
-
-  )
 }
 
 function App() {
