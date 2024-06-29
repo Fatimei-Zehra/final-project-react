@@ -32,14 +32,16 @@
 .frame {
     width: 170px;
     height: 138px;
-    padding: 12px 25px 12px 24px;
     border-radius: 4px;
     background-color: #F5F5F5;
-    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
 }
 
 .img {
-    width: 121px;
+    width: 155px;
     height: 114px;
 }
 
@@ -58,7 +60,6 @@
 
 .leftSide {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     width: 50%;
 }
@@ -112,7 +113,7 @@
 
 .ps {
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 400;
     border-bottom: 2px solid #BFBFBF;
 }
@@ -167,12 +168,13 @@
 .sizeFrame {
     width: 32px;
     height: 32px;
-    padding: 6px 7px 6px 7px;
     border-radius: 4px;
     border: 1px solid #BFBFBF;
-    align-items: center;
     cursor: pointer;
     transition: all 0.6s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sizeFrame:hover {
@@ -206,6 +208,8 @@
     background-color: #fff;
     border: 1px solid #7F7F7F;
     font-size: 20px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
 }
 
 .control_btnn {
@@ -217,14 +221,19 @@
     color: #eee;
     border: 1px solid #7F7F7F;
     font-size: 20px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
 }
 
 .counter_output {
     width: 80px;
-    height: 54px;
+    height: 43px;
     padding: 10px 8px;
     border-radius: 4px;
     border: 1px solid #7F7F7F;
+    display: inline-block;
+
+    text-align: center;
 }
 
 .buy {
