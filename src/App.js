@@ -15,11 +15,8 @@ import Checkout from './Components/Checkout/Checkout';
 import About from "../src/Components/About/About";
 import Home from './Components/Home';
 import Contact from './Components/Contact/Contact';
-
 import Cart2 from './Components/Cart/Cart2'
-
 import ProductView from './Components/ProductView/ProductView';
-
 import Cart from './Components/Cart/Cart'
 import { Addproducts } from './Admin/Addproducts';
 
@@ -33,16 +30,22 @@ function AppContent() {
   const location = useLocation();
   return (
     <div>
-       <Addproducts />
+
       <Header />
-
-     {/* <Account /> */}
-
       {/* <Cart />  */}
 
 
       {/* <Account /> */}
 
+
+      {/* {location.pathname !== "/admin" && (
+        <>
+          <Header />
+          <Footer />
+        </>
+      )} */}
+
+      {/* <Addproducts /> */}
 
 
       <Routes>
@@ -54,7 +57,7 @@ function AppContent() {
         <Route path='/Contact' element={< Contact />} />
         <Route path='/ProductView' element={<ProductView />} />
         <Route path='/Contact' element={<Contact />} />
-        <Route path='/Cart' element={ <Cart2 /> } />
+        <Route path='/Cart' element={<Cart2 />} />
         <Route path='/Addproducts' element={<Addproducts />} />
       </Routes>
 
@@ -64,10 +67,9 @@ function AppContent() {
         location.pathname !== "/SignUp" &&
         location.pathname !== "/About" &&
         location.pathname !== "/Contact" &&
-        location.pathname !== "/Cart" && 
-        location.pathname !== "/Contact" && 
-        location.pathname !== "/ProductView"&&
-        location.pathname !== "/Contact" && (
+        location.pathname !== "/Cart" &&
+        location.pathname !== "/Contact" &&
+        location.pathname !== "/ProductView" && (
 
           <>
             <Main />
@@ -78,15 +80,14 @@ function AppContent() {
             <Adversiting />
             <Products />
             <Services />
-
-            
           </>
         )
       }
 
       < Footer />
     </div >
-)}
+  )
+}
 
 
 function App() {
@@ -94,18 +95,11 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <AppContent />
-        <Switch>
-          <Route path='/Addproducts' Component={Addproducts} />
-        </Switch>
       </BrowserRouter>
     </div>
   );
 
 }
-
-
-
-
 export default App;
 
 

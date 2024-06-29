@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
 import { storage, db } from '../firebase/firebase'
 import AddCss from '../Admin/Add.module.css'
+import { HiMenu, HiX } from 'react-icons/hi';
+import { SidebarData } from '../Server/Sidebar';
+import { addDoc } from 'firebase/firestore';
+
 export const Addproducts = () => {
 
     const [productName, setProductName] = useState('');
@@ -47,27 +51,72 @@ export const Addproducts = () => {
             })
     }
 
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
+
     return (
-        <div className='container'>
+        <div className='container' style={{display:'flex',marginTop:"30px"}}>
+            <div className={AddCss.dropMenu}>
+                <HiMenu className={AddCss.menuIcon} onClick={toggleMenu} />
+
+                <div className={`${AddCss.sidebar} ${isOpen ? AddCss.open : ''}`}>
+                    <div className={AddCss.sidebarHeader}>
+                        <HiX className={AddCss.closeIcon} onClick={closeMenu} />
+                    </div>
+                    {SidebarData.map((category, index) => (
+                        <div key={index} className={AddCss.category}>
+                            <h2>{category.title}</h2>
+                            {/* <ul className={AddCss.categoryMenu}>
+                            {category.submenu.map((item, idx) => (
+                                <li key={idx}>
+                                    <Link to={item.path}>{item.title}</Link>
+                                </li>
+                            ))}
+                        </ul> */}
+                        </div>
+                    ))}
+                </div>
+            </div>
             <br />
-            <h2>ADD PRODUCTS</h2>
-            <hr />
-            <form autoComplete="off" className='form-group' onSubmit={addProduct}>
-                <label htmlFor="product-name">Product Name</label>
-                <input type="text" className='form-control' required
-                    onChange={(e) => setProductName(e.target.value)} value={productName} />
-                <br />
-                <label htmlFor="product-price">Product Price</label>
-                <input type="number" className='form-control' required
-                    onChange={(e) => setProductPrice(e.target.value)} value={productPrice} />
-                <br />
-                <label htmlFor="product-img">Product Image</label>
-                <input type="file" className='form-control' id="file" required
-                    onChange={productImgHandler} />
-                <br />
-                <button type="submit" className='btn btn-success btn-md mybtn'>ADD</button>
-            </form>
-            {error && <span className='error-msg'>{error}</span>}
+            <div style={{width:"100%"}}>
+                <h2>ADD PRODUCTS</h2>
+                <hr />
+                <form autoComplete="off" className={AddCss.formGroup} onSubmit={addProduct}>
+                    <div className={AddCss.inputForProduct}>
+                    <label htmlFor="product-name">Product Name:</label>
+                    <input type="text" className={AddCss.formControl} required
+                        onChange={(e) => setProductName(e.target.value)} value={productName} />
+                    </div>
+
+                    <br />
+
+                    <div className={AddCss.inputForProduct}>
+                    <label htmlFor="product-price">Product Price</label>
+                    <input type="number" className={AddCss.formControl} required
+                        onChange={(e) => setProductPrice(e.target.value)} value={productPrice} />
+                    </div>
+                   
+                    <br />
+
+                    <div className={AddCss.inputForProduct}>
+                    <label htmlFor="product-img">Product Image</label>
+                    <input type="file" className={AddCss.formControl} id="file" required
+                        onChange={productImgHandler} />
+                    </div>
+
+                    <br />
+                    <button type="submit" className={AddCss.buttonAdd}>ADD</button>
+                </form>
+                {error && <span className='error-msg'>{error}</span>}
+            </div>
+
         </div>
     )
 }

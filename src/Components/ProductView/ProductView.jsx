@@ -108,10 +108,10 @@ function ProductView() {
                                 </div>
                             </div>
                             <button className={ProductViewCss.buy}>Buy now</button>
-                            <div className={ProductViewCss.wish}>
+                            {/* <div className={ProductViewCss.wish}>
                                 <Link to="/ProductView"><WishProduct /></Link>
 
-                            </div>
+                            </div> */}
                         </div>
 
                     </div>
@@ -120,7 +120,7 @@ function ProductView() {
                 </div>
                 
             </div>
-            <MainSlider/>
+            {/* <MainSlider/> */}
         </div>
         
     )

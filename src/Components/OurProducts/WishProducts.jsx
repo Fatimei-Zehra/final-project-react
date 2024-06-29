@@ -1,7 +1,7 @@
-import React, { useState, useEffect,useRef } from 'react';
-import { IoMdHeart, IoMdHeartEmpty } from 'react-icons/io';
-import { db } from "../../firebase/firebase";
-import OurProductsStyle from "./OurProducts.module.css";
+// import React, { useState, useEffect,useRef } from 'react';
+// import { IoMdHeart, IoMdHeartEmpty } from 'react-icons/io';
+// import { db } from "../../firebase/firebase";
+// import OurProductsStyle from "./OurProducts.module.css";
 // import products from "../../Server/Products";
 // import { setDoc, collection, addDoc } from "firebase/firestore";
 

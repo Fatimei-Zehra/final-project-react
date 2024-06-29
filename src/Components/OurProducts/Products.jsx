@@ -43,8 +43,8 @@ const ProductList = () => {
 
                 {/* <WishProduct /> */}
                 <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`} />
-
-                <WishProduct />
+{/* 
+                <WishProduct /> */}
                 <Link to="/ProductView"> <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`}  /></Link>
 
               </div>
