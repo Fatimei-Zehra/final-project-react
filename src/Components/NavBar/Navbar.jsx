@@ -21,6 +21,12 @@ function Navbar() {
   // const toggleSidebar = () => {
   //   setIsSidebarOpen(!isSidebarOpen);
   // };
+  const { t } = useTranslation();
+
+
+
+
+
 
   const { t } = useTranslation();
 
@@ -30,7 +36,11 @@ function Navbar() {
         <ul className={styles.list}>
           <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list" >
             <Link to="/Home" className={styles.linkName}>
+
+            {t("home")}
+
               {t("home")}
+
             </Link>
           </li>
           <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list">

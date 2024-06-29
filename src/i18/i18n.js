@@ -14,9 +14,13 @@ const resources = {
             home: "Ana səifə",
             contact: "Əlaqə",
             Contact: "Əlaqə",
+            "Sign Up": "Abunə olun",
+            Exclusive: "Eksklüziv",
+
             "sign Up": "Abunə olun",
             about:"Haqqımızda",
             // Exclusive: "Eksklüziv",
+
             "Woman’s Fashion": "Qadın Moda",
             "Men’s Fashion": "Kişi Moda",
             Electronics: "Elektronika",
@@ -31,24 +35,51 @@ const resources = {
             "Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!":
                 "Bütün Üzgüçülük Geyimlərinə Yay Endirimi və Pulsuz Ekspres Çatdırılma - ENDİRİM 50%!",
             ShopNow: "İndi alış-veriş edin",
+
+            "Today's": "Bugünkü",
+            "Flash Sales": "Flash Satış",
+            Days: "Günlər",
+            Hours: "Saat",
+            Minuts: "Dəqiqələr",
+            Minutes: "Dəqiqələr",
+            Seconds: "Saniyələr",
+
             "Today's": "Bu gün",
             "Flash Sales": "Flaş Satış",
             Days: "Gün",
             Hours: "Saat",
             Minutes: "Dəqiqə",
             Seconds: "Saniyə",
+
             "Add To Card": "Səbətə əlavə et",
             "HAVIT HV-G92 Gamepad": "HAVIT HV-G92 Oyun bloku",
             "AK-900 Wired Keyboard": "AK-900 Simli Klaviatura",
             "IPS LCD Gaming Monitor": "IPS LCD Oyun Monitoru",
             "S-Series Comfort Chair": "S-Series Komfortlu Kreslo",
+
+            "View Products All": "Bütün Məhsullara Baxın",
+
             "View Products All": "Bütün Məhsullara Bax",
+
             Categories: "Kateqoriyalar",
             "Browse By Category": "Kateqoriyaya görə Gözdən keçirin",
             Phones: "Telefonlar",
             Computers: "Kompüterlər",
             SmartWatch: "Ağıllı saat",
             Camera: "Kamera",
+
+            HeadPhones: "Qulaqlıqlar",
+            Gaming: "Oyun",
+            "This Month": "Bu Ay",
+            "Best Selling Products": "Ən çox satılan məhsullar",
+            "View All": "Hamısına Baxın",
+            "The north coat": "Şimal palto",
+            "Gucci duffle bag": "Gucci duffle çantası",
+            "RGB liquid CPU Cooler": "RGB maye CPU Soyuducu",
+            "Small BookSelf": "Kiçik kitab rəfi",
+            "Enhance Your": "Musiqi Təcrübənizi ",
+            "Music Experience": "Təkmilləşdirin",
+
             HeadPhones: "Qulaqcıqlar",
             Gaming: "Oyun",
             "This Month": "Bu Ay",
@@ -59,7 +90,7 @@ const resources = {
             "RGB liquid CPU Cooler": "RGB maye CPU Soyuducu",
             "Small BookSelf": "Kiçik kitab rəfi",
             "Enhance Your Music Experience": "Musiqi Təcrübənizi Təkmilləşdirin",
-            
+
             "Buy Now!": "İndi al!",
             "Breed Dry Dog Food": "Quru it yemi yetişdirin",
             "CANON EOS DSLR Camera": "CANON EOS DSLR kamera",
