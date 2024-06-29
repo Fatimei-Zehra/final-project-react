@@ -4,7 +4,7 @@ import styles from "../SignUp/SignUp.module.css"
 import svg  from "../../Images/Login/login.jpg"
 import { FcGoogle } from 'react-icons/fc'
 import SignUpMediacss from '../SignUp/SignUp.media.css'
-import {createUserWithEmailAndPassword } from 'firebase/auth'
+import { createUserWithEmailAndPassword } from 'firebase/auth'
 import { auth } from '../../firebase/firebase.js'
 import { Link } from 'react-router-dom'
 
@@ -24,31 +24,36 @@ const SignUp = () => {
   });
 
   const handleSignUp = async (e) => {
-    e.preventDefault();
-    if (validateInputs()) {
-    try {
-      createUserWithEmailAndPassword(auth, email, password, name);
-      navigate('/login');
-      console.log('Qeydiyyat olundu');
+    e.preventDefault(); 
 
-    } catch (error) {
-      console.log(error);
+    
+    if (validateInputs()) {
+      try {
+        await createUserWithEmailAndPassword(auth, email, password);
+        navigate('/login');
+        console.log('Qeydiyyat olundu'); 
+
+      } catch (error) {
+        console.log(error); 
+      }
+    } else {
+      console.log('Password yanlış'); 
     }
   };
-}
 
+  
+  const validateInputs = () => {
+    const errors = {
+      name: name.trim() === '', 
+      email: !email || email.trim() === '' || !/\S+@\S+\.\S+/.test(email), 
+      password: password.trim() === '' || !/^\d{6,}$/.test(password) 
+    };
 
-const validateInputs = () => {
-  const errors = {
-    name: name.trim() === '',
-    email: !email || email.trim() === '' || !/\S+@\S+\.\S+/.test(email),
-    password: password.trim() === '' || password.length < 6,
+    
+    setInputErrors(errors);
+
+    return !errors.name && !errors.email && !errors.password;
   };
-  setInputErrors(errors);
-  return !errors.name && !errors.email && !errors.password;
-};
-
-
 
   return (
     <div>
