@@ -10,7 +10,6 @@ import Services from './Components/Services/Services';
 
 import Footer from "../src/Components/Footer/Footer";
 
-import Footer from '../src/Components/Footer/Footer'
 
 import WishlistPage from './Components/Wishlist/WishlistPage';
 import Selling from '../src/Components/Selling/Selling';
@@ -99,8 +98,7 @@ function AppContent() {
     </div>
 
 
-      <Footer />
-    </div>
+   
   );
 
     
@@ -121,7 +119,7 @@ function App() {
 }
 
 
-} 
+
 
 export default App;
 
