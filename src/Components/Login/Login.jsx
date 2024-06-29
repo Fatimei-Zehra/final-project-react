@@ -12,32 +12,43 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
   const [inputErrors, setInputErrors] = useState({
-    name: false,
     email: false,
     password: false,
   });
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (validateInputs()) {
-    try {
-      signInWithEmailAndPassword(auth, email, password);
-      navigate('/home');
-      console.log('Giriş başarılı');
-    } catch (error) {
-      console.log(error);
-    }
-  }
-}
+    e.preventDefault(); 
 
-const validateInputs = () => {
-  const errors = {
-    email: !email || email.trim() === '' || !/\S+@\S+\.\S+/.test(email),
-    password: password.trim() === '' || password.length < 6,
+    
+    if (validateInputs()) {
+      try {
+        
+        await  signInWithEmailAndPassword(auth, email, password);
+        
+        
+        navigate('/home');
+        console.log('Qeydiyyat olundu'); 
+
+      } catch (error) {
+        console.log(error); 
+      }
+    } else {
+      console.log('Password yanlış'); 
+    }
   };
-  setInputErrors(errors);
-  return !errors.email && !errors.password;
-};
+
+
+  const validateInputs = () => {
+    const errors = {
+      email: !email || email.trim() === '' || !/\S+@\S+\.\S+/.test(email), 
+      password: password.trim() === '' || password.length < 6, 
+    };
+
+    setInputErrors(errors);
+
+    return !errors.email && !errors.password;
+  };
+
   
   return (
     <div>
