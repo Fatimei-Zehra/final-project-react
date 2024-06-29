@@ -103,10 +103,7 @@ function AppContent() {
 
 
 
-      <Footer />
-    </div>
-  );
-
+  )
     
 
 
