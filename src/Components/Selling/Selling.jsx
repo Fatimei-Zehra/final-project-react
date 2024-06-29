@@ -4,25 +4,28 @@ import Coat from '../../Images/Selling/1e9f94261b28e16ea21bacb4144473e8.png'
 import Bag from '../../Images/Selling/2722dbdf98f25179d3c0b785988c513d.png'
 import Cooler from '../../Images/Selling/c218c97b645d616c8188a4f2e6aaf84b.png'
 import BookShelf from '../../Images/Selling/2757d20a14861e2e0ebd4e9889693f59.png'
+import { useTranslation } from "react-i18next";
+
 
 
 import { LuEye } from "react-icons/lu";
 import { CiHeart } from "react-icons/ci";
 import { FaStar } from "react-icons/fa";
 function Selling() {
+    const { t } = useTranslation();
     return (
         <div className='container'>
             <div className={styles.firstSelling}>
             <div className={styles.selling}>
                 <div className={styles.rectangle}>
                     <div className={styles.red}></div>
-                    <h1>This month</h1>
+                    <h1>{t("This Month")}</h1>
 
                 </div>
-                <h1 className={styles.browsing}>Best Selling Products</h1>
+                <h1 className={styles.browsing}>{t("Best Selling Products")}</h1>
             </div>
             <div className={styles.view}>
-                <button >View All</button>
+                <button>{t("View All")}</button>
             </div>
             </div>
             <div className={styles.slider}>
@@ -45,7 +48,7 @@ function Selling() {
 
                     </div>
                     <div className={styles.downSide}>
-                        <h1 className={styles.downSideText}>The north coat</h1>
+                        <h1 className={styles.downSideText}>{t("The north coat")}</h1>
                         <div className={styles.price}>
                             <span className={styles.firstPrice}>$260</span>
                             <span className={styles.line}>$360</span>
@@ -84,7 +87,7 @@ function Selling() {
                     </div>
 
                     <div className={styles.downSide}>
-                        <h1 className={styles.downSideText}>Gucci duffle bag</h1>
+                        <h1 className={styles.downSideText}>{t("Gucci duffle bag")}</h1>
                         <div className={styles.price}>
                             <span className={styles.firstPrice}>$960</span>
                             <span className={styles.line}>$1160</span>
@@ -127,7 +130,7 @@ function Selling() {
                     </div>
 
                     <div className={styles.downSide}>
-                        <h1 className={styles.downSideText}>RGB liquid CPU Cooler</h1>
+                        <h1 className={styles.downSideText}>{t( "RGB liquid CPU Cooler")}</h1>
                         <div className={styles.price}>
                             <span className={styles.firstPrice}>$160</span>
                             <span className={styles.line}>$170</span>
@@ -171,7 +174,7 @@ function Selling() {
                     </div>
 
                     <div className={styles.downSide}>
-                        <h1 className={styles.downSideText}>Small BookSelf</h1>
+                        <h1 className={styles.downSideText}>{t( "Small BookSelf")}</h1>
                         <div className={styles.price}>
                             <span className={styles.firstPrice}>$360</span>
                          

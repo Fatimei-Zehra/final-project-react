@@ -18,7 +18,7 @@
 .contact{
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+    gap: 30px;
 }
 
 .contactInformation{
@@ -44,12 +44,22 @@
 
 
 .phoneIcon{
-    background-color: red;
+    /* background-color: red;
     padding: 5px;
     border-radius: 50px;
     color: #000000;
     width: 40px;
-    height: 40px; 
+    height: 40px;  */
+
+    background-color: red;
+    border-radius: 50px;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    font-size: 24px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contactInput{
@@ -99,9 +109,10 @@
 .btnSend{
     display: flex;
     justify-content: end;
+    cursor: pointer;
 }
 
-/* //nese bilmirem ne */
+
 
 
 .callNum {

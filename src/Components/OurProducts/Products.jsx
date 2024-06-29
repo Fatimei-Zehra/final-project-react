@@ -8,25 +8,16 @@ import { FaStar } from "react-icons/fa";
 import firebase from 'firebase/app';
 import { useState } from 'react'
 import products from "../../Server/Products";
-import Wishlist from '../Wishlist/WishlistPage';
 import Raiting from "./Raiting"
 import WishProduct from "./WishProducts"
+import { Link } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
 
 
+
+
 const ProductList = () => {
-  const [wishlist, setWishlist] = useState([]);
   const { t } = useTranslation();
-  const handleWishlistClick = (productId) => {
-    if (wishlist.includes(productId)) {
-
-      setWishlist(wishlist.filter(id => id !== productId));
-    } else {
-
-      setWishlist([...wishlist, productId]);
-    }
-
-  };
   return (
     <div className="container">
       <div className={OurProductsStyle.rectangle}>
@@ -49,8 +40,13 @@ const ProductList = () => {
               </div>
 
               <div className={OurProductsStyle.iconsBox} id='prod-icon1'>
-                <WishProduct />
+
+                {/* <WishProduct /> */}
                 <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`} />
+{/* 
+                <WishProduct /> */}
+                <Link to="/ProductView"> <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`}  /></Link>
+
               </div>
 
               <button className={OurProductsStyle.addToCart}>Add To Cart</button>
@@ -78,7 +74,6 @@ const ProductList = () => {
           </div>
         ))}
       </div>
-      <Wishlist wishlist={wishlist} />
       <div className={OurProductsStyle.viewAllProducts}>
         <button className={OurProductsStyle.viewButton}>{t("View All Products")}</button>
       </div>
