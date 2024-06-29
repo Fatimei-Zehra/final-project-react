@@ -26,7 +26,7 @@ import { Addproducts } from './Admin/Addproducts';
 
 // ROOTER CODES
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
-import { Switch } from '@mui/material';
+
 
 function AppContent() {
   const location = useLocation();
@@ -95,16 +95,14 @@ function AppContent() {
   )
 
  
-  );
+  
 
 
     
 
 
 
-      < Footer />
-    </div >
-  )
+  
 
 }
 
