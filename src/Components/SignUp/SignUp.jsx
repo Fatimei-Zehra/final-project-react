@@ -22,9 +22,40 @@ const SignUp = () => {
   });
 
   const handleSignUp = async (e) => {
-    e.preventDefault();
+    e.preventDefault(); 
+
+    
     if (validateInputs()) {
       try {
+
+        await createUserWithEmailAndPassword(auth, email, password);
+        navigate('/login');
+        console.log('Qeydiyyat olundu'); 
+
+      } catch (error) {
+        console.log(error); 
+      }
+    } else {
+      console.log('Password yanlış'); 
+    }
+  };
+
+  
+  const validateInputs = () => {
+    const errors = {
+      name: name.trim() === '', 
+      email: !email || email.trim() === '' || !/\S+@\S+\.\S+/.test(email), 
+      password: password.trim() === '' || !/^\d{6,}$/.test(password) 
+    };
+
+    
+    setInputErrors(errors);
+
+    return !errors.name && !errors.email && !errors.password;
+  };
+
+  return (
+
         createUserWithEmailAndPassword(auth, email, password, name);
         navigate('/login');
         console.log('Qeydiyyat olundu');
