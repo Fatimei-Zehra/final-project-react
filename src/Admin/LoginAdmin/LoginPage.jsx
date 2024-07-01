@@ -23,6 +23,12 @@ const LoginForm = () => {
             .catch((error) => {
                 const errorCode = error.code;
                 const errorMessage = error.message;
+
+                if (errorCode === 'auth/user-not-found' || errorCode === 'auth/wrong-password') {
+                    alert('Invalid username or password. Please try again.');
+                } else {
+                    alert("Invalid username or password. Please try again.")
+                }
             });
 
     };
