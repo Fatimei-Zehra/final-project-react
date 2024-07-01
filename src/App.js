@@ -20,7 +20,7 @@ import Contact from "./Components/Contact/Contact";
 import Cart2 from "./Components/Cart/Cart2";
 import ProductView from "./Components/ProductView/ProductView";
 import Cart from "./Components/Cart/Cart";
-import  Addproducts  from "./Admin/Addproducts";
+import Addproducts from "./Admin/Addproducts";
 
 // ROOTER CODES
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
@@ -31,11 +31,12 @@ function AppContent() {
   const location = useLocation();
   return (
     <div>
-      {location.pathname !== "/admin" && (
-        <>
-          <Header />
-        </>
-      )}
+      {location.pathname !== "/adminpanel" &&
+        location.pathname !== "/admin" && (
+          <>
+            <Header />
+          </>
+        )}
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -48,14 +49,15 @@ function AppContent() {
         <Route path="/ProductView" element={<ProductView />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Cart" element={<Cart2 />} />
-        <Route path="/Addproducts" element={<Addproducts />} />
+        <Route path="/adminpanel" element={<Addproducts />} />
       </Routes>
 
-      {location.pathname !== "/admin" && (
-        <>
-          <Footer />
-        </>
-      )}
+      {location.pathname !== "/adminpanel" &&
+        location.pathname !== "/admin" && (
+          <>
+            <Footer />
+          </>
+        )}
     </div>
   );
 }
