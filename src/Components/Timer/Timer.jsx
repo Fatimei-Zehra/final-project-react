@@ -18,14 +18,14 @@ const Timer = () => {
             return { days: "00", hours: "00", minutes: "00", seconds: "00" };
         }
 
-        const days = String(Math.floor(difference / (1000 * 60 * 60 * 24))).padStart(2, '0');
-        const hours = String(Math.floor((difference / (1000 * 60 * 60)) % 24)).padStart(2, '0');
-        const minutes = String(Math.floor((difference / 1000 / 60) % 60)).padStart(2, '0');
-        const seconds = String(Math.floor((difference / 1000) % 60)).padStart(2, '0');
+            const days = String(Math.floor(difference / (1000 * 60 * 60 * 24))).padStart(2, '0');
+            const hours = String(Math.floor((difference / (1000 * 60 * 60)) % 24)).padStart(2, '0');
+            const minutes = String(Math.floor((difference / 1000 / 60) % 60)).padStart(2, '0');
+            const seconds = String(Math.floor((difference / 1000) % 60)).padStart(2, '0');
 
         return { days, hours, minutes, seconds };
     };
-
+                                
     const [timeLeft, setTimeLeft] = useState(calculateTime());
     //sayimi n yenilenmesi:
     useEffect(() => {
