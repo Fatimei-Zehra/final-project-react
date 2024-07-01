@@ -73,7 +73,10 @@ function Footer() {
                         <ul className={FooterStyle.footerLatItem}>
                             <h4 className={FooterStyle.footerTittle} title="footer-list-title" >{t("Account")}</h4>
                             <Link to="/" className={FooterStyle.footerList} list="footer-list">{t("My Account")}</Link>
-                            <Link to="/" className={FooterStyle.footerList} list="footer-list">{t("Login / Register")}</Link>
+                            <div className={FooterStyle.footerloginRegister}>
+                            <Link to="/login" className={FooterStyle.footerList} list="footer-list">{t("Login")}</Link>
+                            <Link to="/SignUp" className={FooterStyle.footerList} list="footer-list">{t("/Register")}</Link>
+                            </div>
                             <Link to="/cart" className={FooterStyle.footerList} list="footer-list">{t("Cart")}</Link>
                             <Link to="/wishlist" className={FooterStyle.footerList} list="footer-list">{t("Wishlist")}</Link>
                             <Link to="/" className={FooterStyle.footerList} list="footer-list">{t("Shop")}</Link>

@@ -37,7 +37,7 @@ function AppContent() {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/ProductView" element={<ProductView />} />
         <Route path="/Contact" element={<Contact />} />
-        <Route path="/Cart" element={<Cart2 />} />
+        <Route path="/Cart" element={<Cart />} />
         <Route path="/adminpanel" element={<Addproducts />} />
       </Routes>
 

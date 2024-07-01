@@ -14,23 +14,21 @@ import Cart2 from "../Cart/Cart2"
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import i18n from '../../i18/i18n'
+import { FaUser } from 'react-icons/fa';
 import User from '../User/User'
 
 
-
-
-
-export default function Header() {
+export default function Header({ isLoggedIn }) {
     const { i18n } = useTranslation()
     const { t } = useTranslation();
-    
+
 
 
     const clickChange = (e) => {
         i18n.changeLanguage(e.target.value)
     }
 
-   
+
     return (
         <div>
             {/* LAYER CODES START */}
@@ -61,7 +59,7 @@ export default function Header() {
             <header className={styles.header} id='header'>
                 <div className="container">
                     <div className={styles.headerNav}>
-                        <Link to="/Home">
+                        <Link to="/">
                             <h1 className={`${styles.brand} ${GlobalModuleCss.fontInter}`} id='brand'>exclusive</h1>
                         </Link>
                         <Navbar />
@@ -75,8 +73,7 @@ export default function Header() {
                         <div id='planset-header-icons' className={styles.plansetHeaderIcons}>
                             <Wishlist />
                             <Cart2 />
-                            {/* <User /> */}
-                             <User />
+                            {sessionStorage.getItem("token") ? <User /> : null}
                         </div>
 
 
@@ -85,8 +82,8 @@ export default function Header() {
                         <div className={styles.headerComponents} id='header-components'>
                             <Search />
                             <Wishlist />
-                            <Cart2 />
-                            <User />
+                            <Cart2 />               
+                            {sessionStorage.getItem("token") ? <User /> : null}
                         </div>
 
                     </div>
@@ -130,10 +127,6 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-
-
-
-
 
         </div>
     )

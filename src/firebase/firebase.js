@@ -21,9 +21,6 @@ const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 export const auth = getAuth(app);
 export const storage = getStorage(app);
-// export const storageRef = ref(storage);
-// export default fireDb.database().ref();
-// export const storage = firebase.storage();
-//  export const storageRef = storage.ref("images/Profiler.png");
+
 
 

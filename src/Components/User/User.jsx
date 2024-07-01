@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { FaUser } from 'react-icons/fa';
 import UserCss from './User.module.css';
 import wishlistStyle from '../Cart/Cart.module.css';
@@ -17,11 +18,20 @@ import { Link } from 'react-router-dom'
 
 function User() {
     const [isOpen, setIsOpen] = useState(false);
-
+   
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
     };
     const { t } = useTranslation();
+    const navigate = useNavigate();
+    const logOut = (e) => {
+        e.preventDefault();
+        sessionStorage.removeItem("token");
+        sessionStorage.removeItem("email");
+        navigate('/login');
+    }
+
+
     return (
         <div className={UserCss.userIcon}>
             <FaUser
@@ -48,7 +58,7 @@ function User() {
                         <FaRegStar className={UserCss.icons} />
                         {t("My Reviews")}
                     </Link>
-                    <Link to="/" className={UserCss.dropdownItems}>
+                    <Link to="/" className={UserCss.dropdownItems} onClick={logOut}>
                         <BiLogOut className={UserCss.icons} />
                         {t("Logout")}
                     </Link>

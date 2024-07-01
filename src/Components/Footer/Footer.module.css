@@ -139,3 +139,7 @@ footer {
     display: flex;
     flex-direction: column;
 }
+
+.footerloginRegister{
+    display: flex;
+}

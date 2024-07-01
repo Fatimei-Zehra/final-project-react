@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 const Wishlist=()=> {
   return (
     <div>
-      <Link>
+      <Link to="/cart" >
       <FaCartShopping className={wishlistStyle.wishlistIcon} id='wishlist' />
       </Link>
     </div>

@@ -6,18 +6,21 @@ import { LuEye } from "react-icons/lu";
 import { CiHeart } from "react-icons/ci";
 import { FaStar } from "react-icons/fa";
 import firebase from 'firebase/app';
-import { useState } from 'react'
+import { useState,useEffect} from 'react'
 import products from "../../Server/Products";
 import Raiting from "./Raiting"
 import WishProduct from "./WishProducts"
 import { Link } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
+import Cart from "../Cart/Cart"
 
 
 
 
 const ProductList = () => {
   const { t } = useTranslation();
+
+ 
   return (
     <div className="container">
       <div className={OurProductsStyle.rectangle}>
@@ -42,14 +45,11 @@ const ProductList = () => {
               <div className={OurProductsStyle.iconsBox} id='prod-icon1'>
 
                 <WishProduct />
-                {/* <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`} /> */}
-
-               
-                <Link to="/ProductView"> <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`}  /></Link>
+                <Link to="/ProductView"> <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`} /></Link>
 
               </div>
 
-              <button className={OurProductsStyle.addToCart}>{t("Add To Cart")}</button>
+              <button  className={OurProductsStyle.addToCart}>{t("Add To Cart")}</button>
             </div>
 
             <div className="product-about">
@@ -77,7 +77,7 @@ const ProductList = () => {
       <div className={OurProductsStyle.viewAllProducts}>
         <button className={OurProductsStyle.viewButton}>{t("View Products All")}</button>
       </div>
-
+      {/* <Cart cartItems={cartItems} /> */}
     </div>
 
 
