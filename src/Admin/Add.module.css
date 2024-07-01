@@ -410,7 +410,16 @@ label{
 .buttonAdd{
     height: 35px;
     width: 13%;
-    border: 1px solid black;
+    border: 1px solid #fff;
     border-radius: 5px;
     cursor: pointer;
+    background-color: red;
+    color: #fff;
+}
+
+.buttonAdd:hover{
+    background-color: #fff;
+    color: rgb(219, 68, 68);
+    transition: color 0.9s ease, 0.9s ease;
+    border: 1px solid rgb(219, 68, 68);
 }

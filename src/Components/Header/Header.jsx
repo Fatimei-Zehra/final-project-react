@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 import Wishlist from '../Wishlist/Wishlist'
 import Search from '../Search/Search'
 import Cart2 from "../Cart/Cart2"
-
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import i18n from '../../i18/i18n'
 import User from '../User/User'
@@ -23,12 +23,14 @@ import User from '../User/User'
 export default function Header() {
     const { i18n } = useTranslation()
     const { t } = useTranslation();
+    
 
 
     const clickChange = (e) => {
         i18n.changeLanguage(e.target.value)
     }
 
+   
     return (
         <div>
             {/* LAYER CODES START */}
@@ -73,7 +75,8 @@ export default function Header() {
                         <div id='planset-header-icons' className={styles.plansetHeaderIcons}>
                             <Wishlist />
                             <Cart2 />
-                            <User />
+                            {/* <User /> */}
+                             <User />
                         </div>
 
 

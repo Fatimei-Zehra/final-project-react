@@ -18,9 +18,9 @@ const Wishlist = ({ wishlist }) => {
     <div className={wishlistStyle.wishlist}>
       <h2>Wishlist</h2>
       <ul>
-        {wishlist.map((productId) => {
+        {wishlist?.map((productId) => {
           const product = products.find(p => p.id === productId);
-          if (!product) return null; // Handle case where product is not found
+          if (!product) return null;
           return (
             <li key={product.id}>
               <div>

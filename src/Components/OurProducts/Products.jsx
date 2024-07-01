@@ -41,10 +41,10 @@ const ProductList = () => {
 
               <div className={OurProductsStyle.iconsBox} id='prod-icon1'>
 
-                {/* <WishProduct /> */}
+                <WishProduct />
                 {/* <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`} /> */}
-{/* 
-                <WishProduct /> */}
+
+               
                 <Link to="/ProductView"> <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`}  /></Link>
 
               </div>
