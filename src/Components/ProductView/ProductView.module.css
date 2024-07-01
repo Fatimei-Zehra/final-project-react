@@ -1,6 +1,6 @@
 .pageLink {
     display: flex;
-    margin-top: 80px;
+    margin: 80px 0px;
 }
 
 .aboutItems {
@@ -26,7 +26,7 @@
     display: flex;
     margin: 10px 0px;
     justify-content: space-between;
-    /* width: 90%; */
+    margin-bottom: 70px;
 }
 
 .frame {
@@ -47,10 +47,12 @@
 
 .bigFrame {
     width: 500px;
-    height: 600px;
-    padding: 154px 27px 131px 27px;
+    height: 592px;
     border-radius: 4px;
     background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .bigImg {
@@ -85,9 +87,8 @@
 
 .view {
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
-
 }
 
 .stock {
@@ -116,6 +117,8 @@
     font-size: 19px;
     font-weight: 400;
     border-bottom: 2px solid #BFBFBF;
+    padding-bottom: 20px;
+    padding-top: 10px;
 }
 
 .colourH1 {
@@ -155,6 +158,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    padding-top: 20px;
 
 }
 
@@ -203,8 +207,6 @@
     width: 40px;
     height: 44px;
     padding: 10px 8px;
-    border-radius: 4px;
-
     background-color: #fff;
     border: 1px solid #7F7F7F;
     font-size: 20px;
@@ -216,24 +218,26 @@
     width: 40px;
     height: 44px;
     padding: 10px 8px;
-    border-radius: 4px;
     background-color: #DB4444;
     color: #eee;
     border: 1px solid #7F7F7F;
     font-size: 20px;
-    border-bottom-left-radius: 4px;
-    border-top-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
 }
 
 .counter_output {
     width: 80px;
-    height: 43px;
+    height: 44px;
     padding: 10px 8px;
-    border-radius: 4px;
     border: 1px solid #7F7F7F;
     display: inline-block;
 
     text-align: center;
+}
+
+.btnContainer{
+    display: flex;
 }
 
 .buy {
@@ -263,6 +267,33 @@
     height: 40px;
     padding: 4px;
     border-radius: 4px;
+}
 
 
+.firstSide{
+    margin-right: 15px;
+}
+
+
+
+.rectangleText {
+    color: #DB4444;
+    font-size: 16px;
+}
+
+.rectangle {
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+    margin-top: 80px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.red {
+    border: 1px solid #DB4444;
+    width: 20px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #DB4444;
 }

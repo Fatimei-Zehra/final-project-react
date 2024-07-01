@@ -7,7 +7,7 @@ import { useState } from 'react';
 import Modal from 'react-modal';
 import { RiCloseCircleLine } from "react-icons/ri";
 import SearchStyle from "./Search.module.css"
-
+import { useTranslation } from "react-i18next";
 
 
 function Search() {
@@ -38,10 +38,11 @@ function Search() {
 
     handleCloseModal();
   }
+  const { t } = useTranslation();
   return (
     <div>
       <form action="#" className={styleSearch.form} id='form'>
-        <input type="text" className={styleSearch.input} placeholder='What are you looking for?' />
+        <input type="text" className={styleSearch.input} placeholder={t('What are you looking for?')} />
         <FontAwesomeIcon icon={faSearch} className={styleSearch.searchIcon} onClick={handleOpenModal} />
       </form>
 
@@ -53,7 +54,7 @@ function Search() {
           <div className={SearchStyle.modal}>
         <input
           type="text"
-          placeholder="Enter to search "
+          placeholder={t("Enter to search ")}
           value={searchTerm}
           onChange={handleInputChange}
         className={SearchStyle.inputSearch} />

@@ -22,12 +22,12 @@ const ProductList = () => {
     <div className="container">
       <div className={OurProductsStyle.rectangle}>
         <div className={OurProductsStyle.red}></div>
-        <h1 className={`${GlobalModuleCss.fontPoppins} ${OurProductsStyle.rectangleText}`}>Our Products</h1>
+        <h1 className={`${GlobalModuleCss.fontPoppins} ${OurProductsStyle.rectangleText}`}>{t("Our Products")}</h1>
       </div>
 
       <div className="section-our-products">
         <div className="section-ourProducts">
-          <h1 className={OurProductsStyle.sectionProductsText} id='section-products-text'>Explore Our Products</h1>
+          <h1 className={OurProductsStyle.sectionProductsText} id='section-products-text'>{t("Explore Our Products")}</h1>
         </div>
       </div>
 
@@ -42,14 +42,14 @@ const ProductList = () => {
               <div className={OurProductsStyle.iconsBox} id='prod-icon1'>
 
                 {/* <WishProduct /> */}
-                <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`} />
+                {/* <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`} /> */}
 {/* 
                 <WishProduct /> */}
                 <Link to="/ProductView"> <LuEye className={`${OurProductsStyle.svg} ${OurProductsStyle.svgEyes}`}  /></Link>
 
               </div>
 
-              <button className={OurProductsStyle.addToCart}>Add To Cart</button>
+              <button className={OurProductsStyle.addToCart}>{t("Add To Cart")}</button>
             </div>
 
             <div className="product-about">
@@ -75,7 +75,7 @@ const ProductList = () => {
         ))}
       </div>
       <div className={OurProductsStyle.viewAllProducts}>
-        <button className={OurProductsStyle.viewButton}>{t("View All Products")}</button>
+        <button className={OurProductsStyle.viewButton}>{t("View Products All")}</button>
       </div>
 
     </div>

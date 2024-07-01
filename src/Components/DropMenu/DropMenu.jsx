@@ -87,7 +87,8 @@ function DropMenu() {
                 </div>
                 {SidebarData.map((category, index) => (
                     <div key={index} className={styles.category}>
-                        <h2>{category.title}</h2>
+                       
+                        <Link to="/"> <h2>{category.title}</h2></Link>
                         {/* <ul className={styles.categoryMenu}>
                             {category.submenu.map((item, idx) => (
                                 <li key={idx}>

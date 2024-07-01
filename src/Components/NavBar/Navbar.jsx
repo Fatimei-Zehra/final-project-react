@@ -22,38 +22,26 @@ function Navbar() {
   //   setIsSidebarOpen(!isSidebarOpen);
   // };
   const { t } = useTranslation();
-
-
-
-
-
-
-  const { t } = useTranslation();
-
   return (
     <>
       <nav className={styles.nav} id='nav' >
         <ul className={styles.list}>
           <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list" >
-            <Link to="/Home" className={styles.linkName}>
-
+            <Link to="/" className={styles.linkName}>
             {t("home")}
-
-              {t("home")}
-
             </Link>
           </li>
           <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list">
-            <Link to='/Contact' className={styles.linkName}>
+            <Link to='/contact' className={styles.linkName}>
               {t("contact")}
             </Link></li>
           <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list">
-            <Link to="/About" className={styles.linkName}>
+            <Link to="/about" className={styles.linkName}>
               {t("about")}
             </Link>
           </li>
           <li className={`${styles.listLi} ${GlobalModuleCss.fontPoppins} `} responsive="list">
-            <Link to="/SignUp" className={styles.linkName}>
+            <Link to="/signUp" className={styles.linkName}>
              {t("sign Up")}
             </Link>
           </li>

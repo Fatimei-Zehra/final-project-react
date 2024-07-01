@@ -4,8 +4,10 @@ import GlobalModuleCss from "../GlobalCss/global.module.css"
 import MediaStyle from "../GlobalCss/Media/media.css"
 import { TbTruckDelivery } from "react-icons/tb";
 import { TfiHeadphoneAlt } from "react-icons/tfi";
+import { useTranslation } from "react-i18next";
 
 function Services() {
+    const { t } = useTranslation();
     return (
         <div>
             <div className="container">
@@ -15,8 +17,8 @@ function Services() {
                             <TbTruckDelivery className={ServicesCss.deliveryIcon} id='truck'/>
                         </div>
                         <div className={ServicesCss.delivery}>
-                            <h4 className={ServicesCss.serviceName} name="services-name" >free and fast delivery</h4>
-                            <p className={ServicesCss.aboutService} service="about-servece">Free delivery for all orders over $140</p>
+                            <h4 className={ServicesCss.serviceName} name="services-name" >{t("free and fast delivery")}</h4>
+                            <p className={ServicesCss.aboutService} service="about-servece">{t("Free delivery for all orders over $140")}</p>
                         </div>
                     </div>
 
@@ -25,8 +27,8 @@ function Services() {
                             <TfiHeadphoneAlt className={ServicesCss.deliveryIcon}  id='headphoneService'/>
                         </div>
                         <div className={ServicesCss.delivery}>
-                            <h4 className={ServicesCss.serviceName} name="services-name">free and fast delivery</h4>
-                            <p className={ServicesCss.aboutService} service="about-servece">Friendly 24/7 customer support</p>
+                            <h4 className={ServicesCss.serviceName} name="services-name">{t("free and fast delivery")}</h4>
+                            <p className={ServicesCss.aboutService} service="about-servece">{t("Friendly 24/7 customer support")}</p>
                         </div>
                     </div>
 
@@ -35,8 +37,8 @@ function Services() {
                             <TbTruckDelivery className={ServicesCss.deliveryIcon} id='truck-second'/>
                         </div>
                         <div className={ServicesCss.delivery}>
-                            <h4 className={ServicesCss.serviceName} name="services-name">free and fast delivery</h4>
-                            <p className={ServicesCss.aboutService} service="about-servece">We reurn money within 30 days</p>
+                            <h4 className={ServicesCss.serviceName} name="services-name">{t("free and fast delivery")}</h4>
+                            <p className={ServicesCss.aboutService} service="about-servece">{t("We reurn money within 30 days")}</p>
                         </div>
                     </div>
 

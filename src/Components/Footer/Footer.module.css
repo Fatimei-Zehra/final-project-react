@@ -79,6 +79,7 @@ footer {
     font-family: "Poppins";
     font-weight: 400;
     margin-bottom: 15px;
+    color: #fff;
 }
 
 .newUserSuggest {
@@ -132,4 +133,9 @@ footer {
 
 .socialIcons:hover.linkedin {
     color: #0077b5 !important;
+}
+
+.footerLatItem{
+    display: flex;
+    flex-direction: column;
 }

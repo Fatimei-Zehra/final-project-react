@@ -14,6 +14,7 @@ import Cart2 from "../Cart/Cart2"
 
 import { useTranslation } from 'react-i18next'
 import i18n from '../../i18/i18n'
+import User from '../User/User'
 
 
 
@@ -72,6 +73,7 @@ export default function Header() {
                         <div id='planset-header-icons' className={styles.plansetHeaderIcons}>
                             <Wishlist />
                             <Cart2 />
+                            <User />
                         </div>
 
 
@@ -81,6 +83,7 @@ export default function Header() {
                             <Search />
                             <Wishlist />
                             <Cart2 />
+                            <User />
                         </div>
 
                     </div>
@@ -132,7 +135,4 @@ export default function Header() {
         </div>
     )
 }
-
-
-
 

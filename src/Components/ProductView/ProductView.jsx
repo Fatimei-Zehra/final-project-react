@@ -9,11 +9,19 @@ import img5 from '../../Images/ProductView/9e3950aed9181acb44510f859f50d850.png'
 import { FaStar } from "react-icons/fa";
 import { useState } from 'react'
 import { LuEye } from "react-icons/lu";
-import WishProduct from "../OurProducts/WishProducts"
-import MainSlider from '../MainSlider/MainSlider';
+import Coat from '../../Images/Selling/1e9f94261b28e16ea21bacb4144473e8.png'
+import Bag from '../../Images/Selling/2722dbdf98f25179d3c0b785988c513d.png'
+import Cooler from '../../Images/Selling/c218c97b645d616c8188a4f2e6aaf84b.png'
+import BookShelf from '../../Images/Selling/2757d20a14861e2e0ebd4e9889693f59.png'
+import styles from '../Selling/Selling.module.css'
+import { useTranslation } from "react-i18next";
+import GlobalModuleCss from "../GlobalCss/global.module.css"
+import { CiHeart } from "react-icons/ci";
+
 
 function ProductView() {
     const [counter, setCounter] = useState(0);
+    const { t } = useTranslation();
 
     //increase counter
     const increase = () => {
@@ -83,6 +91,7 @@ function ProductView() {
                         </div>
                         <h2 id='price' className={ProductViewCss.textH2}>$192.00</h2>
                         <p className={ProductViewCss.ps}>PlayStation 5 Controller Skin High quality vinyl with air <br /> channel adhesive for easy bubble free install & mess <br /> free removal Pressure sensitive.</p>
+
                         <div className={ProductViewCss.square}>
                             <h1 className={ProductViewCss.colourH1}>Colours:</h1>
                             <button className={ProductViewCss.colour1}></button> <button className={ProductViewCss.colour2}></button>
@@ -101,7 +110,7 @@ function ProductView() {
                         </div>
                         <div className={ProductViewCss.counter}>
                             <div>
-                                <div className="btn_container">
+                                <div className={ProductViewCss.btnContainer}>
                                     <button className={ProductViewCss.control_btn} onClick={decrease}>-</button>
                                     <span className={ProductViewCss.counter_output}>{counter}</span>
                                     <button className={ProductViewCss.control_btnn} onClick={increase}>+</button>
@@ -116,13 +125,186 @@ function ProductView() {
 
                     </div>
 
-                    
+
                 </div>
-                
+
             </div>
-            {/* <MainSlider/> */}
+            <div>
+            <div className={styles.rectangle} id='timer-mobile-rectangle'>
+                <div className={styles.red}></div>
+                <h1 className={`${GlobalModuleCss.fontPoppins} ${styles.rectangleText}`}>{t("Today's")}</h1>
+            </div>
+                <div className={styles.slider}>
+                    <div className={styles.sliderBox}>
+                        <div className={styles.sliderBoxes}>
+                            <div className={styles.upSide}>
+                                <img src={Coat} alt="" />
+                                <div className={styles.buttons}>
+                                    <div>
+                                        {/* <span className={styles.saleProcent}>-40%</span> */}
+                                    </div>
+                                    <div className={styles.iconsBox}>
+                                        <CiHeart className={styles.svg} />
+                                        <LuEye className={styles.svg} />
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div className={styles.downSide}>
+                            <h1 className={styles.downSideText}>{t("The north coat")}</h1>
+                            <div className={styles.price}>
+                                <span className={styles.firstPrice}>$260</span>
+                                <span className={styles.line}>$360</span>
+                            </div>
+                            <div className={styles.infoDown}>
+                                <div className={styles.starIcons}>
+                                    <FaStar className={styles.star} />
+                                    <FaStar className={styles.star} />
+                                    <FaStar className={styles.star} />
+                                    <FaStar className={styles.star} />
+                                    <FaStar className={styles.star} />
+                                </div>
+                                <div className={styles.numberDown}>
+                                    <span>(65)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.sliderBox}>
+                        <div className={styles.sliderBoxes}>
+                            <div className={styles.upSide}>
+                                <img src={Bag} alt="" />
+                                <div className={styles.buttons}>
+                                    <div>
+                                        {/* <span className={styles.saleProcent}>-35%</span> */}
+                                    </div>
+                                    <div className={styles.iconsBox}>
+                                        <CiHeart className={styles.svg} />
+                                        <LuEye className={styles.svg} />
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div className={styles.downSide}>
+                            <h1 className={styles.downSideText}>{t("Gucci duffle bag")}</h1>
+                            <div className={styles.price}>
+                                <span className={styles.firstPrice}>$960</span>
+                                <span className={styles.line}>$1160</span>
+
+                            </div>
+                            <div className={styles.infoDown}>
+                                <div className={styles.starIcons}>
+                                    <FaStar className={styles.star} />
+                                    <FaStar className={styles.star} />
+                                    <FaStar className={styles.star} />
+                                    <FaStar className={styles.star} />
+                                    <FaStar className={styles.starColor} />
+                                </div>
+                                <div className={styles.numberDown}>
+                                    <span>(75)</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div className={styles.sliderBox}>
+                        <div className={styles.sliderBoxes}>
+                            <div className={styles.upSide}>
+                                <img src={Cooler} alt="" />
+                                <div className={styles.buttons}>
+                                    <div>
+                                        {/* <span className={styles.saleProcent}>-30%</span> */}
+                                    </div>
+                                    <div className={styles.iconsBox}>
+                                        <CiHeart className={styles.svg} />
+                                        <LuEye className={styles.svg} />
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div className={styles.downSide}>
+                            <h1 className={styles.downSideText}>{t("RGB liquid CPU Cooler")}</h1>
+                            <div className={styles.price}>
+                                <span className={styles.firstPrice}>$160</span>
+                                <span className={styles.line}>$170</span>
+
+                            </div>
+                            <div className={styles.infoDown}>
+                                <div className={styles.starIcons}>
+                                    <FaStar className={styles.star} />
+                                    <FaStar className={styles.star} />
+                                    <FaStar className={styles.star} />
+                                    <FaStar className={styles.star} />
+                                    <FaStar className={styles.star} />
+                                </div>
+                                <div className={styles.numberDown}>
+                                    <span>(99)</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div className={styles.sliderBox}>
+                        <div className={styles.sliderBoxes}>
+                            <div className={styles.upSide}>
+                                <img src={BookShelf} alt="" />
+
+                                <div className={styles.buttons}>
+                                    <div>
+                                        {/* <span className={styles.saleProcent}>-25%</span> */}
+                                    </div>
+                                    <div className={styles.iconsBox}>
+                                        <CiHeart className={styles.svg} />
+                                        <LuEye className={styles.svg} />
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div className={styles.downSide}>
+                            <h1 className={styles.downSideText}>{t("Small BookSelf")}</h1>
+                            <div className={styles.price}>
+                                <span className={styles.firstPrice}>$360</span>
+
+
+                            </div>
+                            <div className={styles.infoDown}>
+                                <div className={styles.starIcons}>
+                                    <FaStar className={styles.star} />
+                                    <FaStar className={styles.star} />
+                                    <FaStar className={styles.star} />
+                                    <FaStar className={styles.star} />
+                                    <FaStar className={styles.starGradient} />
+                                </div>
+                                <div className={styles.numberDown}>
+                                    <span>(65)</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        
+
     )
 }
 

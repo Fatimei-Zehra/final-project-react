@@ -5,9 +5,11 @@ import { PiCurrencyCircleDollarLight } from "react-icons/pi";
 import { MdOutlineShoppingBag } from "react-icons/md";
 import { TbMoneybag } from "react-icons/tb";
 import MediaStyle from "../GlobalCss/Media/media.css"
+import { useTranslation } from "react-i18next";
 
 
-function Statistics() {
+function Statistics() { 
+    const { t } = useTranslation();
     return (
         <div>
             <div className={StatisticsCss.statistics} id='statistics'>
@@ -17,7 +19,7 @@ function Statistics() {
                     </div>
                     <div className={StatisticsCss.delivery}>
                         <h4 className={StatisticsCss.quantity} id='quantity-first' >10.5k</h4>
-                        <p className={StatisticsCss.aboutService} id='textContentShop'>Sallers active our site</p>
+                        <p className={StatisticsCss.aboutService} id='textContentShop'>{t("Sallers active our site")}</p>
                     </div>
                 </div>
 
@@ -27,7 +29,7 @@ function Statistics() {
                     </div>
                     <div className={StatisticsCss.delivery}>
                         <h4 className={StatisticsCss.quantity}  id='quantity-second'>33k</h4>
-                        <p className={StatisticsCss.aboutService} id='textContentDollar'>Mopnthly Produduct Sale</p>
+                        <p className={StatisticsCss.aboutService} id='textContentDollar'>{t("Mopnthly Produduct Sale")}</p>
                     </div>
                 </div>
 
@@ -37,7 +39,7 @@ function Statistics() {
                     </div>
                     <div className={StatisticsCss.delivery}>
                         <h4 className={StatisticsCss.quantity} id='quantity-third'  >45.5k</h4>
-                        <p className={StatisticsCss.aboutService} id='textContentShopBag'>Mopnthly Produduct Sale</p>
+                        <p className={StatisticsCss.aboutService} id='textContentShopBag'>{t("Mopnthly Produduct Sale")}</p>
                     </div>
                 </div>
 
@@ -47,7 +49,7 @@ function Statistics() {
                     </div>
                     <div className={StatisticsCss.delivery}>
                         <h4 className={StatisticsCss.quantity}  id='quantity-four' >25k</h4>
-                        <p className={StatisticsCss.aboutService}id='textContentMoneyBag'>Anual gross sale in our site</p>
+                        <p className={StatisticsCss.aboutService}id='textContentMoneyBag'>{t("Anual gross sale in our site")}</p>
                     </div>
                 </div>
             </div>

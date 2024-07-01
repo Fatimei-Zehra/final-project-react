@@ -30,7 +30,7 @@ const resources = {
             "Baby’s & Toys": "Uşaq & Oyuncaqlar",
             "Groceries & Pets": "Ərzaq və Ev Heyvanları",
             "Health & Beauty": "Sağlamlıq və Gözəllik",
-            "What are you looking for?": "Nə axtarırsan?",
+            "What are you looking for?": "Nə axtarırsız?",
             "iPhone 14 Series": "iPhone 14 seriyası",
             "Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!":
                 "Bütün Üzgüçülük Geyimlərinə Yay Endirimi və Pulsuz Ekspres Çatdırılma - ENDİRİM 50%!",
@@ -102,7 +102,7 @@ const resources = {
             "Quilted Satin Jacket": "Yorğanlı atlaz gödəkçə",
             Featured: "Seçilmiş",
             "New Arrival": "Yeni Gəliş",
-            "FREE AND FAST DELIVERY": "PULSUZ ÇATDIRILMA",
+            "free and fast delivery": "PULSUZ ÇATDIRILMA",
             "Free delivery for all orders over $140":
                 "140 $ yuxarı  çatdırılma pulsuzdur",
             "24/7 CUSTOMER SERVICE": "24/7 MÜŞTƏRİ XİDMƏTi",
@@ -190,7 +190,7 @@ const resources = {
             "Sign up with Google": "Google ilə qeydiyyatdan keçin",
             "Already have account?": "Artıq hesabınız var?",
             "Log in": "Daxil ol",
-            "Log in to Exclusive": "Eksklüziv daxil olun",
+            "Log in to": "Daxil olun",
             "Log In": "Daxil ol",
             "Forget Password?": "Şifrəni unutmusunuz?",
         },

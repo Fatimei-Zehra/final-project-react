@@ -10,7 +10,7 @@ import { useTranslation } from "react-i18next";
 
 function Adversiting() {
     const calculateTime = () => {
-        const targetDate = new Date("2024-06-30");
+        const targetDate = new Date("2024-07-02");
         const now = new Date(); //indiki vaxtimiz
         const difference = targetDate - now; //bize hansi tarix lazmdisa ondan indiki vaxt arasindaki ferqi hesabla
 
@@ -43,7 +43,7 @@ function Adversiting() {
             <div className={AdvertisingStyle.sectionAdvertising} id='section-advertiising'>
                 <div className={AdvertisingStyle.advertisingItems} id='advertising-item'>
                     <p className={`${AdvertisingStyle.categoriesText} ${GlobalModuleCss.fontPoppins}`} id='categories-title'>{t("Categories")}</p>
-                    <h2 className={`${AdvertisingStyle.aboutProduct} ${GlobalModuleCss.fontInter}`} id='about-product'>{t("Enhance Your Music Experience")}</h2>
+                    <h2 className={`${AdvertisingStyle.aboutProduct} ${GlobalModuleCss.fontInter}`} id='about-product'>Enhance Your Music Experience</h2>
 
                     <div className={AdvertisingStyle.advertisingDate} id='advertising-date'>
                         <div className={AdvertisingStyle.advertisingDateItems} id='days'>

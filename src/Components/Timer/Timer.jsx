@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 
 const Timer = () => {
     const calculateTime = () => {
-        const targetDate = new Date("2024-06-30");
+        const targetDate = new Date("2024-07-02");
         const now = new Date(); //indiki vaxtimiz
         const difference = targetDate - now; //bize hansi tarix lazmdisa ondan indiki vaxt arasindaki ferqi hesabla
 

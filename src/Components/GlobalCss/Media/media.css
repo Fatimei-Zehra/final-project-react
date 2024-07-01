@@ -1340,6 +1340,7 @@
 
     #planset-header-icons {
         display: flex;
+        align-items: center;
     }
 
     #cart {
@@ -2613,6 +2614,7 @@
 
     #mobile-right-icon {
         display: flex;
+        align-items: center;
     }
 }
 
