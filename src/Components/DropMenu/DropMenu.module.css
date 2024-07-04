@@ -1,4 +1,4 @@
-/* DropMenu.module.css */
+
 
 .dropMenu {
     position: relative;
@@ -21,7 +21,7 @@
 }
 
 .sidebar.open {
-    left: -19px; /* Slide in from the left when open */
+    left: -19px; 
     transition: left 3s ease;
 }
 

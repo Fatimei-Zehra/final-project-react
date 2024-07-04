@@ -18,7 +18,7 @@ const Login = () => {
     password: false,
   });
 
-  
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -28,15 +28,16 @@ const Login = () => {
       try {
 
         const response = await signInWithEmailAndPassword(auth, email, password);
-
+        //Fatime codes start
         sessionStorage.setItem("token", response?.user?.accessToken);
         sessionStorage.setItem("email", response?.user?.email);
 
         setIsLoggedIn(true);
         navigate('/');
-        // console.log('Qeydiyyat olundu');
+        // console.log('Qeydiyyat olundu hersey okeydurr');
         // console.log(response.user);
         console.log(response);
+        //Fatime codes end
 
       } catch (error) {
         console.log(error);

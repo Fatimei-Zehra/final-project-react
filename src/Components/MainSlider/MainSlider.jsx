@@ -49,7 +49,7 @@ function MainSlider() {
                                 <FaStar className={styles.star} />
                             </div>
                             <div className={styles.numberDown}>
-                                <span>(88)</span>
+                                <span>(88)</span> 
                             </div>
                         </div>
                     </div>

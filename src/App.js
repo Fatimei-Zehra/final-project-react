@@ -10,10 +10,7 @@ import Cart2 from "./Components/Cart/Cart2";
 import ProductView from "./Components/ProductView/ProductView";
 import Cart from "./Components/Cart/Cart";
 import Addproducts from "./Admin/Addproducts";
-
-// ROOTER CODES
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
-import { Switch } from "@mui/material";
 import LoginForm from "./Admin/LoginAdmin/LoginPage";
 
 function AppContent() {

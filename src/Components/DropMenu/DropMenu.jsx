@@ -89,13 +89,6 @@ function DropMenu() {
                     <div key={index} className={styles.category}>
                        
                         <Link to="/"> <h2>{category.title}</h2></Link>
-                        {/* <ul className={styles.categoryMenu}>
-                            {category.submenu.map((item, idx) => (
-                                <li key={idx}>
-                                    <Link to={item.path}>{item.title}</Link>
-                                </li>
-                            ))}
-                        </ul> */}
                     </div>
                 ))}
             </div>

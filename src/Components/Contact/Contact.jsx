@@ -5,8 +5,7 @@ import { LuPhone } from "react-icons/lu";
 import { FaRegEnvelope } from "react-icons/fa6";
 import { useTranslation } from 'react-i18next'
 import { useRef } from 'react';
-import { collection, addDoc } from "../../firebase/firestore";
-import { db } from "../../firebase/firebase";
+
 
 
 function Contact() {
@@ -30,11 +29,11 @@ function Contact() {
         };
         console.log(fullData);
 
-        await addDoc(collection(db, "Contact-Messages"), fullData);
-        nameRef.current.value = "";
-        emailRef.current.value = "";
-        phoneRef.current.value = "";
-        messageRef.current.value = "";
+        // await addDoc(collection(db, "Contact-Messages"), fullData);
+        // nameRef.current.value = "";
+        // emailRef.current.value = "";
+        // phoneRef.current.value = "";
+        // messageRef.current.value = "";
     };
     return (
         <div>

@@ -58,8 +58,6 @@ function Search() {
           value={searchTerm}
           onChange={handleInputChange}
         className={SearchStyle.inputSearch} />
-        {/* <button onClick={handleSearch}>Search</button>
-        <button >Close</button> */}
         <RiCloseCircleLine onClick={handleCloseModal} className={SearchStyle.closeModal} />
           </div>
       </Modal>

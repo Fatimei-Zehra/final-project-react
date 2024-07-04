@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { FaStar } from 'react-icons/fa';
 
 const ProductRating = () => {
-  const [rating, setRating] = useState(0); // State to store the current rating
+  const [rating, setRating] = useState(0); 
 
   const handleRatingClick = (value) => {
-    // Update the rating state when a star is clicked
+    
     setRating(value);
   };
 
