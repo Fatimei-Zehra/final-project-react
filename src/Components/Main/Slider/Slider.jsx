@@ -1,3 +1,4 @@
+//!FATIME
 import React from 'react'
 import SliderStyle from "../Slider/Slider.module.css";
 import MediaStyle from "../../GlobalCss/Media/media.css"

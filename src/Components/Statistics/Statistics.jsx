@@ -1,3 +1,4 @@
+//!FATIME
 import React from 'react'
 import StatisticsCss from "./Statistics.module.css"
 import { CiShop } from "react-icons/ci";

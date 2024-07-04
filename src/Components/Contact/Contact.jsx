@@ -1,3 +1,4 @@
+//!FATIME
 import React from 'react'
 import ContactCss from "./Contact.module.css"
 import { Link } from "react-router-dom"

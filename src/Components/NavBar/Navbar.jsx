@@ -1,3 +1,4 @@
+//!FATIME
 import React from 'react'
 import styles from "../NavBar/Navbar.module.css"
 import GlobalModuleCss from "../GlobalCss/global.module.css"

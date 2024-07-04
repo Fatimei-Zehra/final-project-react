@@ -1,3 +1,4 @@
+//!ELCAN
 import React from 'react'
 import styles from '../Timer/Timer.module.css'
 import GlobalCss from "../GlobalCss/global.css"

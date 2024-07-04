@@ -1,3 +1,5 @@
+
+//!ELCAN
 import React from 'react'
 import styles from './MainSlider.module.css'
 import ImageConsol from '../../Images/MainSliderImages/50752d55f8b60f2aa2923183dadbc135.png'

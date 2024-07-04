@@ -1,3 +1,4 @@
+//!FATIME
 import React from 'react'
 import FounderCss from "../Founders/Founder.module.css"
 import { FiTwitter } from "react-icons/fi";

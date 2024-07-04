@@ -1,3 +1,4 @@
+//!FATIME
 import React, { useEffect, useState } from 'react';
 import { allJson } from '../../Server/AllJson';
 import subStyle from "./submenu.module.css";
